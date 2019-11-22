@@ -314,6 +314,10 @@ La &      &      &     & 3.3 \\
 \end{tabular}
 \end{table}
 
+\subsection{Impedance Measurement}
+
+Impedance measurements were carried out
+Data were collected using, and analysed using
 
 \subsection{Molecular Dynamic Simulation (MD)}
 Classical MD simulations were performed on $4\times 4\times 4$ unit cells and 12288 atoms of LLZO using the DL\_POLY package.
@@ -480,6 +484,26 @@ Red circles represent the Molecular Dynamic simulation ones.}
 \label{fig:powerSpectra}
 \end{figure}
 
+\subsection{Transport measurements}
+The impedance data collected from LLZO showed .
+The data collected from -20$^oC$ to 100$^oC$ are plotted in Fig.\ref{fig:impedance}.
+
+The total conductivity dislays an Arrhenius temperature dependence as showed in Fig.\ref{fig:arrhenius-plot},
+with activation energy of 0.36~eV
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/impedance.png}
+\caption{AC impedance data collected from -20$^oC$ to 100$^oC$.}
+\label{fig:impedance}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/arrhenius-plot.png}
+\caption{A plot of conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range.}
+\label{fig:arrhenius-plot}
+\end{figure}
 
 %\section{Simple model}\label{sec:model}
 %
@@ -574,8 +598,19 @@ respect to a reference position over time. MSD is related to the $G_s(r,t)$ as:
   \langle \Delta r_i(t)\rangle ^2=\int_{0}^{\infty} (\Delta r_i(t))^2\cdot 4\pi(\Delta r_i(t))^2G_s(\Delta r,t)d\Delta r
 \end{equation}
 
+\subsection{ Nernst-Einstein  Equation}
 
+The value of ionic conductivity ($\sigma$) is determined by the impedance spectroscopy.
+In solid electrolytes, as the anions are immobile, the ionic conduction is driven by the diffusion of Li$^+$ ions. 
+The connection between the diffusion constant (D) and $\sigma$ is defined by the Nernst-Einstein (NE) equation, 
+which are widely used for electrolyte system. NE equation is given as
 
+\begin{equation}
+D(T)=\frac{kT}{Ne^2}\sigma(T)
+\end{equation}
+
+where $k$ is the Boltzmann constant, $e$ is the elementary charge, and N is the number of carrier ions.
+ 
 \section*{Conflicts of interest}
 There are no conflicts to declare.
 
