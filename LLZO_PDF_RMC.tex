@@ -126,7 +126,8 @@
 
  & \noindent\large{Haolai Tian,$^{\ast}$\textit{$^{a}$} Martin T. Dove,\textit{$^{b\ddag}$} and Xiang Yang Kong\textit{$^{c}$}} \\%Author names go here instead of "Full name", etc.
 
-\includegraphics{head_foot/dates} & \noindent\normalsize{ The garnet-structured Li$_7$La$_3$Zr$_2$O$_12$ (LLZO)is an excellent candidate for solid electrolytes with its structural stability and high Li+ conductivity. Li+ diffusion path have not yet been thoroughly studied, as well as the precise crystal and local structure. Herein, we use variable-temperature neutron and cynchrotron total scattering in the range of room temperature to 1100 K, and conducte 
+\includegraphics{head_foot/dates} & \noindent\normalsize{ 
+The garnet-structured Li$_7$La$_3$Zr$_2$O$_12$ (LLZO)is an excellent candidate for solid electrolytes with its structural stability and high Li+ conductivity. Li+ diffusion path have not yet been thoroughly studied, as well as the precise crystal and local structure. Herein, we use variable-temperature neutron and cynchrotron total scattering in the range of room temperature to 1100 K, and conducte
 Reverse Monte Carlo method (RMC) to probe the lithium-ion distribution and framework distortion.
 By this analysis, we provide deeper insight into the local structure and Li+ diffusion path of this lithium-ion conductors.
 %%
@@ -321,10 +322,12 @@ La &      &      &     & 3.3 \\
 \end{tabular}
 \end{table}
 
-\subsection{Impedance Measurement}
+\subsection{Electrochemical Impedance Measurements}
 
-Impedance measurements were carried out
-Data were collected using, and analysed using
+Electrochemical experiments were carried out in an Ar glovebox (O$_2$; H$_2$O < 1 ppm). For the electrical measurement, 
+gold electrodes were evaporated on LLZO by thermal evaporation. The EIS was recorded by a Solartron ModuLab system, 
+and contacted via a probe station on a hot stage in the glovebox. EIS was performed with an 10 mV amplitude voltage 
+in a frequency range of 50 mHz to 1 MHz.
 
 \subsection{Molecular Dynamic Simulation (MD)}
 Classical MD simulations were performed on $4\times 4\times 4$ unit cells and 12288 atoms of LLZO using the DL\_POLY package.
@@ -337,22 +340,37 @@ The simulations were performed for 10 ps with atomic positions saved every 0.01 
 
 
 
+%\begin{table}[h]
+%\centering
+%\caption{Force-field parameters} \label{tab:md_force}
+%\begin{tabular}{cccccc}
+%\hline
+%      & \multicolumn{3}{c}{Buckingham parameters}    & \multicolumn{2}{c}{O shell parameters}         \\
+%\hline
+%      & A (eV)  & $\rho$(\AA) & C(eV\AA$^6$)         &                    &       \\
+%Zr-O  & 1385.02 & 1.79        & 0                    & Y (e)              &  -2.76\\
+%La-O  & 4579.23 & 0.3044      & 0                    & k (eV $\AA^{-2}$)  &  30.2 \\
+%Li-O  & 632.102 & 0.2906      & 0                    & m (au)             &  0.2  \\
+%O-O   & 22764.30& 0.1490      & 27.63                &                    &       \\
+%\hline
+%\end{tabular}
+%\end{table}
+
 \begin{table}[h]
 \centering
 \caption{Force-field parameters} \label{tab:md_force}
 \begin{tabular}{cccccc}
 \hline
-      & \multicolumn{3}{c}{Buckingham parameters}    & \multicolumn{2}{c}{O shell parameters}         \\
+      & \multicolumn{3}{c}{Buckingham parameters}      \\
 \hline
-      & A (eV)  & $\rho$(\AA) & C(eV\AA$^6$)         &                    &       \\
-Zr-O  & 1385.02 & 1.79        & 0                    & Y (e)              &  -2.76\\
-La-O  & 4579.23 & 0.3044      & 0                    & k (eV $\AA^{-2}$)  &  30.2 \\
-Li-O  & 632.102 & 0.2906      & 0                    & m (au)             &  0.2  \\
-O-O   & 22764.30& 0.1490      & 27.63                &                    &       \\
+      & A (eV)  & $\rho$(\AA) & C(eV\AA$^6$)           \\
+Zr-O  & 1385.02 & 1.79        & 0                      \\
+La-O  & 4579.23 & 0.3044      & 0                      \\
+Li-O  & 632.102 & 0.2906      & 0                      \\
+O-O   & 22764.30& 0.1490      & 27.63                  \\
 \hline
 \end{tabular}
 \end{table}
-
 
 \begin{figure}
 \centering
@@ -364,9 +382,12 @@ O-O   & 22764.30& 0.1490      & 27.63                &                    &     
 
 
 
-\subsection{GASP analysis}
-
-Both our RMC and MD configurations have been analysed using the GASP method. In this method the motions of the atoms associated with each polyhedron in the configuration are described together as a combination of whole-polyhedron rotation, bond-bending and bond-stretching motions.
+%\subsection{GASP analysis}
+%
+%Both our RMC and MD configurations have been analysed using the GASP method. 
+%In this method the motions of the atoms associated with each polyhedron in 
+%the configuration are described together as a combination of whole-polyhedron rotation, 
+%bond-bending and bond-stretching motions.
 
 
 \section{Results and discussion}
@@ -449,6 +470,55 @@ But the framework structure keep stable in each case as shown in Fig.\ref{fig:pa
 \end{figure}
 
 
+\subsection{Electrochemical Impedance Spectroscopy}
+
+The EIS of the LLZO were examined with a in-plane geometry at elevated temperatures from -20$^oC$ to 100$^oC$, as shown in  Fig.\ref{fig:impedance}. 
+From the Nyquist plots, a typical semi arc with the straight tail indicates the ion in-plane diffusion at low frequency occurs along the LLZO. 
+The ion conductivity is about 2.1$\times$10$^{-4}$ S/cm at room temperature.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/impedance.png}
+\caption{AC impedance data collected from -20$^oC$ to 100$^oC$.}
+\label{fig:impedance}
+\end{figure}
+
+The activation energy can be calculated from the series of EIS at elevated temperatures shown in Fig.\ref{fig:arrhenius-plot}.
+The activation energy E$_a$ is estimated based on the Arrhenius equation for the ionic conductivity
+
+\begin{equation}
+\sigma T = \sigma_0 e^{-E_a/k_B T}
+\end{equation}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/arrhenius-plot.png}
+\caption{A plot of conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range.}
+\label{fig:arrhenius-plot}
+\end{figure}
+
+where $\sigma$ is the ionic conductivity, $\sigma_0$ is a pre-exponential factor, T is the absolute temperature, and k$_B$ is the Boltzmann constant. 
+Furthermore, the diffusion coefficient was calculated using the Nernst-Einstein-equation
+
+\begin{equation}
+D=\frac{\sigma k_B T}{N_{Li} q^2}
+\end{equation}
+
+where q is the charge of the lithium and N$_{Li}$ the concentration of lithium, in this case for a cubic LLZO structure.
+The calculated activation energy is about 0.36~eV which is in good agreement to other publications, 
+as well as the diffusion coefficient shown in Fig.\ref{fig:DiffusionCoefficient} with 1.31 $\times$ 10$^{-13}$ m$^2$s$^{-1}$ at room temperature.  
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/DiffusionCoefficient.png}
+\caption{Diffusion coefficient at different temperatures}
+\label{fig:DiffusionCoefficient}
+\end{figure}
+
+
 \subsection{Lithium Distribution and Dynamics Analysis}
 
 
@@ -473,44 +543,24 @@ The inset shows a diffusion constant (D) versus temperatures.}
 \end{figure}
 
 
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/entropy.pdf}
-\caption{The entropy of Li distribution. Data represented by back circles are the experimentally determined values using RMC refinement.
-Red circles represent the Molecular Dynamic simulation ones.}
-\label{fig:entropy}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.5\textwidth]{Pics/entropy.pdf}
+%\caption{The entropy of Li distribution. Data represented by back circles are the experimentally determined values using RMC refinement.
+%Red circles represent the Molecular Dynamic simulation ones.}
+%\label{fig:entropy}
+%\end{figure}
 
 
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/powerSpectra.pdf}
-\caption{The power spectrum of Li vibrational frequencies.
- The zero point of power spectrum for each temperature yields the diffusion constant.
- The inset shows a diffusion constant (D) versus temperatures.}
-\label{fig:powerSpectra}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.5\textwidth]{Pics/powerSpectra.pdf}
+%\caption{The power spectrum of Li vibrational frequencies.
+% The zero point of power spectrum for each temperature yields the diffusion constant.
+% The inset shows a diffusion constant (D) versus temperatures.}
+%\label{fig:powerSpectra}
+%\end{figure}
 
-\subsection{Transport measurements}
-The impedance data collected from LLZO showed .
-The data collected from -20$^oC$ to 100$^oC$ are plotted in Fig.\ref{fig:impedance}.
-
-The total conductivity dislays an Arrhenius temperature dependence as showed in Fig.\ref{fig:arrhenius-plot},
-with activation energy of 0.36~eV
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/impedance.png}
-\caption{AC impedance data collected from -20$^oC$ to 100$^oC$.}
-\label{fig:impedance}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/arrhenius-plot.png}
-\caption{A plot of conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range.}
-\label{fig:arrhenius-plot}
-\end{figure}
 
 %\section{Simple model}\label{sec:model}
 %
