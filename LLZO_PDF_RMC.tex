@@ -124,16 +124,19 @@
 \includegraphics{head_foot/DOI} & \noindent\LARGE{\textbf{Local Structure and Lithium Ion Diffusion Pathway of Cubic Li$_7$La$_3$Zr$_2$O$_{12}$ Studied by Total Scattering and the Reverse Monte Carlo Method$^\dag$}} \\%Article title goes here instead of the text "This is the title"
 \vspace{0.3cm} & \vspace{0.3cm} \\
 
- & \noindent\large{Haolai Tian,$^{\ast}$\textit{$^{a}$} Martin T. Dove,\textit{$^{b\ddag}$} and Xiang Yang Kong\textit{$^{c}$}} \\%Author names go here instead of "Full name", etc.
+ & \noindent\large{Haolai Tian,$^{\ast,a}$}
+ Xiang Yang Kong,$^{b}$ 
+ Guanqun Cai,$^{c}$
+ Lei Tan,$^{c}$
+ Anthony E Phillip,$^{c}$
+ Isaac Abrahams,$^{d}$
+ David A Keen,$^{e}$
+ Dean Keeble,$^{f}$
+and Martin T. Dove,\textit{$^{g,h,\ddag}$} 
+\\%Author names go here instead of "Full name", etc.
 
 \includegraphics{head_foot/dates} & \noindent\normalsize{ 
-The garnet-structured Li$_7$La$_3$Zr$_2$O$_12$ (LLZO)is an excellent candidate for solid electrolytes with its structural stability and high Li+ conductivity. Li+ diffusion path have not yet been thoroughly studied, as well as the precise crystal and local structure. Herein, we use variable-temperature neutron and cynchrotron total scattering in the range of room temperature to 1100 K, and conducte
-Reverse Monte Carlo method (RMC) to probe the lithium-ion distribution and framework distortion.
-By this analysis, we provide deeper insight into the local structure and Li+ diffusion path of this lithium-ion conductors.
-%%
-%%The basic perovskite network \textit{AX}$_3$, consisting of corner-linked octahedral groups of atoms,
-%has for a long time know to have an inherent flexibility involving rotations of the octahedra. This is often associated with both displacive phase transitions and negative thermal expansion.
-
+The lithium-bearing oxide Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO), with the cubic garnet crystal structure, is an excellent candidate for solid electrolytes with its structural stability and high Li$^+$ conductivity. Here we use neutron and x-ray total scattering methods with the Reverse Monte Carlo method to identify the temperature-dependence of the Li$^+$ distribution and of the stability and flexibility of the basic oxide structure. We compare with the results with the outcomes from supporting molecular dynamics simulations. The results give insight into the mechanism  of Li$^+$ conductivity.
 } \\
 
 \end{tabular}
@@ -152,9 +155,16 @@ By this analysis, we provide deeper insight into the local structure and Li+ dif
 
 %%%FOOTNOTES%%%
 
-\footnotetext{\textit{$^{a}$~China Spallation Neutron Source (CSNS), Institute of High Energy Physics (IHEP), Chinese Academy of Sciences (CAS), Dongguan 523803, China}}
-\footnotetext{\textit{$^{b}$~Centre for Condensed Matter and Materials Physics, School of Physics and Astronomy, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom; E-mail: martin.dove@qmul.ac.uk}}
-\footnotetext{\textit{$^{c}$~School of Materials Sciences and Engineering, Shanghai Jiao Tong University, Huashan Road 1954, Shanghai 200030; E-mail: xykong@sjtu.edu.cn}}
+\footnotetext{\textit{$^{a}$~China Spallation Neutron Source (CSNS), Institute of High Energy Physics (IHEP), Chinese Academy of Sciences (CAS), Dongguan 523803, People's Republic of China}}
+\footnotetext{\textit{$^{b}$~School of Materials Sciences and Engineering, Shanghai Jiao Tong University, Huashan Road 1954, Shanghai 200030, People's Republic of China}}
+\footnotetext{\textit{$^{c}$~School of Physics and Astronomy, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
+\footnotetext{\textit{$^{d}$~School of Biological and Chemical Sciences, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
+\footnotetext{\textit{$^{e}$~ISIS Neutron and Muon Facility,  Rutherford Appleton Laboratory, Harwell Campus, Didcot, Oxfordshire, OX11 0QX, United Kingdom}}
+\footnotetext{\textit{$^{f}$~Diamond Light Source Ltd, Harwell Science and Innovation Campus, Didcot, OX11 0DE, United Kingdom}}
+\footnotetext{\textit{$^{g}$~College of computer science, Sichuan University, Chengdu, 610065, People's Republic of China}}
+\footnotetext{\textit{$^{h}$~School of Physics, School of Sciences, Wuhan University of Technology, Wuhan, Hubei 430070, People's Republic of China}}
+\footnotetext{\textit{$^{\ddag}$~Corresponding author. email: martin.dove@icloud.com}}
+
 
 %%Please use \dag to cite the ESI in the main text of the article.
 %%If you article does not have ESI please remove the the \dag symbol from the title and the footnotetext below.
@@ -174,35 +184,41 @@ farms for renewable energy storage.  However the commonly used liquid-based elec
 disadvantages such as flammability, volatile  and operating temperature limitations.
 Although all-solid-state lithium ion batteries (SSLBs) which are expected to enhance the safety
 reliability and performance issues have been long sought, the conductivity of solid electrolytes can not
-keep competing at the level of the existed liquid-based counterpart. Most solid electrolytes required both high Li+ conductivity and negligible electronic
-conductivity have either high ionic conductivity or high electrochemical stability, which are not suitable for commercialized battery applications.
- Recently the garnet-structured
- Li$_7$La$_3$Zr$_2$O$_12$ (LLZO)\cite{ANIE:ANIE200701144} has attracted much attention as a poential solid electrolytes, which possessed high Li+ conductivity, stability against chemical
-reaction with Li metal, moisture, air, as well as a wide potential window. However, LLZO exhibits two phases\cite{ic101914e}
-cubic and tetragonal, which represent different Li+ conductivity. The conductivity of the cubic
-phase is two orders of magnitude higher than tetragonal one, $~3\times 10^{-4} S/cm$\cite{ANIE:ANIE200701144}
-and $~1.63\times 10^{-6} S/cm$\cite{AWAKA20092046}, seperately.
+keep competing at the level of the existed liquid-based counterpart. 
+
+Most solid electrolytes require both high Li$^+$ conductivity and negligible electronic
+conductivity. However, in many materials the requirement to match high ionic conductivity with high electrochemical stability for commercialised battery applications is problematic. Recently the lithium-containing oxide  Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO)\cite{Murugan:2007eg, Samson:2019eo, Kataoka:2020bg}, which crystallises with the cubic garnet structure, has attracted much attention as a potential solid electrolyte because it has both high Li$^+$ conductivity and is stabile against chemical
+reaction with Li metal, moisture, air, as well as being able to support both low and high electrical potential differences.  
+
+LLZO actually exists in two phases \cite{Geiger:2011cg}, of
+cubic and tetragonal symmetry, and the two phases show different Li$^+$ conductivities. The conductivity of the cubic
+phase is two orders of magnitude higher than tetragonal one, $~3\times 10^{-4}$ S/cm \cite{Murugan:2007eg}
+and $~1.63\times 10^{-6}$ S/cm \cite{Awaka:2009jv}, respectively.
 This difference may be related to the distances between Li sites, disorder degree of Li atom, and isotropic diffusion pathways in the cubic phase.
-A cubic garnet structure can be described\cite{CUSSEN2011470} as A$_3$B$_3$C$_2$O$_{12}$ array, that La occupies B sites in 8 oxygen coordinated, Zr occupies orctahedral C,
-and Li occupies A in tetrahedral coordination. The B$_3$C$_2$O$_{12}$ structure \cite{doi:10.1246/cl.2011.60} is a host framework that contains the A-sited Li (labeled Li1) and additional
-unoccupied Li (labeled Li2) in disorted octahedral coordination. A Li diffusion loop is constructed by Li1 and Li2 sites, and forms the 3-D Li+ diffusion pathway connected by
-shared Li1 site.
+
+A cubic garnet structure can be described \cite{Cussen:2011dg} as having a general chemical formula of the form A$_3$B$_2$(TO$_4$)$_3$, where the T site has tetrahedral coordination with oxygen (24 sites in the cubic unit cell), the B site has octahedral coordination (16 sites in the unit cell), and the larger A site has 8-fold coordination (24 sites in the unit cell). In LLZO the Zr$^{4+}$ cations are in the B sites, and the La$^{3+}$ cations are in the A site. The tetrahedral sites are occupied by Li$^+$ cations, but full occupancy would only accommodate 3 of the 7 cations of the chemical formula. In crystal structure refinements, sites of general symmetry and irregular coordination with oxygen atoms are associated with the positions of the remaining Li$^+$ cations. However, there are 96 of these sites, and therefore there must only be partial occupancy in this model. Indeed, with more than one position available to the Li$^+$ cations there is no reason why the the tetrahedral sites should be fully occupied, and this partial occupancy is what allows for three-dimensional ionic conductivity.
+
+The atomic structure of LLZO has been studied by two complementary methods. The first is standard crystallography, with both x-ray \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go} and neutron \cite{Awaka:2009jv,Buschmann:2011jo,Xie:2011gv,Han:2012is,Li:2012fz,DanielRettenwander:2016ei,Wang:2014ic} beams, from which Li$^+$ sites can be identified and their site occupancies refined. Using a maximum entropy method it was possibly to visualise the Li$^+$ diffusion pathway \cite{Han:2012is}. 
+%Moreover, anisotropic atomic displacement parameters can shed some light on the possible diffusion mechanisms; in the refinements previously reported it is clear that the Li$^+$ cations on general positions show a distribution of positions that is strongly elongated along a possible diffusion pathway including the tetrahedral sites. 
+The second method is molecular dynamics simulation \cite{Wang:2014ic,Klenk:2015ey}, which has given results broadly consistent with the crystal structure refinements. 
+
+In this paper we use the methods of neutron and synchrotron x-ray total scattering methods together with the Reverse Monte Carlo (RMC) method to create an image of the Li$^+$ site disorder for a wide range of temperatures. The X-ray data are sensitive to the atomic numbers, which means that the data for  x-ray total scattering will be mostly sensitive to the La$^{3+}$ and Zr$^{4+}$ cations, and to a lesser extent to the O$^{2-}$ anions, but will have virtually no sensitivity to the Li$^+$ cations. On the other hand, neutron total scattering will have enhanced sensitivity to the O$^{2-}$ anions and, but to a lesser extent also, to the Li$^+$ cations. The combination of the two techniques will give greater chance to identify the spatial distribution of the  Li$^+$ cations.
+
 
 \section{Experimental methods}
 
 \subsection{Synthesis}
-The precursor materials used was anhydrous LiOH (Alfa Aesar 99.5\%, dried at 200~$^{\circ}C$ overnight; 10 wt.\% excess was taken to compensate for the loss of lithium under annealing conditions), La2O3 (Alfa Aesar, treated at 950~$^{\circ}C$ overnight), ZrO2 (Alfa Aesar, 99.7\%). The reactants were mixed with a mortar and pestle before reacting them at 950~$^{\circ}C$ for 12 hours. The resultant product was reground and pressed into pellets. The pellets were transferred to an alumina crucible and buried with mother powder, followed by sintering at 1140~$^{\circ}C$ for 20 hours to form single-phase material. The resulting pellets were grounded into powder and stored in an Ar-filled glovebox (<0.1 ppm O2, <0.1 ppm H2O) to prevent reaction with humidity.
+The precursor materials used was anhydrous LiOH (Alfa Aesar 99.5\%, dried at 200~$^{\circ}$C overnight; 10 wt.\% excess was taken to compensate for the loss of lithium under annealing conditions), La$_2$O$_3$ (Alfa Aesar, treated at 950~$^{\circ}$C overnight), ZrO$_2$ (Alfa Aesar, 99.7\%). The reactants were mixed with a mortar and pestle before reacting them at 950~$^{\circ}$C for 12 hours. The resultant product was reground and pressed into pellets. The pellets were transferred to an alumina crucible and buried with mother powder, followed by sintering at 1140~$^{\circ}$C for 20 hours to form single-phase material. The resulting pellets were grounded into powder and stored in an argon-filled glovebox (<0.1 ppm O$_2$, <0.1 ppm H$_2$O) to prevent reaction with humidity.
 
 
 \subsection{Neutron Powder Diffraction and Total Scattering}
 
-Neutron powder diffraction and total scattering data were obtained at a number of temperatures on the GEM diffractometer at the
+Neutron powder diffraction and total scattering data were obtained at a number of temperatures on the GEM diffractometer \cite{Hannon:2005cy} at the
 ISIS spallation neutron source, Rutherford Appleton Laboratory, UK. The LLZO sample was contained in a cylindrical thin-walled vanadium can of 8 mm diameter.
-This was mounted in a standard vanadium-foil furnace for measurements at and above room temperature (at 293K, 450K, 600K, 750K,
-900K and 1100K). Data were collected on six separate occasions, counting for between 5 and 6 hours per temperature.
-Measurements were also performed on an empty vanadium can, the empty instrument, and an 8 mm diameter vanadium rod for normalisation and background subtraction.
-Those data were processed by the GudrunN software to obtain scattering data $I(Q)$ and PDF data $D(r)$  with a maximum momentum transfer of $Q_{max}$ of 50 \AA$^{-1}$.
-Diffraction data were also corrected and reduced using Mantid, and Rietveld analysis was performed by GSAS software.
+This was mounted in a standard vanadium-foil furnace for measurements at and above room temperature (at 293 K, 450 K, 600 K, 750 K,
+900 K and 1100 K). Data were collected on six separate occasions, counting for between 5 and 6 hours per temperature.
+
+Measurements were also performed on the empty instrument, the empty furnace, and an empty vanadium can within the furnace to account for experimental background scattering and sources of beam attenuation, and also of an 8 mm diameter vanadium rod for normalisation. The data were processed using the GudrunN software \cite{Soper:2012vs} to obtain the scattering data and pair distribution function as described below, with a maximum scattering vector of $Q_\mathrm{max}$ of 50 \AA$^{-1}$. Diffraction data were also corrected and reduced using the Mantid software \cite{Arnold:2014iy}. Rietveld refinement of the crystal structures was performed by GSAS software \cite{Larson:2004wv} with the EXPGUI interface \cite{gsasgui}.
 
 \begin{figure}[t]
 \begin{center}
@@ -215,99 +231,74 @@ Diffraction data were also corrected and reduced using Mantid, and Rietveld anal
 
 \subsection{Synchrotron  Total Scattering}
 Synchrotron powder diffraction and total scattering data were collected on the XPDF beamline (I15-1 instrument) at Diamond Light Source (UK).
-The X-rays were monochromatized to yield a wavelength of 0.161669~\AA.
+The X-rays were monochromatized to give a wavelength of 0.161669~\AA.
 %PerkinElmer XRD 16611 CP3 and a PerkinElmer XRD 4343 CT were used as primary and secondary detectors.
-The sample was sealed into borosilicate capilaries ($\phi$ 1 mm, and 50 mm in length) for measurements at and above room temperature
-(at 295K, 450K, 600K, 750K, 900K, and 1100K).
-The raw data  were corrected and reduced into scattering data using the program DAWN \cite{S1600577515002283}.
-And PDF $D(r)$ were processed from scattering data using GudrunX with Q-range 0.5 $\le$ Q $\le$ 25 \AA$^{-1}$ for the Fourier transformation.
-The fluorescence corrections were applied, in which the fluorescence energy of La was assumed to be 38.739 keV.
+The sample was sealed into borosilicate capillary tubes ($\phi$ 1 mm, and 50 mm in length) for measurements at the same temperatures as the neutron beam measurements. The raw data  were corrected and reduced into scattering data using the program DAWN \cite{Basham:2015cf}.
+And PDF $D(r)$ were processed from scattering data using GudrunX \cite{Soper:2011fda,Soper:2012vs} with the range of data between $0.5 \le Q \le 25$ \AA$^{-1}$ for the Fourier transformation. Corrections for fluorescence were applied, in which the fluorescence energy of La was assumed to be 38.739 keV.
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/xpdf.pdf}
 \caption{Synchrotron pair distribution $D(r)$ obtained from GudrunX for all temperatures represented as circles.
  A constant offset has been applied to separate those curves.
- The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modeling are represented by the solid red lines.
+ The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modelling are represented by the solid red lines.
  }
 \label{fig:xpdf}
 \end{figure}
 
-\subsection{Pair Distribution Function (PDF)}
-In the diffraction theory, the differential cross section is defined as
-
+\subsection{Pair Distribution Function}
+The differential cross section for the scattering of a beam of radiation as integrated over all changes of energy is defined as
 \begin{equation}
-\frac{1}{N}\frac{d\sigma}{d\Omega}=I(Q)=I^{S}(Q)+i(Q)
+\frac{1}{N}\frac{d\sigma}{d\Omega}=I(Q)=I^\mathrm{S}(Q)+i(Q)
 \end{equation}
-
-where $I^{S}(Q)=\sum_{i=1}^{n}c_i\frac{\sigma_{i}}{4\pi}$ is the self-scattering of all atoms,
-and $i(Q)$ is the total scattering structure factor in which we are interested. Here we define partial pair
-distribution function $g_{mn}(r)$ to present the number of atoms of type $n$ within the shell between $r$ and  $r+dr$ centered on a particle of type $m$.
-And then the structure factor $i(Q)$ can be presented as
-
+where $I^\mathrm{S}(Q)=  \sum_m c_m f_m^2 $ is the self-scattering of all atoms, $c_m$ is the fractional amount of atom type $m$ such that $\sum_m c_m = 1$, and $f_m$ is the scattering factor of atom of type $m$ (the symbol $b_m$ is usually used for neutron scattering, denoting the scattering length whose value is independent of $Q$) \cite{Keen:2001wc}. The function $i(Q)$ is the total scattering structure factor. Here we define the partial pair distribution function (PDF) $g_{mn}(r)$ to represent the number of atoms of type $n$ within the shell between $r$ and  $r+\mathrm{d}r$ centred on a particle of type $m$, namely of value $4 \pi r^2 \mathrm{d}r \times c_n \rho \times g_{mn}(r)$,  where $\rho$ is the overall atomic number density. The structure factor $i(Q)$ can then be written as \cite{Dove2002}
 \begin{equation}
-i(Q)=4\pi\rho\int^{\infty}_{0}\sum_{m,n}c_m c_n b_m b_n r^2 [g_{mn}(r)-1]\frac{\sin{Qr}}{Qr}dr
+i(Q)=4\pi\rho\int^{\infty}_{0}\sum_{m,n}c_m c_n f_m f_n r^2 [g_{mn}(r)-1]\frac{\sin{Qr}}{Qr} \mathrm{d}r
 \end{equation}
-
-where $c_m$, $b_m$, and $\rho$ denote the fraction of atoms of type $m$, the  scattering length of species $m$, and the average atomic number density.
-Overall pair distribution function is defined as
-
+ The overall pair distribution function is defined as
 \begin{equation}\label{fun:dofr_0}
-D(r)=4\pi\rho r \sum_{m,n}c_m c_n b_m b_n [g_{mn}(r)-1]
+D(r)=4\pi\rho r \sum_{m,n}c_m c_n f_m f_n [g_{mn}(r)-1]
 \end{equation}
-
-The $D(r)$ can be calculated via Fourier transformation of $i(Q)$
-
+so that
+\begin{equation}
+Qi(Q)=\int^{\infty}_{0} D(r) \sin{Qr} \mathrm{d}r
+\end{equation}
+In turn, the function $D(r)$ can be obtained as the the sine Fourier transform of $Qi(Q)$, but in practice the transform is modified as
 \begin{equation}\label{fun:dofr_1}
-D(r)=\frac{2}{\pi}\int^{Q_{max}}_{0} M(Q)Qi(Q)\sin{Qr}dr
+D(r)=\frac{2}{\pi}\int^{Q_{max}}_{0} M(Q)Qi(Q)\sin{Qr} \mathrm{d}r
 \end{equation}
+where $M(Q) = \sin(\pi Q/Q_\mathrm{max})/(\pi Q/Q_\mathrm{max})$ is the Lorch function, which is introduced to reduce the effect of finite maximum momentum transfer, $Q_\mathrm{max}$ \cite{Lorch:1969js, Dove2002, Soper:2012kr}. Those tasks were carried out using the programs GudrunX and GudrunN \cite{Soper:2011fda,Soper:2012vs}.
 
-where $M(Q)$ is the Lorch function to reduce the effect of finite maximum momentum transfer, $Q_{max}$. Those tasks were carried out using the program GudrunX and GudrunN.
 
-
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/npdf.pdf}
 \caption{Neutron pair distribution $D(r)$  obtained from GudrunN for all temperatures represented as circles.
  A constant offset has been applied to separate those curves.
- The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modeling are represented by the solid red lines. }
+ The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modelling are represented by the solid red lines. }
 \label{fig:npdf}
 \end{figure}
 
-\subsection{Reverse Monte Carlo Analysis (RMC)}
+\subsection{Reverse Monte Carlo Analysis}
 
-Involving measurements of the total neutron and X-ray powder diffraction,
-the RMC Profile program combines and fits all the reciprocal $i(Q)$, real-space $D(r)$ data, and the intensities of thr Bragg peaks at the same time.
-The explicit use of the Bragg intensities ensures that the RMC refinement gives configurations that have the correct
-long-range average structure and symmetry without any exaggeration of the structural disorder.
-The traditional Metropolis Monte Carlo algorithm moves atoms randomly to generate new configration.
-In order to keep atomic movement within the crystal structure,
-maximum atomic moves of La, O and Zr were of size $0.05 \AA$, but those of Li were $0.1 \AA$.
-The minimum distances between pairs of atoms are give in Table  \ref{tab:min_dis}.
+The Reverse Monte Carlo (RMC) method, whilst initially developed for the study of highly-disordered (non-crystalline) materials \cite{McGreevy:1988bu}, is in fact an excellent technique for the study of disordered crystalline materials \cite{Keen:2005dd}. That said, it appears that there have been only limited applications of the RMC method to crystalline fast-ion conductors \cite{Adams:2000ez, Swenson:2001if, Adams:2002ga,Adams:2005ds}, and apparently not to the cases where lithium is the mobile ion. We will comment later on some observations on the application of the RMC method to lithium fast-ion conductors in the light of the experience gained in this study. 
 
-$\chi^2$ is definded to reflect the agreenment  between calculated (Monte Carlo) and observed (measured) curves
-
+The RMC method is a way to visualise the atomic-scale structure of a material through a simulation based on experimental data. If uses a Monte Carlo method to minimise the difference between experimental functions and the values computed from the atomic configuration as expressed in the function
 \begin{equation}
-\chi^2=\sum_{j}\sum_{i}(y^{obs}_{i,j}-y^{calc}_{i,j})^2/\sigma_{j}
+\chi^2=\sum_{j}\sum_{i}(y^ \mathrm{obs}_{i,j}-y^ \mathrm{calc}_{i,j})^2/\sigma^2_{j}
 \end{equation}
+where $y^\mathrm{obs}_{i,j}$ is the observed values at data point $i$ in data set $j$, $y^ \mathrm{calc}_{i,j}$ is the calculated counterpart, and  $\sigma^2_{j}$ is weighing function that may represent the statistical accuracy of data set. In this study, the data sets used include $i(Q)$ from both neutron and  synchrotron power diffraction, $D(r)$ from the neutron total scattering data, and the Bragg data from the neutron diffraction measurements, In the RMC method an selected at random is moved by a random amount up to a specified maximum. The move is accepted if the value of $\chi^2$ is lowered. On the other hand, if the value of $\chi^2$ increases by an amount $\Delta \chi^2$, the move is accepted only with probability $\exp(-\Delta \chi^2/2)$. Each simulation ran until the value of $\chi^2$ had reached a stable minimum value, corresponding in this case to around 300 accepted moves per atom.
 
-where $y^{obs}_{i,j}$ is the observed values at data point $i$ in data set $j$, $y^{calc}_{i,j}$ is the calculated counterpart, and  $\sigma_{j}$ is the weighing that represents
-the statistical accuracy of data set. In this study, data sets include $i(Q)$ from both neutron and  synchrotron power diffraction, and $D(r)$ and Bragg data from neutron diffraction only,
-all with equal $\sigma_{j}$. An atomic move can be accepted when the value of $\chi^2$ declines. If the value of $\chi^2$ raises by $\Delta \chi^2$, the probability of accception is $exp(-\Delta \chi^2/2)$
+The RMC simulations were performed using the program \texttt{RMCprofile} v6.7 \cite{Tucker:2007eh}. The starting configurations of Li$_7$La$_2$Zr$_3$O$_{12}$ were generated from the results of Rietveld refinement using the \texttt{data2config}/\texttt{RMCcreate} program \cite{Dove:2013gk}. Configurations were $4\times 4\times 4$ supercell of the conventional body-centred unit cell with linear dimension of around 52 \AA, containing 12288 atoms. Maximum atomic moves of La, O and Zr atoms were of size $0.05 \AA$, but those of Li were $0.1 \AA$. Minimum distance constraints were applied within the RMC simulation; between  pairs of atoms as given in Table  \ref{tab:min_dis}. Finally, bond-stretching and bond-bending potentials were applied within the ZrO$_6$ octahedra, and for the La--O bonds, during the RMC simulation.
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/nsoq.pdf}
 \caption{Neutron scattering function $S(Q)$ for all temperatures. A constant offset has been applied to separate those curves.}
 \label{fig:nsoq}
 \end{figure}
 
-The initial RMC configuration were generated from the crystal strucutres got by Rietveld refinement of neutron diffraction.
-Each contained $4\times 4\times 4$ unit cells with 12288 atoms. And the RMC analysis were run for long enough to ensure the convergence of the simulation by checing the value of $\chi^2$.
-
-
-
-\begin{table}[h]
+\begin{table}[t]
 \centering
 \caption{The minimum distances between pairs of atoms} \label{tab:min_dis}
 \begin{tabular}{c|cccc}
@@ -329,15 +320,18 @@ gold electrodes were evaporated on LLZO by thermal evaporation. The EIS was reco
 and contacted via a probe station on a hot stage in the glovebox. EIS was performed with an 10 mV amplitude voltage 
 in a frequency range of 50 mHz to 1 MHz.
 
-\subsection{Molecular Dynamic Simulation (MD)}
-Classical MD simulations were performed on $4\times 4\times 4$ unit cells and 12288 atoms of LLZO using the DL\_POLY package.
-Empirical force-fields similar to previous work were employed which include the long-range Coulombic potential,
-short-range Buckingham potential, and Dick-Overhauser core-shell potential for O atoms.
-The parameters of force-field are listed in Table \ref{tab:md_force}.
-Constant number, volume, and energy (NVE) ensemble simulations were carried out at 300K, 450K, 600K, 750K, 900K and 1100K.
-Each initial configurations came from the result of RMC analysis at same temperature.
-The simulations were performed for 10 ps with atomic positions saved every 0.01 ps.
 
+\subsection{Molecular Dynamic Simulation}
+
+Classical molecular dynamics (MD) simulations were performed using the \texttt{DL\_POLY} package \cite{Todorov:2006ee}.
+Empirical force-fields were used, which include the long-range Coulomb potential,
+short-range Buckingham potential functions to describe the energy between two ions of type $m$ and $n$, $E_{mn}(r)$, assumed to be functions of inter-ionic separation $r$ only:
+\begin{equation} \label{eq:buckingham}
+E_{mn}(r) = \frac{Q_m Q_n}{4 \pi \epsilon_0 r} + A_{mn} \exp(-r/\rho_{mn}) - C_{mn}r^{-6}
+\end{equation}
+with ions treated as rigid entities with no induced polarisation, and assigned formal charges, $Q_\mathrm{Zr} = +4e$, $Q_\mathrm{La} = +4e$, $Q_\mathrm{Li} = +e$, $Q_\mathrm{O} = -2e$, where $e$ is the positive unit charge value. The parameters of the force-field were taken from the work of Wang et al  \cite{Wang:2014ic}, who used a combination of literature and new values; the parameters of the force field are given in Table \ref{tab:md_force}. The starting configurations were the same as used in the RMC work (linear dimensions of around 52 \AA, and 12288 atoms), and simulations were performed at the same temperatures as in the neutron and x-ray total scattering measurements.
+
+Simulations were performed within thermodynamic ensembles that were either constant-stress \cite{Parrinello:1980kx, Melchionna:2006fi} and constant temperature \cite{Nose:1984bf, Hoover:1985cu}, or the standard constant-volume constant-energy microcanonical conditions. Simulations were performed using a time step of 0.001 ps, allowing 5 ps for equilibration.
 
 
 %\begin{table}[h]
@@ -356,23 +350,22 @@ The simulations were performed for 10 ps with atomic positions saved every 0.01 
 %\end{tabular}
 %\end{table}
 
-\begin{table}[h]
+\begin{table}[t]
 \centering
-\caption{Force-field parameters} \label{tab:md_force}
+\caption{Force-field parameters for the molecular dynamics simulations, from the work of Wang et al \cite{Wang:2014ic}, with interactions between cations assumed to be give only by the Coulomb interaction. Ions are assigned their formal charge values. The parameters are defined by equation \ref{eq:buckingham}.} \label{tab:md_force}
 \begin{tabular}{cccccc}
 \hline
-      & \multicolumn{3}{c}{Buckingham parameters}      \\
+      & $A$ (eV)  & $\rho$ (\AA) & $C$ (eV\,\AA$^6$)           \\
 \hline
-      & A (eV)  & $\rho$(\AA) & C(eV\AA$^6$)           \\
-Zr-O  & 1385.02 & 1.79        & 0                      \\
-La-O  & 4579.23 & 0.3044      & 0                      \\
-Li-O  & 632.102 & 0.2906      & 0                      \\
-O-O   & 22764.30& 0.1490      & 27.63                  \\
+Zr--O  & 1385.02 & 1.79        & 0                      \\
+La--O  & 4579.23 & 0.3044      & 0                      \\
+Li--O  & 632.102 & 0.2906      & 0                      \\
+O--O   & 22764.30& 0.1490      & 27.63                  \\
 \hline
 \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/xsoq.pdf}
 \caption{Synchrotron scattering function $S(Q)$ for all temperatures. A constant offset has been applied to separate those curves.}
@@ -391,91 +384,91 @@ O-O   & 22764.30& 0.1490      & 27.63                  \\
 
 
 \section{Results and discussion}
+
 \subsection{Crystal Structure Analysis}
 
-The structural parameters of Rietveld refinement for all temperatures are listed in Table \ref{tab:cell_parameters},
-which fitted well to the cubic model with space group $Ia\bar{3}d$. A sample fit to the data, namely for the data at 293K, is shown in Fig.\ref{fig:gsas}
-The lattice parameters are plotted as functions of temperature in Fig.\ref{fig:lattice}, showing a linear thermal expansion.
+The structural parameters of Rietveld refinement for all temperatures are listed in Table \ref{tab:Rietveld_structure},
+which fitted well to the cubic model with space group $Ia\bar{3}d$. A sample fit to the data, namely for the data at 293 K, is shown in Fig. \ref{fig:gsas}
+The lattice parameters are plotted as functions of temperature in Fig. \ref{fig:lattice}, showing a linear thermal expansion. The coefficient of volumetric thermal expansion is $\alpha_V = 1.18 \times 10^{-5}$ K$^{-1}$. The structure is in good agreement with previous structure refinements \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go, Xie:2011gv,Han:2012is,Li:2012fz,Wang:2014ic}; aspects of the crystal structure have been discussed in these previous works. 
 
 
-\begin{table*}[h]
+\begin{table*}[t]
 \centering
-\caption{Cell parameters and atomic fractional coordinates of LLZO. Zr has fractional coordionals 0,0,0, La has fractional coordinations 0.125,0,0.25, and Li1 has fractional coordinations 0.375,0,0.25.
-Standard deviations are given for the last significant figures in brackets. } 
-\label{tab:cell_parameters}
-\begin{tabular}{cccccccc}
-\hline
-\hline
-T(K)  & a(\AA)       & O$_{x}$        & O$_{y}$        & O$_{z}$       & Li2$_{x}$      & Li2$_{y}$           & Li2$_{z}$      \\
-\hline
-273  & 12.921268(90) & 0.102208(76)   & 0.196891(77)   & 0.281292(67)   & 0.125000       & 0.17673(37)         & 0.42673(37)   \\
-450  & 12.952687(88) & 0.102172(76)   & 0.196875(76)   & 0.281281(67)   & 0.125000       & 0.17769(36)         & 0.42769(36)   \\
-600  & 12.979779(70) & 0.102361(63)   & 0.197156(64)   & 0.280766(56)   & 0.125000       & 0.17872(28)         & 0.42872(28)   \\
-750  & 13.008921(92) & 0.102281(81)   & 0.197353(82)   & 0.281026(72)   & 0.125000       & 0.17725(38)         & 0.42725(38)   \\
-900  & 13.03568(17)  & 0.10271(14)    & 0.19765(15)    & 0.28036(14)    & 0.125000       & 0.17527(74)         & 0.42527(74)   \\
-1100 & 13.08621(10)  & 0.102407(99)   & 0.19791(10)    & 0.280357(89)   & 0.125000       & 0.17683(18)         & 0.42683(18)   \\
-\hline
-\hline
-\end{tabular}
-\end{table*}
-
-\begin{table*}[h]
-\centering
-\caption{Li displacement parameters 100$\times U_{ij}$(\AA$^2$) refined from Rietveld refinement.For Li2 $U_{22} = U_{33}$ and $U_{12} = - U_{13}. 
-$ $U_{ij}$ units are in \AA$^2$.
-Standard deviations are given for the last significant figures in brackets. } 
-\label{tab:Li_displacement_parameters}
-\begin{tabular}{cccccc}
-\hline
-\hline
-T(K)    & Li1 Uiso      & Li2 U$_{11}$ & Li2 U$_{22}$ & Li2 U$_{12}$ & Li2 U$_{23}$ \\
-\hline
-273     & -0.307(40)    & 26.3(11)     & 4.77(40)     & -11.67(51)   & -4.86(43)    \\
-450     &  0.80(35)     & 21.0(14)     & 2.91(39)     & -7.99(57)    & -3.27(41)    \\
-600     &  6.51(46)     & 24.7(11)     & 4.96(43)     & -8.90(47)    & -3.77(40)    \\
-750     &  2.06(81)     & 25.0(20)     & 4.82(62)     & -12.49(98)   & -5.97(63)    \\
-900     &  34.3(61)     & 16.3(30)     & 1.74(77)     & -7.8(13)     & -3.00(76)    \\
-1100    & -3.15(18)     & 23.6(18)     &-1.35(28)     & -2.71(51)    & -3.07(29)    \\
-\hline
-\hline
-\end{tabular}
-\end{table*}
-
-
-\begin{table*}[h]
-\centering
-\caption{Atomic (Except Li) displacement parameters 100$\times U_{ij}$(\AA$^2$) refined from Rietveld refinement. 
-$U_{ij}$ units are in \AA$^2$.
-Standard deviations are given for the last significant figures in brackets.  } 
-\label{tab:atomic_parameters}
+\caption{Lattice parameters, atomic fractional coordinates and Lithium site occupancy of Li$_7$La$_2$Zr$_3$O$_{12}$ obtained from Rietveld refinement. Zr has fractional coordinates 0,0,0, La has fractional coordinates $1/4,0,1/4$, Li$_1$ has fractional coordinates $3/8,0,1/4$, and Li$_2$ has fractional coordinates $1/4,y,z$. Standard deviations are given for the last significant figures in brackets. } 
+\label{tab:Rietveld_structure}
 \begin{tabular}{ccccccccc}
 \hline
 \hline
-T(K)   & O U$_{11}$ & O U$_{22}$ & O U$_{33}$ & O U$_{12}$ & O U$_{13}$ & O U$_{23}$  & La Uiso    & Zr Uiso    \\
+$T$ (K)  & $a$ (\AA) & O ($x$)        & O ($y$)        & O ($z$)        &  Li$_2$ ($y$)       & Li$_2$ ($z$) & Li$_2$ ($occ.$) \\
 \hline
-273    & 0.382(44)  & 1.017(52)  & 0.425(44)  & -0.303(39) & -0.052(36) & 0.261(38)   & 0.281(15)  & 0.240(22)  \\
-450    & 0.838(49)  & 1.266(57)  & 0.822(52)  & -0.056(45) & -0.005(42) & 0.177(43)   & 0.622(19)  & 0.599(27)  \\
-600    & 1.430(43)  & 2.357(52)  & 1.830(51)  & -0.124(40) &  0.096(39) & 0.309(41)   & 1.168(17)  & 1.117(23)  \\
-750    & 1.238(60)  & 2.437(75)  & 1.653(72)  & -0.448(56) &  0.189(55) & 0.471(58)   & 0.861(24)  & 0.636(30)  \\
-900    & 0.014(92)  & 1.25(12)   & 0.211(98)  & -0.536(85) & -0.090(76) & 0.414(86)   & 0.340(40)  & 0.083(50)  \\
-1100   & 1.199(73)  & 3.172(97)  & 1.941(88)  & -0.041(70) &  0.404(68) & 0.189(73)   & 0.724(28)  & 0.404(34)  \\
+273  & 12.9219(1)    & 0.1021(1)      & 0.1970(1)      & 0.28162(9)     & 0.1763(5)           & 0.4263(5)    & 0.507(4) \\
+450  & 12.95247(9)   & 0.10210(8)     & 0.19666(8)     & 0.28141(7)     & 0.1761(2)           & 0.4261(2)    & 0.524(3) \\
+600  & 12.97967(9)   & 0.10210(8)     & 0.19717(8)     & 0.28136(7)     & 0.1774(3)           & 0.4274(3)    & 0.524(4) \\
+750  & 13.0096(2)    & 0.1019(1)      & 0.19686(9)     & 0.28123(8)     & 0.1754(4)           & 0.4254(4)    & 0.537(4) \\
+900  & 13.04123(9)   & 0.10235(8)     & 0.19751(8)     & 0.28060(7)     & 0.1766(3)           & 0.4266(3)    & 0.540(3) \\
+1100 & 13.08634(8)   & 0.10184(7)     & 0.19742(6)     & 0.28081(6)     & 0.1772(2)           & 0.4272(2)    & 0.504(4) \\
 \hline
 \hline
 \end{tabular}
 \end{table*}
 
-\begin{figure}
+\begin{table*}[t]
+\centering
+\caption{Li displacement parameters $100 \times U_{ij}$(\AA$^2$) refined from Rietveld refinement.For Li$_2$ $U_{22} = U_{33}$ and $U_{12} = - U_{13}. 
+$. $U_{ij}$ units are in \AA$^2$.
+Standard deviations are given for the last significant figures in brackets. } 
+\label{tab:Li_displacement_parameters}
+\begin{tabular}{ccccccccc}
+\hline
+\hline
+$T$ (K) & Li$_1$ $U_\mathrm{iso}$  & Li$_2$ $U_{11}$ & Li$_2$ $U_{22}$ & Li$_2$ $U_{12}$ & Li$_2$ $U_{23}$  & O $U_\mathrm{iso}$  & La $U_\mathrm{iso}$  & Zr $U_\mathrm{iso}$\\
+\hline
+273     &  0.9(5)                  & 10(1)           & 0.09(33)        & -3.6(5)         & -1.4(3)          &  0.97(2)            &  0.63(2)             &  0.62(3)            \\
+450     & -0.6(2)                  & 13(1)           & 0.2(2)          & -6.1(4)         & -2.5(2)          &  0.97(1)            &  0.56(2)             &  0.35(2)            \\
+600     &  1.4(8)                  & 14(1)           & 0.5(2)          & -4.4(4)         & -2.3(3)          &  1.7(1)             &  1.16(2)             &  1.03(3)            \\
+750     & -2.8(2)                  & 19(1)           & 1.9(5)          & -10.7(8)        & -4.9(5)          & -0.20(1)            & -0.01(2)             & -0.43(2)            \\
+900     & -2.7(1)                  & 16(1)           & 0.4(3)          & -7.4(5)         & -3.1(3)          &  0.74(1)            &  0.38(2)             & -0.10(2)            \\
+1100    &  3.7(7)                  & 16(1)           &-0.6(2)          & -5.4(4)         & -2.9(2)          &  1.97(1)            &  1.39(2)             &  0.93(2)            \\
+\hline
+\hline
+\end{tabular}
+\end{table*}
+
+
+%\begin{table*}[t]
+%\centering
+%\caption{Atomic (Except Li) displacement parameters $100 \times U_{ij}$ (\AA$^2$) refined from Rietveld refinement. 
+%$U_{ij}$ units are in \AA$^2$.
+%Standard deviations are given for the last significant figures in brackets.  } 
+%\label{tab:atomic_parameters}
+%\begin{tabular}{ccccccccc}
+%\hline
+%\hline
+%T(K)   & O $U_{11}$ & O $U_{22}$ & O $U_{33}$ & O $U_{12}$ & O $U_{13}$ & O $U_{23}$  & La $U_\mathrm{iso}$    & Zr $U_\mathrm{iso}$Li$_7$    \\
+%\hline
+%273    & 0.382(44)  & 1.017(52)  & 0.425(44)  & -0.303(39) & -0.052(36) & 0.261(38)   & 0.281(15)  & 0.240(22)  \\
+%450    & 0.838(49)  & 1.266(57)  & 0.822(52)  & -0.056(45) & -0.005(42) & 0.177(43)   & 0.622(19)  & 0.599(27)  \\
+%600    & 1.430(43)  & 2.357(52)  & 1.830(51)  & -0.124(40) &  0.096(39) & 0.309(41)   & 1.168(17)  & 1.117(23)  \\
+%750    & 1.238(60)  & 2.437(75)  & 1.653(72)  & -0.448(56) &  0.189(55) & 0.471(58)   & 0.861(24)  & 0.636(30)  \\
+%900    & 0.014(92)  & 1.25(12)   & 0.211(98)  & -0.536(85) & -0.090(76) & 0.414(86)   & 0.340(40)  & 0.083(50)  \\
+%1100   & 1.199(73)  & 3.172(97)  & 1.941(88)  & -0.041(70) &  0.404(68) & 0.189(73)   & 0.724(28)  & 0.404(34)  \\
+%\hline
+%\hline
+%\end{tabular}
+%\end{table*}
+
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/lattice.pdf}
-\caption{Variation of the lattice parameters with temperature, obtained by Rietveld analysis. }
+\caption{Variation of the lattice parameter of Li$_7$La$_2$Zr$_3$O$_{12}$ with temperature as obtained by Rietveld analysis (Table \ref{tab:Rietveld_structure}). }
 \label{fig:lattice}
 \end{figure}
 
-the average structure calculated from the RMC configurations agreed well with Rietveld refinement, as shown in Fig. \ref{fig:Rietveld_refinement}
+%the average structure calculated from the RMC configurations agreed well with Rietveld refinement, as shown in Fig. \ref{fig:Rietveld_refinement}
 
 
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/bragg.pdf}
 \caption{The Bragg diffraction data. The data are represented as circles with constant offset to separate those curves.
@@ -501,14 +494,14 @@ But the framework structure keep stable in each case as shown in Fig.\ref{fig:pa
 
 
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/partialPDFwithLi.pdf}
 \caption{The distributions calculated from RMCProfile of (1) Li-Li, (2)Li-O, (3)Li-Zr, (4)Li-La at low-$r$ range for all temperatures. A constant offset has been applied to separate those curves.}
 \label{fig:partialPDFwithLi}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/partialPDFwithoutLi.pdf}
 \caption{The distributions calculated from RMCProfile of (1) O-O;(2) O-Zr;(3) O-La; (4) Zr-Zr; (5) Zr-La; (6) La-La at low-$r$ range for all temperatures. A constant offset has been applied to separate those curves. The solid lines (black) indicate the values obtained from Molecular Dynamic simulation}
@@ -518,14 +511,14 @@ But the framework structure keep stable in each case as shown in Fig.\ref{fig:pa
 
 \subsection{Electrochemical Impedance Spectroscopy}
 
-The EIS of the LLZO were examined with a in-plane geometry at elevated temperatures from -20$^oC$ to 100$^oC$, as shown in  Fig.\ref{fig:impedance}. 
+The EIS of the LLZO were examined with a in-plane geometry at elevated temperatures from -20$^\circ$C to 100$^\circ$C, as shown in  Fig.\ref{fig:impedance}. 
 From the Nyquist plots, a typical semi arc with the straight tail indicates the ion in-plane diffusion at low frequency occurs along the LLZO. 
 The ion conductivity is about 2.1$\times$10$^{-4}$ S/cm at room temperature.
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/impedance.png}
-\caption{AC impedance data collected from -20$^oC$ to 100$^oC$.}
+\caption{AC impedance data collected from -20$^\circ$C to 100$^\circ$C.}
 \label{fig:impedance}
 \end{figure}
 
@@ -537,7 +530,7 @@ The activation energy E$_a$ is estimated based on the Arrhenius equation for the
 \end{equation}
 
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/arrhenius-plot.png}
 \caption{A plot of conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range.}
@@ -557,7 +550,7 @@ as well as the diffusion coefficient shown in Fig.\ref{fig:DiffusionCoefficient}
 
 
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/DiffusionCoefficient.png}
 \caption{Diffusion coefficient at different temperatures}
@@ -572,14 +565,14 @@ as well as the diffusion coefficient shown in Fig.\ref{fig:DiffusionCoefficient}
 The 3D density maps of Li in cubic garnets are shown in Fig.\ref{fig:pdfs}.
 The lithium distribution can ben expected in liquid and amorphous materials
 
-\begin{figure*}
+\begin{figure*}[t]
 \centering
 \includegraphics[width=0.9\textwidth]{Pics/pdfs.pdf}
 \caption{Isosurfaces with level of 0.1~\AA$^{-3}$ (yellow) and 3~\AA$^{-3}$ (red)}
 \label{fig:pdfs}
 \end{figure*}
 
-\begin{figure}
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/MSD.pdf}
 \caption{Mean squared displacement (MSD) of Li from 300 K to 1100 K.
