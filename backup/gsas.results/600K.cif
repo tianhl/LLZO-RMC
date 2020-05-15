@@ -1,13 +1,13 @@
 data_600K_publ
 
 _pd_block_id
-  2020-05-04T18:49|600K|LLZO_CUBIC_600K|Overall
+  2020-05-15T11:26|600K|LLZO_CUBIC_600K|Overall
 
 _audit_creation_method  "from EXP file using GSAS2CIF"
-_audit_creation_date                   2020-05-04T18:49
+_audit_creation_date                   2020-05-15T11:26
 _audit_author_name                     LLZO_CUBIC_600K
 _audit_update_record
-; 2020-05-04T18:49  Initial CIF as created by GSAS2CIF
+; 2020-05-15T11:26  Initial CIF as created by GSAS2CIF
 ;
 
 #=============================================================================
@@ -166,17 +166,17 @@ _pd_prep_temperature              ?
 _pd_char_colour                   ?       # use ICDD colour descriptions
 data_600K_overall
 
-_refine_ls_shift/su_max                0.04
-_refine_ls_shift/su_mean               0.01
+_refine_ls_shift/su_max                2.59
+_refine_ls_shift/su_mean               0.92
 _computing_structure_refinement        GSAS
-_refine_ls_number_parameters           19
-_refine_ls_goodness_of_fit_all         5.11
+_refine_ls_number_parameters           14
+_refine_ls_goodness_of_fit_all         7.07
 _refine_ls_number_restraints           0
 _refine_ls_matrix_type                 full
 
 # pointers to the phase blocks
 loop_   _pd_phase_block_id
-      2020-05-04T18:49|600K_phase1|LLZO_CUBIC_600K||
+      2020-05-15T11:26|600K_phase1|LLZO_CUBIC_600K||
 # pointers to the diffraction patterns
 loop_   _pd_block_diffractogram_id
       ?
@@ -185,7 +185,7 @@ loop_   _pd_block_diffractogram_id
 data_600K_phase_1
 
 _pd_block_id
-  2020-05-04T18:49|600K_phase1|LLZO_CUBIC_600K||
+  2020-05-15T11:26|600K_phase1|LLZO_CUBIC_600K||
 
 #==============================================================================
 # 7. CHEMICAL, STRUCTURAL AND CRYSTAL DATA
@@ -226,13 +226,13 @@ _computing_structure_solution     ?
 
 _pd_phase_name
                    "from E:/RMCDATA/Al_LLZO/GSAS_600K/RT_CUBIC.cif"
-_cell_length_a                         12.97978(7)
-_cell_length_b                         12.97978
-_cell_length_c                         12.97978
+_cell_length_a                         12.97967(10)
+_cell_length_b                         12.97967
+_cell_length_c                         12.97967
 _cell_angle_alpha                      90.0
 _cell_angle_beta                       90.0
 _cell_angle_gamma                      90.0
-_cell_volume                           2186.764(35)
+_cell_volume                           2186.71(5)
 _symmetry_cell_setting                 cubic
 _symmetry_space_group_name_H-M         "I a -3 d"
 loop_ _symmetry_equiv_pos_site_id _symmetry_equiv_pos_as_xyz
@@ -347,15 +347,15 @@ loop_
       _atom_site_U_iso_or_equiv
       _atom_site_symmetry_multiplicity
 La
-La      0.125        0.0          0.25         1.0        Uiso   0.01168(17)  24
+La      0.125        0.0          0.25         1.0        Uiso   0.01160(24)  24
 Li
-Li1     0.375        0.0          0.25         0.495(8)   Uiso   0.065(5)     24
+Li1     0.375        0.0          0.25         0.238(16)  Uiso   0.014(9)     24
 Li
-Li2     0.125        0.17873(28)  0.42873(28)  0.875(15)  Uani   0.11559      48
+Li2     0.125        0.1774(4)    0.4274(4)    0.524(4)   Uani   0.05186      48
 O 
-O       0.10236(6)   0.19716(6)   0.28077(6)   1.0        Uani   0.01872      96
+O       0.10210(8)   0.19717(8)   0.28137(7)   1.0        Uiso   0.01715(19)  96
 Zr
-Zr      0.0          0.0          0.0          1.0        Uiso   0.01117(23)  16
+Zr      0.0          0.0          0.0          1.0        Uiso   0.01038(31)  16
 
 loop_ _atom_site_aniso_label
       _atom_site_aniso_U_11
@@ -364,19 +364,18 @@ loop_ _atom_site_aniso_label
       _atom_site_aniso_U_22
       _atom_site_aniso_U_23
       _atom_site_aniso_U_33
-Li2     0.248(12)  -0.089(5)    0.089(5)    0.050(4)   -0.038(4)    0.050(4)  
-O       0.0143(4)  -0.0012(4)   0.0010(4)   0.0236(5)   0.0031(4)   0.0183(5) 
+Li2     0.145(11)  -0.045(4)    0.045(4)    0.0052(25) -0.0239(33)  0.0052(25)
 
 loop_ _atom_type_symbol
       _atom_type_number_in_cell
                    La 24.0        
-                   Li 53.894      
+                   Li 30.857      
                    O  96.0        
                    Zr 16.0        
  
 # If you change Z, be sure to change all 3 of the following
-_chemical_formula_sum                  "La3 Li6.74 O12 Zr2"
-_chemical_formula_weight               837.91
+_chemical_formula_sum                  "La3 Li3.86 O12 Zr2"
+_chemical_formula_weight               817.92
 _cell_formula_units_Z                  8
 
 # MOLECULAR GEOMETRY

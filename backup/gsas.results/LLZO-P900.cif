@@ -1,0 +1,402 @@
+data_LLZO-P900_publ
+
+_pd_block_id
+  2020-05-15T11:28|LLZO-P900|tianhl|Overall
+
+_audit_creation_method  "from EXP file using GSAS2CIF"
+_audit_creation_date                   2020-05-15T11:28
+_audit_author_name                     tianhl
+_audit_update_record
+; 2020-05-15T11:28  Initial CIF as created by GSAS2CIF
+;
+
+#=============================================================================
+# this information describes the project, paper etc. for the CIF             #
+# Acta Cryst. Section C papers and editorial correspondence is generated     #
+# from the information in this section                                       #
+#                                                                            #
+#   (from)   CIF submission form for Rietveld refinements (Acta Cryst. C)    #
+#                                                 Version 14 December 1998   #
+#=============================================================================
+# 1. SUBMISSION DETAILS
+
+_publ_contact_author_name            ?   # Name of author for correspondence
+_publ_contact_author_address             # Address of author for correspondence
+; ?
+;
+_publ_contact_author_email           ?
+_publ_contact_author_fax             ?
+_publ_contact_author_phone           ?
+
+_publ_contact_letter
+; ?
+;
+
+_publ_requested_journal              ?
+_publ_requested_coeditor_name        ?
+_publ_requested_category             ?   # Acta C: one of CI/CM/CO/FI/FM/FO
+
+#==============================================================================
+
+# 2. PROCESSING SUMMARY (IUCr Office Use Only)
+
+_journal_data_validation_number      ?
+
+_journal_date_recd_electronic        ?
+_journal_date_to_coeditor            ?
+_journal_date_from_coeditor          ?
+_journal_date_accepted               ?
+_journal_date_printers_first         ?
+_journal_date_printers_final         ?
+_journal_date_proofs_out             ?
+_journal_date_proofs_in              ?
+_journal_coeditor_name               ?
+_journal_coeditor_code               ?
+_journal_coeditor_notes
+; ?
+;
+_journal_techeditor_code             ?
+_journal_techeditor_notes
+; ?
+;
+_journal_coden_ASTM                  ?
+_journal_name_full                   ?
+_journal_year                        ?
+_journal_volume                      ?
+_journal_issue                       ?
+_journal_page_first                  ?
+_journal_page_last                   ?
+_journal_paper_category              ?
+_journal_suppl_publ_number           ?
+_journal_suppl_publ_pages            ?
+
+#==============================================================================
+
+# 3. TITLE AND AUTHOR LIST
+
+_publ_section_title
+; ?
+;
+_publ_section_title_footnote
+; ?
+;
+
+# The loop structure below should contain the names and addresses of all
+# authors, in the required order of publication. Repeat as necessary.
+
+loop_
+	_publ_author_name
+        _publ_author_footnote
+	_publ_author_address
+ ?                                   #<--'Last name, first name'
+; ?
+;
+; ?
+;
+
+#==============================================================================
+
+# 4. TEXT
+
+_publ_section_synopsis
+;  ?
+;
+_publ_section_abstract
+; ?
+;
+_publ_section_comment
+; ?
+;
+_publ_section_exptl_prep      # Details of the preparation of the sample(s)
+                              # should be given here.
+; ?
+;
+_publ_section_exptl_refinement
+; ?
+;
+_publ_section_references
+; ?
+;
+_publ_section_figure_captions
+; ?
+;
+_publ_section_acknowledgements
+; ?
+;
+
+#=============================================================================
+# 5. OVERALL REFINEMENT & COMPUTING DETAILS
+
+_refine_special_details
+; ?
+;
+_pd_proc_ls_special_details
+; ?
+;
+
+# The following items are used to identify the programs used.
+_computing_molecular_graphics     ?
+_computing_publication_material   ?
+
+_refine_ls_weighting_scheme       ?
+_refine_ls_weighting_details      ?
+_refine_ls_hydrogen_treatment     ?
+_refine_ls_extinction_method      ?
+_refine_ls_extinction_coef        ?
+_refine_ls_number_constraints     ?
+
+_refine_ls_restrained_S_all       ?
+_refine_ls_restrained_S_obs       ?
+
+#==============================================================================
+# 6. SAMPLE PREPARATION DATA
+
+# (In the unusual case where multiple samples are used in a single
+#  Rietveld study, this information should be moved into the phase
+#  blocks)
+
+# The following three fields describe the preparation of the material.
+# The cooling rate is in K/min.  The pressure at which the sample was
+# prepared is in kPa.  The temperature of preparation is in K.
+
+_pd_prep_cool_rate                ?
+_pd_prep_pressure                 ?
+_pd_prep_temperature              ?
+
+_pd_char_colour                   ?       # use ICDD colour descriptions
+data_LLZO-P900_overall
+
+_refine_ls_shift/su_max                0.01
+_refine_ls_shift/su_mean               0.00
+_computing_structure_refinement        GSAS
+_refine_ls_number_parameters           14
+_refine_ls_goodness_of_fit_all         6.38
+_refine_ls_number_restraints           0
+_refine_ls_matrix_type                 full
+
+# pointers to the phase blocks
+loop_   _pd_phase_block_id
+      2020-05-15T11:28|LLZO-P900_phase1|tianhl||
+# pointers to the diffraction patterns
+loop_   _pd_block_diffractogram_id
+      ?
+
+# Information for phase 1
+data_LLZO-P900_phase_1
+
+_pd_block_id
+  2020-05-15T11:28|LLZO-P900_phase1|tianhl||
+
+#==============================================================================
+# 7. CHEMICAL, STRUCTURAL AND CRYSTAL DATA
+
+_pd_char_particle_morphology      ?
+
+_chemical_name_systematic
+; ?
+;
+_chemical_name_common             ?
+_chemical_formula_moiety          ?
+_chemical_formula_structural      ?
+_chemical_formula_analytical      ?
+_chemical_melting_point           ?
+_chemical_compound_source         ?       # for minerals and
+                                          # natural products
+_symmetry_space_group_name_Hall   ?
+
+_exptl_crystal_F_000               ?
+_exptl_crystal_density_diffrn      ?
+_exptl_crystal_density_meas        ?
+_exptl_crystal_density_method      ?
+
+_cell_measurement_temperature     ?
+
+_cell_special_details
+; ?
+;
+
+_geom_special_details             ?
+
+# The following item identifies the program(s) used (if appropriate).
+_computing_structure_solution     ?
+
+#==============================================================================
+
+# 8. Phase information from GSAS
+
+_pd_phase_name
+    "from C:/Users/blues/OneDrive/tianhl/LLZO_workspace/Dove/gsas/P900/"
+_cell_length_a                         13.04123(10)
+_cell_length_b                         13.04123
+_cell_length_c                         13.04123
+_cell_angle_alpha                      90.0
+_cell_angle_beta                       90.0
+_cell_angle_gamma                      90.0
+_cell_volume                           2217.97(5)
+_symmetry_cell_setting                 cubic
+_symmetry_space_group_name_H-M         "I a -3 d"
+loop_ _symmetry_equiv_pos_site_id _symmetry_equiv_pos_as_xyz
+       1 +x,+y,+z 
+       2 +z,+x,+y 
+       3 +y,+z,+x 
+       4 +x+1/2,+y,-z+1/2 
+       5 -z+1/2,+x+1/2,+y 
+       6 +y,-z+1/2,+x+1/2 
+       7 -z,+x+1/2,-y+1/2 
+       8 -y+1/2,-z,+x+1/2 
+       9 +y+1/2,-z+1/2,-x 
+      10 -x,+y+1/2,-z+1/2 
+      11 -z+1/2,-x,+y+1/2 
+      12 +x+1/2,-y+1/2,-z 
+      13 +y+1/4,+x+1/4,+z+1/4 
+      14 +z+1/4,+y+1/4,+x+1/4 
+      15 +x+1/4,+z+1/4,+y+1/4 
+      16 +y+3/4,+x+1/4,-z+1/4 
+      17 -z+1/4,+y+3/4,+x+1/4 
+      18 +x+1/4,-z+1/4,+y+3/4 
+      19 -z+3/4,+y+3/4,-x+1/4 
+      20 -x+1/4,-z+3/4,+y+3/4 
+      21 +x+3/4,-z+1/4,-y+3/4 
+      22 -y+3/4,+x+3/4,-z+1/4 
+      23 -z+1/4,-y+3/4,+x+3/4 
+      24 +y+3/4,-x+1/4,-z+3/4 
+      -1 -x,-y,-z 
+      -2 -z,-x,-y 
+      -3 -y,-z,-x 
+      -4 -x+1/2,-y,+z+1/2 
+      -5 +z+1/2,-x+1/2,-y 
+      -6 -y,+z+1/2,-x+1/2 
+      -7 +z,-x+1/2,+y+1/2 
+      -8 +y+1/2,+z,-x+1/2 
+      -9 -y+1/2,+z+1/2,+x 
+     -10 +x,-y+1/2,+z+1/2 
+     -11 +z+1/2,+x,-y+1/2 
+     -12 -x+1/2,+y+1/2,+z 
+     -13 -y+3/4,-x+3/4,-z+3/4 
+     -14 -z+3/4,-y+3/4,-x+3/4 
+     -15 -x+3/4,-z+3/4,-y+3/4 
+     -16 -y+1/4,-x+3/4,+z+3/4 
+     -17 +z+3/4,-y+1/4,-x+3/4 
+     -18 -x+3/4,+z+3/4,-y+1/4 
+     -19 +z+1/4,-y+1/4,+x+3/4 
+     -20 +x+3/4,+z+1/4,-y+1/4 
+     -21 -x+1/4,+z+3/4,+y+1/4 
+     -22 +y+1/4,-x+1/4,+z+3/4 
+     -23 +z+3/4,+y+1/4,-x+1/4 
+     -24 -y+1/4,+x+3/4,+z+1/4 
+     101 +x+1/2,+y+1/2,+z+1/2 
+     102 +z+1/2,+x+1/2,+y+1/2 
+     103 +y+1/2,+z+1/2,+x+1/2 
+     104 +x,+y+1/2,-z 
+     105 -z,+x,+y+1/2 
+     106 +y+1/2,-z,+x 
+     107 -z+1/2,+x,-y 
+     108 -y,-z+1/2,+x 
+     109 +y,-z,-x+1/2 
+     110 -x+1/2,+y,-z 
+     111 -z,-x+1/2,+y 
+     112 +x,-y,-z+1/2 
+     113 +y+3/4,+x+3/4,+z+3/4 
+     114 +z+3/4,+y+3/4,+x+3/4 
+     115 +x+3/4,+z+3/4,+y+3/4 
+     116 +y+1/4,+x+3/4,-z+3/4 
+     117 -z+3/4,+y+1/4,+x+3/4 
+     118 +x+3/4,-z+3/4,+y+1/4 
+     119 -z+1/4,+y+1/4,-x+3/4 
+     120 -x+3/4,-z+1/4,+y+1/4 
+     121 +x+1/4,-z+3/4,-y+1/4 
+     122 -y+1/4,+x+1/4,-z+3/4 
+     123 -z+3/4,-y+1/4,+x+1/4 
+     124 +y+1/4,-x+3/4,-z+1/4 
+    -101 -x+1/2,-y+1/2,-z+1/2 
+    -102 -z+1/2,-x+1/2,-y+1/2 
+    -103 -y+1/2,-z+1/2,-x+1/2 
+    -104 -x,-y+1/2,+z 
+    -105 +z,-x,-y+1/2 
+    -106 -y+1/2,+z,-x 
+    -107 +z+1/2,-x,+y 
+    -108 +y,+z+1/2,-x 
+    -109 -y,+z,+x+1/2 
+    -110 +x+1/2,-y,+z 
+    -111 +z,+x+1/2,-y 
+    -112 -x,+y,+z+1/2 
+    -113 -y+1/4,-x+1/4,-z+1/4 
+    -114 -z+1/4,-y+1/4,-x+1/4 
+    -115 -x+1/4,-z+1/4,-y+1/4 
+    -116 -y+3/4,-x+1/4,+z+1/4 
+    -117 +z+1/4,-y+3/4,-x+1/4 
+    -118 -x+1/4,+z+1/4,-y+3/4 
+    -119 +z+3/4,-y+3/4,+x+1/4 
+    -120 +x+1/4,+z+3/4,-y+3/4 
+    -121 -x+3/4,+z+1/4,+y+3/4 
+    -122 +y+3/4,-x+3/4,+z+1/4 
+    -123 +z+1/4,+y+3/4,-x+3/4 
+    -124 -y+3/4,+x+1/4,+z+3/4 
+
+# ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+
+
+loop_
+      _atom_site_type_symbol
+      _atom_site_label
+      _atom_site_fract_x
+      _atom_site_fract_y
+      _atom_site_fract_z
+      _atom_site_occupancy
+      _atom_site_thermal_displace_type
+      _atom_site_U_iso_or_equiv
+      _atom_site_symmetry_multiplicity
+La
+La      0.125        0.0          0.25         1.0        Uiso   0.00381(24)  24
+Li
+Li1     0.375        0.0          0.25         0.172(11)  Uiso  -0.0279(20)   24
+Li
+Li2     0.125        0.1766(4)    0.4266(4)    0.5404(27) Uani   0.05755      48
+O 
+O       0.10235(9)   0.19751(8)   0.28061(7)   1.0        Uiso   0.00746(19)  96
+Zr
+Zr      0.0          0.0          0.0          1.0        Uiso  -0.00100(26)  16
+
+loop_ _atom_site_aniso_label
+      _atom_site_aniso_U_11
+      _atom_site_aniso_U_12
+      _atom_site_aniso_U_13
+      _atom_site_aniso_U_22
+      _atom_site_aniso_U_23
+      _atom_site_aniso_U_33
+Li2     0.164(14)  -0.075(6)    0.075(6)    0.0043(33) -0.031(4)    0.0043(33)
+
+loop_ _atom_type_symbol
+      _atom_type_number_in_cell
+                   La 24.0        
+                   Li 30.067      
+                   O  96.0        
+                   Zr 16.0        
+ 
+# If you change Z, be sure to change all 3 of the following
+_chemical_formula_sum                  "La3 Li3.76 O12 Zr2"
+_chemical_formula_weight               817.23
+_cell_formula_units_Z                  8
+
+# MOLECULAR GEOMETRY
+
+loop_
+      _geom_bond_atom_site_label_1
+      _geom_bond_atom_site_label_2
+      _geom_bond_distance
+      _geom_bond_site_symmetry_1
+      _geom_bond_site_symmetry_2
+      _geom_bond_publ_flag
+   ?   ?   ?   ?   ?   ?
+
+loop_
+      _geom_angle_atom_site_label_1
+      _geom_angle_atom_site_label_2
+      _geom_angle_atom_site_label_3
+      _geom_angle
+      _geom_angle_site_symmetry_1
+      _geom_angle_site_symmetry_2
+      _geom_angle_site_symmetry_3
+      _geom_angle_publ_flag
+   ?   ?   ?   ?   ?   ?   ?   ?
+#--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--eof--#
