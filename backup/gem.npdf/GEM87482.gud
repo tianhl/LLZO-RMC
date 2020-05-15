@@ -1,0 +1,40 @@
+ GEM87482.gud
+
+ Li7La3Zr2O12 in GEM furnace post Chopper - T=627C  #1
+
+ Dove
+
+ 20-MAR-2019 20:09:57
+
+ Number density of this sample (atoms/A**3) =  0.837700E-01
+ Corresponding density in g/cm**3 =    4.86711
+ Average scattering length of the sample (10**-12cm) =    0.39740
+ Average scattering length squared (barns) =  0.157927E+00
+ Average square of the scattering length (barns) =  0.306497E+00
+ Ratio of (coherent) single to interference =  0.194075E+01
+
+ Expected level of DCS [b/sr/atom] =    0.33911
+
+ Group number,  first Q,   last Q,   level [b/sr/atom],   gradient in Q (%)
+
+    1            0.0000    0.0000        0.00000              0.0000
+    2            0.0000    0.0000        0.00000              0.0000
+    3            0.5100   23.1300        0.36881              2.7002
+    4            0.9100   44.5100        0.29726              0.9694
+    5            1.7700   44.5100        0.38205             -0.7166
+    6            2.6700   44.5100        0.30487             -0.0354
+    7            3.9700   44.5100        0.25083              0.0969
+    8            4.0500   44.5100        0.27882              0.0950
+
+ No. of groups accepted for merge =    8
+
+ Average level of merged dcs is    0.28526 b/sr/atom;
+
+ Gradient of merged dcs: -0.0937% of average level.
+
+ WARNING! This DCS level is   15.9% BELOW expected level.
+
+ Please check sample density, size or thickness, and composition.
+ If all is in order, then refer to your local contact for further advice
+
+ Suggested tweak factor:    2.15763

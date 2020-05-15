@@ -1,0 +1,22 @@
+'  '  '          '  '\'
+
+GEM          Instrument name
+B:\cycle_18_4\Dove\PDF\          Gudrun input file directory:
+B:\cycle_18_4\Dove\Data\          Data file directory
+C:\Gudrun_exID27_DaveKeen\StartupFiles\GEM\gem_det_034c1.dat          Detector calibration file name
+C:\Gudrun_exID27_DaveKeen\StartupFiles\GEM\banks_051m.grp          Groups file name
+6 7 8          Spectrum number(s) for incident beam monitor
+30  4980          Channel numbers for spike analysis
+4          Spike analysis acceptance factor
+10  10          Specify the number of standard deviations allowed above and below the mean ratio. Specify the range of std's allowed around the mean standard deviation.
+1          Ignore any existing bad spectrum and spike files (spec.bad, spike.dat)?
+GEM87411.raw  1          
+GEM87412.raw  1          
+GEM87441.raw  1          
+GEM87443.raw  1          
+GEM87444.raw  1          
+GEM87445.raw  1          
+GEM87446.raw  1          
+GEM87447.raw  1          
+GEM87448.raw  1          
+GEM87442.raw  1          
