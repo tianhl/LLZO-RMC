@@ -1,0 +1,1117 @@
+     VERSION   6                                                                
+      DESCR   LLZO Post 1100K                                                   
+    HSTRY  1 created readexp.tcl 1251 2019-08-06T14:48:36                       
+    HSTRY  2 EXPTOOL  Win32  Aug 06 14:48:59 2019 P P                           
+    HSTRY  3 EXPTOOL  Win32  Aug 06 14:49:10 2019 P  A                          
+    HSTRY  4 EXPTOOL  Win32  Aug 06 14:49:31 2019 P  H                          
+    HSTRY  5 EXPGUI 1251 1251 (1 changes) -- 08/06/19 14:49:37                  
+    HSTRY  6 POWPREF Win32  Aug 06 14:49:37 2019                                
+    HSTRY  7 GENLES  Win32  Aug 06 14:50:14 2019 Sdsq= 0.681E+07 S/E= 0.634E-08 
+    HSTRY  8 EXPGUI 1251 1251 (6 changes) -- 08/06/19 14:50:47                  
+    HSTRY  9 GENLES  Win32  Aug 06 14:50:58 2019 Sdsq= 0.556E+07 S/E= 0.816E-05 
+    HSTRY 10 EXPGUI 1251 1251 (3 changes) -- 08/06/19 14:52:38                  
+    HSTRY 11 GENLES  Win32  Aug 06 14:52:57 2019 Sdsq= 0.298E+07 S/E=  11.9     
+    HSTRY 12 EXPGUI 1251 1251 (2 changes) -- 08/06/19 14:54:49                  
+    HSTRY 13 GENLES  Win32  Aug 06 14:54:49 2019                                
+    HSTRY 14 EXPGUI 1251 1251 (2 changes) -- 08/06/19 14:56:00                  
+    HSTRY 15 GENLES  Win32  Aug 06 14:56:23 2019 Sdsq= 0.276E+07 S/E=  16.3     
+    HSTRY 16 EXPGUI 1251 1251 (2 changes) -- 08/06/19 14:59:03                  
+    HSTRY 17 GENLES  Win32  Aug 06 14:59:04 2019                                
+    HSTRY 18 EXPGUI 1251 1251 (2 changes) -- 08/06/19 14:59:40                  
+    HSTRY 19 GENLES  Win32  Aug 06 15:00:04 2019 Sdsq= 0.273E+07 S/E=  3.63     
+    HSTRY 20 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:01:10                  
+    HSTRY 21 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:04:06                  
+    HSTRY 22 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:05:06                  
+    HSTRY 23 GENLES  Win32  Aug 06 15:05:25 2019 Sdsq= 0.222E+07 S/E= 0.119E-01 
+    HSTRY 24 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:06:12                  
+    HSTRY 25 GENLES  Win32  Aug 06 15:06:31 2019 Sdsq= 0.197E+07 S/E= 0.718E-03 
+    HSTRY 26 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:06:55                  
+    HSTRY 27 GENLES  Win32  Aug 06 15:07:15 2019 Sdsq= 0.193E+07 S/E= 0.157     
+    HSTRY 28 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:07:40                  
+    HSTRY 29 GENLES  Win32  Aug 06 15:07:55 2019 Sdsq= 0.104E+07 S/E= 0.373E-02 
+    HSTRY 30 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:08:20                  
+    HSTRY 31 GENLES  Win32  Aug 06 15:08:36 2019 Sdsq= 0.797E+06 S/E= 0.413     
+    HSTRY 32 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:09:49                  
+    HSTRY 33 GENLES  Win32  Aug 06 15:10:05 2019 Sdsq= 0.681E+06 S/E= 0.543     
+    HSTRY 34 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:11:03                  
+    HSTRY 35 GENLES  Win32  Aug 06 15:11:03 2019 Sdsq= 0.681E+06 S/E= 0.829E-06 
+    HSTRY 36 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:11:27                  
+    HSTRY 37 GENLES  Win32  Aug 06 15:11:36 2019 Sdsq= 0.296E+06 S/E= 0.324E-07 
+    HSTRY 38 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:12:21                  
+    HSTRY 39 GENLES  Win32  Aug 06 15:12:40 2019 Sdsq= 0.288E+06 S/E= 0.129E-03 
+    HSTRY 40 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:13:23                  
+    HSTRY 41 GENLES  Win32  Aug 06 15:13:33 2019 Sdsq= 0.283E+06 S/E= 0.992E-06 
+    HSTRY 42 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:14:26                  
+    HSTRY 43 GENLES  Win32  Aug 06 15:14:36 2019 Sdsq= 0.199E+06 S/E= 0.221E-10 
+    HSTRY 44 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:15:11                  
+    HSTRY 45 GENLES  Win32  Aug 06 15:15:11 2019                                
+    HSTRY 46 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:15:51                  
+    HSTRY 47 GENLES  Win32  Aug 06 15:16:10 2019 Sdsq= 0.198E+06 S/E= 0.191E-02 
+    HSTRY 48 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:16:46                  
+    HSTRY 49 GENLES  Win32  Aug 06 15:17:06 2019 Sdsq= 0.198E+06 S/E= 0.729E-04 
+    HSTRY 50 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:17:27                  
+    HSTRY 51 GENLES  Win32  Aug 06 15:17:46 2019 Sdsq= 0.196E+06 S/E= 0.115     
+    HSTRY 52 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:18:29                  
+    HSTRY 53 GENLES  Win32  Aug 06 15:18:48 2019 Sdsq= 0.188E+06 S/E= 0.315     
+    HSTRY 54 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:19:11                  
+    HSTRY 55 GENLES  Win32  Aug 06 15:19:32 2019 Sdsq= 0.188E+06 S/E= 0.665E-04 
+    HSTRY 56 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:20:01                  
+    HSTRY 57 GENLES  Win32  Aug 06 15:20:21 2019 Sdsq= 0.183E+06 S/E= 0.149     
+    HSTRY 58 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:20:51                  
+    HSTRY 59 GENLES  Win32  Aug 06 15:21:11 2019 Sdsq= 0.183E+06 S/E= 0.341E-01 
+    HSTRY 60 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:21:41                  
+    HSTRY 61 GENLES  Win32  Aug 06 15:22:02 2019 Sdsq= 0.182E+06 S/E= 0.285E-02 
+    HSTRY 62 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:23:33                  
+    HSTRY 63 GENLES  Win32  Aug 06 15:23:53 2019 Sdsq= 0.173E+06 S/E=  7.68     
+    HSTRY 64 EXPGUI 1251 1251 (3 changes) -- 08/06/19 15:30:05                  
+    HSTRY 65 EXPTOOL  Win32  Aug 06 15:31:19 2019 P  H                          
+    HSTRY 66 EXPGUI 1251 1251 (7 changes) -- 08/06/19 15:32:21                  
+    HSTRY 67 POWPREF Win32  Aug 06 15:32:22 2019                                
+    HSTRY 68 GENLES  Win32  Aug 06 15:33:19 2019 Sdsq= 0.220E+07 S/E= 0.537E-04 
+    HSTRY 69 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:35:45                  
+    HSTRY 70 GENLES  Win32  Aug 06 15:36:00 2019 Sdsq= 0.224E+07 S/E= 0.171E-07 
+    HSTRY 71 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:37:29                  
+    HSTRY 72 GENLES  Win32  Aug 06 15:37:46 2019 Sdsq= 0.236E+07 S/E= 0.998E-08 
+    HSTRY 73 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:38:32                  
+    HSTRY 74 GENLES  Win32  Aug 06 15:38:50 2019 Sdsq= 0.870E+06 S/E= 0.406E-09 
+    HSTRY 75 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:39:23                  
+    HSTRY 76 GENLES  Win32  Aug 06 15:39:57 2019 Sdsq= 0.869E+06 S/E= 0.372E-03 
+    HSTRY 77 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:41:00                  
+    HSTRY 78 GENLES  Win32  Aug 06 15:41:15 2019 Sdsq= 0.133E+07 S/E= 0.131E-08 
+    HSTRY 79 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:41:51                  
+    HSTRY 80 GENLES  Win32  Aug 06 15:42:07 2019 Sdsq= 0.472E+06 S/E= 0.515E-07 
+    HSTRY 81 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:43:11                  
+    HSTRY 82 GENLES  Win32  Aug 06 15:43:28 2019 Sdsq= 0.472E+06 S/E= 0.359E-03 
+    HSTRY 83 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:45:20                  
+    HSTRY 84 GENLES  Win32  Aug 06 15:45:49 2019 Sdsq= 0.460E+06 S/E= 0.614     
+    HSTRY 85 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:46:45                  
+    HSTRY 86 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:47:55                  
+    HSTRY 87 GENLES  Win32  Aug 06 15:48:32 2019 Sdsq= 0.375E+06 S/E= 0.886     
+    HSTRY 88 EXPGUI 1251 1251 (6 changes) -- 08/06/19 15:49:09                  
+    HSTRY 89 GENLES  Win32  Aug 06 15:49:48 2019 Sdsq= 0.354E+06 S/E=  2.99     
+    HSTRY 90 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:50:57                  
+    HSTRY 91 GENLES  Win32  Aug 06 15:50:58 2019                                
+    HSTRY 92 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:51:45                  
+    HSTRY 93 GENLES  Win32  Aug 06 15:52:20 2019 Sdsq= 0.341E+06 S/E= 0.778     
+    HSTRY 94 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:52:58                  
+    HSTRY 95 GENLES  Win32  Aug 06 15:53:35 2019 Sdsq= 0.331E+06 S/E= 0.583E-03 
+    HSTRY 96 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:54:03                  
+    HSTRY 97 EXPGUI 1251 1251 (4 changes) -- 08/06/19 15:55:10                  
+    HSTRY 98 GENLES  Win32  Aug 06 15:55:38 2019 Sdsq= 0.331E+06 S/E= 0.109     
+    HSTRY 99 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:56:07                  
+    HSTRY100 GENLES  Win32  Aug 06 15:56:36 2019 Sdsq= 0.310E+06 S/E=  1.51     
+    HSTRY101 EXPGUI 1251 1251 (2 changes) -- 08/06/19 15:57:02                  
+    HSTRY102 GENLES  Win32  Aug 06 15:57:31 2019 Sdsq= 0.305E+06 S/E= 0.176E-04 
+    HSTRY103 EXPGUI 1251 1251 (1 changes) -- 08/06/19 15:58:31                  
+    HSTRY104 EXPTOOL  Win32  Aug 06 15:58:32 2019 P  H                          
+    HSTRY105 EXPGUI 1251 1251 (7 changes) -- 08/06/19 15:59:02                  
+    HSTRY106 GENLES  Win32  Aug 06 15:59:03 2019                                
+    HSTRY107 POWPREF Win32  Aug 06 15:59:28 2019                                
+    HSTRY108 GENLES  Win32  Aug 06 16:00:14 2019 Sdsq= 0.430E+07 S/E= 0.827E-05 
+    HSTRY109 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:01:57                  
+    HSTRY110 GENLES  Win32  Aug 06 16:02:21 2019 Sdsq= 0.143E+07 S/E= 0.474E-07 
+    HSTRY111 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:03:04                  
+    HSTRY112 GENLES  Win32  Aug 06 16:03:51 2019 Sdsq= 0.141E+07 S/E=  1.00     
+    HSTRY113 EXPGUI 1251 1251 (3 changes) -- 08/06/19 16:04:27                  
+    HSTRY114 GENLES  Win32  Aug 06 16:04:52 2019 Sdsq= 0.141E+07 S/E= 0.330E-02 
+    HSTRY115 EXPGUI 1251 1251 (4 changes) -- 08/06/19 16:05:52                  
+    HSTRY116 GENLES  Win32  Aug 06 16:06:36 2019 Sdsq= 0.138E+07 S/E= 0.909     
+    HSTRY117 EXPGUI 1251 1251 (6 changes) -- 08/06/19 16:07:26                  
+    HSTRY118 GENLES  Win32  Aug 06 16:08:12 2019 Sdsq= 0.126E+07 S/E=  1.17     
+    HSTRY119 EXPGUI 1251 1251 (6 changes) -- 08/06/19 16:09:12                  
+    HSTRY120 GENLES  Win32  Aug 06 16:09:58 2019 Sdsq= 0.126E+07 S/E= 0.363     
+    HSTRY121 EXPGUI 1251 1251 (4 changes) -- 08/06/19 16:10:58                  
+    HSTRY122 GENLES  Win32  Aug 06 16:10:58 2019                                
+    HSTRY123 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:11:33                  
+    HSTRY124 GENLES  Win32  Aug 06 16:12:20 2019 Sdsq= 0.126E+07 S/E=  10.9     
+    HSTRY125 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:13:33                  
+    HSTRY126 GENLES  Win32  Aug 06 16:14:20 2019 Sdsq= 0.125E+07 S/E= 0.136E-04 
+    HSTRY127 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:15:18                  
+    HSTRY128 GENLES  Win32  Aug 06 16:16:23 2019 Sdsq= 0.125E+07 S/E=  63.0     
+    HSTRY129 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:18:12                  
+    HSTRY130 GENLES  Win32  Aug 06 16:19:02 2019 Sdsq= 0.122E+07 S/E= 0.654E-03 
+    HSTRY131 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:19:39                  
+    HSTRY132 GENLES  Win32  Aug 06 16:20:31 2019 Sdsq= 0.122E+07 S/E= 0.533E-04 
+    HSTRY133 EXPGUI 1251 1251 (15 changes) -- 08/06/19 16:24:13                 
+    HSTRY134 GENLES  Win32  Aug 06 16:24:13 2019                                
+    HSTRY135 EXPGUI 1251 1251 (1 changes) -- 08/06/19 16:25:18                  
+    HSTRY136 GENLES  Win32  Aug 06 16:25:47 2019 Sdsq= 0.485E+07 S/E= 0.134E-08 
+    HSTRY137 EXPGUI 1251 1251 (3 changes) -- 08/06/19 16:26:45                  
+    HSTRY138 GENLES  Win32  Aug 06 16:26:45 2019 Sdsq= 0.485E+07 S/E= 0.134E-04 
+    HSTRY139 EXPGUI 1251 1251 (5 changes) -- 08/06/19 16:27:37                  
+    HSTRY140 GENLES  Win32  Aug 06 16:27:37 2019                                
+    HSTRY141 EXPGUI 1251 1251 (5 changes) -- 08/06/19 16:29:16                  
+    HSTRY142 GENLES  Win32  Aug 06 16:29:40 2019 Sdsq= 0.121E+07 S/E= 0.174E-06 
+    HSTRY143 EXPGUI 1251 1251 (4 changes) -- 08/06/19 16:31:07                  
+    HSTRY144 GENLES  Win32  Aug 06 16:31:59 2019 Sdsq= 0.121E+07 S/E= 0.675E-04 
+    HSTRY145 EXPGUI 1251 1251 (2 changes) -- 08/06/19 16:32:53                  
+    HSTRY146 GENLES  Win32  Aug 06 16:33:18 2019 Sdsq= 0.121E+07 S/E= 0.139E-02 
+    HSTRY147 EXPGUI 1251 1251 (1 changes) -- 08/06/19 16:33:59                  
+    HSTRY148 GENLES  Win32  Aug 06 16:34:25 2019 Sdsq= 0.121E+07 S/E= 0.122E-03 
+    HSTRY149 EXPGUI 1251 1251 (3 changes) -- 08/06/19 16:36:53                  
+    HSTRY150 GENLES  Win32  Aug 06 16:36:53 2019                                
+    HSTRY151 EXPGUI 1251 1251 (1 changes) -- 08/06/19 16:37:31                  
+    HSTRY152 GENLES  Win32  Aug 06 16:37:55 2019 Sdsq= 0.121E+07 S/E= 0.343E-02 
+    HSTRY153 EXPGUI 1251 1251 (1 changes) -- 08/06/19 16:38:37                  
+    HSTRY154 GENLES  Win32  Aug 06 16:38:38 2019 Sdsq= 0.121E+07 S/E= 0.966E-05 
+    HSTRY155 EXPGUI 1251 1251 (1 changes) -- 08/08/19 15:14:53                  
+    HSTRY156 GENLES  Win32  Aug 08 15:14:54 2019 Sdsq= 0.121E+07 S/E= 0.176E-07 
+    HSTRY157 EXPGUI 1251 1251 (2 changes) -- 08/08/19 15:16:25                  
+    HSTRY158 GENLES  Win32  Aug 08 15:16:51 2019 Sdsq= 0.121E+07 S/E= 0.114E-05 
+    HSTRY159 EXPGUI 1251 1251 (7 changes) -- 08/08/19 15:23:05                  
+    HSTRY160 GENLES  Win32  Aug 08 15:23:28 2019 Sdsq= 0.612E+06 S/E= 0.531E-06 
+    HSTRY161 EXPGUI 1251 1251 (4 changes) -- 08/08/19 15:34:44                  
+    HSTRY162 GENLES  Win32  Aug 08 15:35:25 2019 Sdsq= 0.611E+06 S/E= 0.170E-03 
+    HSTRY163 EXPGUI 1251 1251 (1 changes) -- 08/08/19 15:35:58                  
+    HSTRY164 GENLES  Win32  Aug 08 15:36:22 2019 Sdsq= 0.611E+06 S/E= 0.143E-02 
+    HSTRY165 EXPGUI 1251 1251 (3 changes) -- 08/08/19 15:37:04                  
+    HSTRY166 GENLES  Win32  Aug 08 15:37:27 2019 Sdsq= 0.594E+06 S/E= 0.383E-03 
+    HSTRY167 EXPGUI 1251 1251 (1 changes) -- 08/08/19 15:42:35                  
+    HSTRY168 POWPREF Win32  May 02 17:38:12 2020                                
+    HSTRY169 GENLES  Win32  May 02 17:39:54 2020                                
+    HSTRY170 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:40:37                  
+    HSTRY171 POWPREF Win32  May 02 17:40:38 2020                                
+    HSTRY172 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:41:35                  
+    HSTRY173 EXPEDT  Win32  May 02 17:41:35 2020 P  H                           
+    HSTRY174 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:41:52                  
+    HSTRY175 POWPREF Win32  May 02 17:41:52 2020                                
+    HSTRY176 GENLES  Win32  May 02 17:41:57 2020                                
+    HSTRY177 BKGEDIT 1183 1251 -- Sat May 02 17:42:37 ?????????????????? 2020   
+    HSTRY178 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:42:50                  
+    HSTRY179 GENLES  Win32  May 02 17:42:50 2020 Sdsq= 0.337E+05 S/E= 0.133E-02 
+    HSTRY180 EXPGUI 1251 1251 (5 changes) -- 05/02/20 17:43:16                  
+    HSTRY181 GENLES  Win32  May 02 17:43:17 2020 Sdsq= 0.337E+05 S/E= 0.281E-05 
+    HSTRY182 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:43:25                  
+    HSTRY183 GENLES  Win32  May 02 17:43:27 2020 Sdsq= 0.282E+05 S/E= 0.818E-02 
+    HSTRY184 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:43:53                  
+    HSTRY185 GENLES  Win32  May 02 17:43:54 2020 Sdsq= 0.214E+05 S/E= 0.595E-03 
+    HSTRY186 GENLES  Win32  May 02 17:44:03 2020 Sdsq= 0.214E+05 S/E= 0.310E-06 
+    HSTRY187 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:44:26                  
+    HSTRY188 GENLES  Win32  May 02 17:44:27 2020 Sdsq= 0.161E+05 S/E= 0.216E-02 
+    HSTRY189 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:45:02                  
+    HSTRY190 GENLES  Win32  May 02 17:45:03 2020 Sdsq= 0.153E+05 S/E= 0.415E-02 
+    HSTRY191 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:45:24                  
+    HSTRY192 POWPREF Win32  May 02 17:45:25 2020                                
+    HSTRY193 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:46:02                  
+    HSTRY194 EXPEDT  Win32  May 02 17:46:02 2020 P  H                           
+    HSTRY195 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:46:24                  
+    HSTRY196 POWPREF Win32  May 02 17:46:24 2020                                
+    HSTRY197 GENLES  Win32  May 02 17:46:32 2020                                
+    HSTRY198 BKGEDIT 1183 1251 -- Sat May 02 17:47:16 ?????????????????? 2020   
+    HSTRY199 GENLES  Win32  May 02 17:47:21 2020                                
+    HSTRY200 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:47:30                  
+    HSTRY201 GENLES  Win32  May 02 17:47:31 2020 Sdsq= 0.142E+06 S/E= 0.550E-02 
+    HSTRY202 EXPGUI 1251 1251 (5 changes) -- 05/02/20 17:47:43                  
+    HSTRY203 GENLES  Win32  May 02 17:47:44 2020 Sdsq= 0.142E+06 S/E= 0.502E-03 
+    HSTRY204 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:47:51                  
+    HSTRY205 GENLES  Win32  May 02 17:47:52 2020 Sdsq= 0.135E+06 S/E= 0.427E-02 
+    HSTRY206 EXPGUI 1251 1251 (10 changes) -- 05/02/20 17:48:24                 
+    HSTRY207 GENLES  Win32  May 02 17:48:25 2020                                
+    HSTRY208 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:48:38                  
+    HSTRY209 GENLES  Win32  May 02 17:48:39 2020 Sdsq= 0.168E+06 S/E= 0.336E-06 
+    HSTRY210 EXPGUI 1251 1251 (6 changes) -- 05/02/20 17:49:04                  
+    HSTRY211 GENLES  Win32  May 02 17:49:05 2020 Sdsq= 0.145E+06 S/E= 0.549E-05 
+    HSTRY212 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:49:18                  
+    HSTRY213 GENLES  Win32  May 02 17:49:19 2020 Sdsq= 0.135E+06 S/E= 0.905E-03 
+    HSTRY214 EXPGUI 1251 1251 (7 changes) -- 05/02/20 17:49:37                  
+    HSTRY215 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:49:46                  
+    HSTRY216 GENLES  Win32  May 02 17:49:46 2020                                
+    HSTRY217 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:49:53                  
+    HSTRY218 GENLES  Win32  May 02 17:49:54 2020 Sdsq= 0.139E+06 S/E= 0.581E-03 
+    HSTRY219 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:50:13                  
+    HSTRY220 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:50:25                  
+    HSTRY221 GENLES  Win32  May 02 17:50:28 2020 Sdsq= 0.112E+06 S/E= 0.461     
+    HSTRY222 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:50:40                  
+    HSTRY223 GENLES  Win32  May 02 17:50:41 2020 Sdsq= 0.102E+06 S/E= 0.236E-04 
+    HSTRY224 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:50:51                  
+    HSTRY225 GENLES  Win32  May 02 17:50:52 2020 Sdsq= 0.102E+06 S/E= 0.121E-02 
+    HSTRY226 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:51:10                  
+    HSTRY227 EXPEDT  Win32  May 02 17:51:10 2020 P  H                           
+    HSTRY228 POWPREF Win32  May 02 17:51:21 2020                                
+    HSTRY229 GENLES  Win32  May 02 17:51:26 2020                                
+    HSTRY230 BKGEDIT 1183 1251 -- Sat May 02 17:52:02 ?????????????????? 2020   
+    HSTRY231 GENLES  Win32  May 02 17:52:08 2020                                
+    HSTRY232 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:52:17                  
+    HSTRY233 GENLES  Win32  May 02 17:52:19 2020 Sdsq= 0.175E+06 S/E= 0.222E-03 
+    HSTRY234 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:52:27                  
+    HSTRY235 GENLES  Win32  May 02 17:52:28 2020 Sdsq= 0.175E+06 S/E= 0.178E-03 
+    HSTRY236 EXPGUI 1251 1251 (4 changes) -- 05/02/20 17:52:38                  
+    HSTRY237 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:52:47                  
+    HSTRY238 GENLES  Win32  May 02 17:52:48 2020 Sdsq= 0.166E+06 S/E= 0.995E-03 
+    HSTRY239 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:53:12                  
+    HSTRY240 GENLES  Win32  May 02 17:53:13 2020 Sdsq= 0.165E+06 S/E= 0.156E-04 
+    HSTRY241 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:53:25                  
+    HSTRY242 GENLES  Win32  May 02 17:53:26 2020 Sdsq= 0.165E+06 S/E= 0.697E-03 
+    HSTRY243 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:53:38                  
+    HSTRY244 GENLES  Win32  May 02 17:53:40 2020 Sdsq= 0.165E+06 S/E= 0.828E-03 
+    HSTRY245 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:53:48                  
+    HSTRY246 GENLES  Win32  May 02 17:53:49 2020 Sdsq= 0.163E+06 S/E= 0.282E-03 
+    HSTRY247 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:54:00                  
+    HSTRY248 GENLES  Win32  May 02 17:54:02 2020 Sdsq= 0.157E+06 S/E= 0.879E-03 
+    HSTRY249 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:54:10                  
+    HSTRY250 GENLES  Win32  May 02 17:54:11 2020 Sdsq= 0.156E+06 S/E= 0.204E-02 
+    HSTRY251 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:54:20                  
+    HSTRY252 GENLES  Win32  May 02 17:54:23 2020 Sdsq= 0.167E+06 S/E=  55.8     
+    HSTRY253 GENLES  Win32  May 02 17:54:31 2020 Sdsq= 0.157E+06 S/E=  35.6     
+    HSTRY254 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:54:58                  
+    HSTRY255 EXPEDT  Win32  May 02 17:54:58 2020 P  H                           
+    HSTRY256 POWPREF Win32  May 02 17:55:10 2020                                
+    HSTRY257 GENLES  Win32  May 02 17:55:15 2020                                
+    HSTRY258 BKGEDIT 1183 1251 -- Sat May 02 17:55:41 ?????????????????? 2020   
+    HSTRY259 GENLES  Win32  May 02 17:55:48 2020                                
+    HSTRY260 EXPGUI 1251 1251 (3 changes) -- 05/02/20 17:56:22                  
+    HSTRY261 GENLES  Win32  May 02 17:56:23 2020 Sdsq= 0.226E+06 S/E= 0.399E-02 
+    HSTRY262 EXPGUI 1251 1251 (5 changes) -- 05/02/20 17:56:43                  
+    HSTRY263 GENLES  Win32  May 02 17:56:44 2020 Sdsq= 0.226E+06 S/E= 0.460E-02 
+    HSTRY264 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:56:57                  
+    HSTRY265 GENLES  Win32  May 02 17:56:58 2020 Sdsq= 0.224E+06 S/E= 0.162E-04 
+    HSTRY266 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:57:14                  
+    HSTRY267 GENLES  Win32  May 02 17:57:15 2020 Sdsq= 0.223E+06 S/E= 0.437E-02 
+    HSTRY268 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:57:24                  
+    HSTRY269 GENLES  Win32  May 02 17:57:26 2020 Sdsq= 0.213E+06 S/E= 0.429E-02 
+    HSTRY270 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:57:36                  
+    HSTRY271 GENLES  Win32  May 02 17:57:38 2020 Sdsq= 0.212E+06 S/E= 0.666E-02 
+    HSTRY272 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:57:49                  
+    HSTRY273 GENLES  Win32  May 02 17:57:50 2020 Sdsq= 0.211E+06 S/E= 0.403E-08 
+    HSTRY274 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:58:00                  
+    HSTRY275 GENLES  Win32  May 02 17:58:02 2020 Sdsq= 0.206E+06 S/E= 0.246E-02 
+    HSTRY276 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:58:10                  
+    HSTRY277 GENLES  Win32  May 02 17:58:13 2020 Sdsq= 0.203E+06 S/E= 0.647E-02 
+    HSTRY278 EXPGUI 1251 1251 (2 changes) -- 05/02/20 17:58:22                  
+    HSTRY279 EXPGUI 1251 1251 (1 changes) -- 05/02/20 17:58:37                  
+    HSTRY280 GENLES  Win32  May 02 17:58:37 2020                                
+    HSTRY281 BKGEDIT 1183 1251 -- Sat May 02 17:59:52 ?????????????????? 2020   
+    HSTRY282 GENLES  Win32  May 02 17:59:57 2020                                
+    HSTRY283 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:00:07                  
+    HSTRY284 GENLES  Win32  May 02 18:00:08 2020 Sdsq= 0.140E+06 S/E= 0.375E-07 
+    HSTRY285 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:00:17                  
+    HSTRY286 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:00:31                  
+    HSTRY287 GENLES  Win32  May 02 18:00:32 2020                                
+    HSTRY288 EXPGUI 1251 1251 (4 changes) -- 05/02/20 18:01:05                  
+    HSTRY289 GENLES  Win32  May 02 18:01:08 2020 Sdsq= 0.129E+06 S/E= 0.723E-03 
+    HSTRY290 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:01:18                  
+    HSTRY291 GENLES  Win32  May 02 18:01:22 2020 Sdsq= 0.121E+06 S/E= 0.895E-02 
+    HSTRY292 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:01:46                  
+    HSTRY293 EXPEDT  Win32  May 02 18:01:46 2020 P  H                           
+    HSTRY294 POWPREF Win32  May 02 18:03:27 2020                                
+    HSTRY295 GENLES  Win32  May 02 18:03:41 2020                                
+    HSTRY296 GENLES  Win32  May 02 18:06:30 2020                                
+    HSTRY297 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:06:42                  
+    HSTRY298 GENLES  Win32  May 02 18:06:43 2020 Sdsq= 0.962E+05 S/E= 0.374E-03 
+    HSTRY299 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:07:08                  
+    HSTRY300 GENLES  Win32  May 02 18:07:09 2020 Sdsq= 0.962E+05 S/E= 0.179E-03 
+    HSTRY301 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:07:23                  
+    HSTRY302 GENLES  Win32  May 02 18:07:24 2020 Sdsq= 0.959E+05 S/E= 0.687E-02 
+    HSTRY303 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:07:37                  
+    HSTRY304 GENLES  Win32  May 02 18:07:38 2020 Sdsq= 0.936E+05 S/E= 0.716E-04 
+    HSTRY305 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:07:58                  
+    HSTRY306 GENLES  Win32  May 02 18:08:00 2020 Sdsq= 0.916E+05 S/E= 0.111E-02 
+    HSTRY307 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:08:10                  
+    HSTRY308 GENLES  Win32  May 02 18:08:13 2020 Sdsq= 0.892E+05 S/E= 0.459E-02 
+    HSTRY309 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:08:47                  
+    HSTRY310 EXPEDT  Win32  May 02 18:08:47 2020 P  H                           
+    HSTRY311 POWPREF Win32  May 02 18:08:56 2020                                
+    HSTRY312 BKGEDIT 1183 1251 -- Sat May 02 18:09:27 ?????????????????? 2020   
+    HSTRY313 GENLES  Win32  May 02 18:09:32 2020                                
+    HSTRY314 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:09:41                  
+    HSTRY315 GENLES  Win32  May 02 18:09:45 2020 Sdsq= 0.246E+06 S/E= 0.269E-03 
+    HSTRY316 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:10:16                  
+    HSTRY317 GENLES  Win32  May 02 18:10:22 2020 Sdsq= 0.227E+06 S/E= 0.119E-02 
+    HSTRY318 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:10:36                  
+    HSTRY319 GENLES  Win32  May 02 18:10:37 2020 Sdsq= 0.227E+06 S/E= 0.109E-02 
+    HSTRY320 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:10:50                  
+    HSTRY321 GENLES  Win32  May 02 18:10:53 2020 Sdsq= 0.175E+06 S/E= 0.235E-02 
+    HSTRY322 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:11:10                  
+    HSTRY323 GENLES  Win32  May 02 18:11:16 2020 Sdsq= 0.173E+06 S/E= 0.126E-01 
+    HSTRY324 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:11:36                  
+    HSTRY325 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:11:52                  
+    HSTRY326 GENLES  Win32  May 02 18:11:52 2020                                
+    HSTRY327 BKGEDIT 1183 1251 -- Sat May 02 18:13:57 ?????????????????? 2020   
+    HSTRY328 GENLES  Win32  May 02 18:14:02 2020                                
+    HSTRY329 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:14:26                  
+    HSTRY330 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:14:48                  
+    HSTRY331 EXPEDT  Win32  May 02 18:14:48 2020 P  H                           
+    HSTRY332 POWPREF Win32  May 02 18:15:06 2020                                
+    HSTRY333 GENLES  Win32  May 02 18:15:11 2020 Sdsq= 0.225E+09 S/E=  20.4     
+    HSTRY334 GENLES  Win32  May 02 18:15:23 2020 Sdsq= 0.185E+06 S/E=  18.2     
+    HSTRY335 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:16:49                  
+    HSTRY336 GENLES  Win32  May 02 18:16:49 2020                                
+    HSTRY337 GENLES  Win32  May 02 18:17:18 2020                                
+    HSTRY338 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:17:28                  
+    HSTRY339 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:17:56                  
+    HSTRY340 EXPEDT  Win32  May 02 18:17:56 2020 P  H                           
+    HSTRY341 POWPREF Win32  May 02 18:18:03 2020                                
+    HSTRY342 GENLES  Win32  May 02 18:18:10 2020                                
+    HSTRY343 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:18:20                  
+    HSTRY344 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:18:32                  
+    HSTRY345 GENLES  Win32  May 02 18:18:32 2020                                
+    HSTRY346 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:18:45                  
+    HSTRY347 GENLES  Win32  May 02 18:18:50 2020 Sdsq= 0.215E+06 S/E= 0.483E-02 
+    HSTRY348 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:19:02                  
+    HSTRY349 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:19:15                  
+    HSTRY350 GENLES  Win32  May 02 18:19:15 2020                                
+    HSTRY351 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:19:33                  
+    HSTRY352 GENLES  Win32  May 02 18:19:35 2020 Sdsq= 0.209E+06 S/E= 0.748E-02 
+    HSTRY353 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:20:11                  
+    HSTRY354 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:20:21                  
+    HSTRY355 GENLES  Win32  May 02 18:20:22 2020                                
+    HSTRY356 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:20:49                  
+    HSTRY357 GENLES  Win32  May 02 18:20:51 2020 Sdsq= 0.204E+06 S/E= 0.411E-02 
+    HSTRY358 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:20:59                  
+    HSTRY359 GENLES  Win32  May 02 18:21:04 2020 Sdsq= 0.200E+06 S/E= 0.511     
+    HSTRY360 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:21:23                  
+    HSTRY361 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:21:35                  
+    HSTRY362 GENLES  Win32  May 02 18:21:35 2020                                
+    HSTRY363 BKGEDIT 1183 1251 -- Sat May 02 18:23:27 ?????????????????? 2020   
+    HSTRY364 GENLES  Win32  May 02 18:23:33 2020                                
+    HSTRY365 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:23:45                  
+    HSTRY366 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:24:02                  
+    HSTRY367 EXPEDT  Win32  May 02 18:24:02 2020 P  H                           
+    HSTRY368 POWPREF Win32  May 02 18:24:07 2020                                
+    HSTRY369 GENLES  Win32  May 02 18:24:14 2020                                
+    HSTRY370 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:24:24                  
+    HSTRY371 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:24:49                  
+    HSTRY372 EXPEDT  Win32  May 02 18:24:50 2020 P  H                           
+    HSTRY373 POWPREF Win32  May 02 18:24:55 2020                                
+    HSTRY374 GENLES  Win32  May 02 18:25:01 2020                                
+    HSTRY375 BKGEDIT 1183 1251 -- Sat May 02 18:25:57 ?????????????????? 2020   
+    HSTRY376 GENLES  Win32  May 02 18:26:04 2020                                
+    HSTRY377 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:26:15                  
+    HSTRY378 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:26:24                  
+    HSTRY379 GENLES  Win32  May 02 18:26:25 2020 Sdsq= 0.407E+06 S/E= 0.475E-02 
+    HSTRY380 EXPGUI 1251 1251 (4 changes) -- 05/02/20 18:26:39                  
+    HSTRY381 GENLES  Win32  May 02 18:26:40 2020 Sdsq= 0.407E+06 S/E= 0.557E-05 
+    HSTRY382 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:29:19                  
+    HSTRY383 GENLES  Win32  May 02 18:29:20 2020 Sdsq= 0.180E+06 S/E= 0.643E-04 
+    HSTRY384 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:29:36                  
+    HSTRY385 GENLES  Win32  May 02 18:29:38 2020 Sdsq= 0.174E+06 S/E= 0.297E-02 
+    HSTRY386 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:30:02                  
+    HSTRY387 EXPEDT  Win32  May 02 18:30:02 2020 P  H                           
+    HSTRY388 POWPREF Win32  May 02 18:30:07 2020                                
+    HSTRY389 GENLES  Win32  May 02 18:30:12 2020                                
+    HSTRY390 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:30:32                  
+    HSTRY391 GENLES  Win32  May 02 18:30:33 2020 Sdsq= 0.173E+06 S/E= 0.527E-02 
+    HSTRY392 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:30:56                  
+    HSTRY393 GENLES  Win32  May 02 18:30:57 2020 Sdsq= 0.173E+06 S/E= 0.308E-03 
+    HSTRY394 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:31:06                  
+    HSTRY395 GENLES  Win32  May 02 18:31:08 2020 Sdsq= 0.170E+06 S/E= 0.151E-02 
+    HSTRY396 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:31:21                  
+    HSTRY397 GENLES  Win32  May 02 18:31:22 2020 Sdsq= 0.166E+06 S/E= 0.633E-04 
+    HSTRY398 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:31:41                  
+    HSTRY399 GENLES  Win32  May 02 18:31:42 2020 Sdsq= 0.166E+06 S/E= 0.707E-04 
+    HSTRY400 EXPGUI 1251 1251 (6 changes) -- 05/02/20 18:31:57                  
+    HSTRY401 GENLES  Win32  May 02 18:31:58 2020 Sdsq= 0.168E+06 S/E= 0.101E-03 
+    HSTRY402 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:35:25                  
+    HSTRY403 GENLES  Win32  May 02 18:35:26 2020 Sdsq= 0.163E+06 S/E= 0.974E-02 
+    HSTRY404 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:35:45                  
+    HSTRY405 EXPEDT  Win32  May 02 18:35:45 2020 P  H                           
+    HSTRY406 POWPREF Win32  May 02 18:35:51 2020                                
+    HSTRY407 GENLES  Win32  May 02 18:35:56 2020 Sdsq= 0.320E+06 S/E= 0.566E-05 
+    HSTRY408 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:36:07                  
+    HSTRY409 BKGEDIT 1183 1251 -- Sat May 02 18:36:43 ?????????????????? 2020   
+    HSTRY410 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:37:01                  
+    HSTRY411 GENLES  Win32  May 02 18:37:01 2020 Sdsq= 0.178E+06 S/E= 0.703E-02 
+    HSTRY412 GENLES  Win32  May 02 18:37:21 2020 Sdsq= 0.178E+06 S/E= 0.867E-05 
+    HSTRY413 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:37:30                  
+    HSTRY414 GENLES  Win32  May 02 18:37:31 2020 Sdsq= 0.178E+06 S/E= 0.203E-02 
+    HSTRY415 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:37:44                  
+    HSTRY416 GENLES  Win32  May 02 18:37:45 2020 Sdsq= 0.176E+06 S/E= 0.188E-04 
+    HSTRY417 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:37:55                  
+    HSTRY418 GENLES  Win32  May 02 18:37:56 2020 Sdsq= 0.175E+06 S/E= 0.213E-04 
+    HSTRY419 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:38:10                  
+    HSTRY420 GENLES  Win32  May 02 18:38:11 2020 Sdsq= 0.139E+06 S/E= 0.294E-02 
+    HSTRY421 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:38:20                  
+    HSTRY422 GENLES  Win32  May 02 18:38:23 2020 Sdsq= 0.138E+06 S/E= 0.480     
+    HSTRY423 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:38:42                  
+    HSTRY424 EXPEDT  Win32  May 02 18:38:42 2020 P  H                           
+    HSTRY425 POWPREF Win32  May 02 18:38:48 2020                                
+    HSTRY426 GENLES  Win32  May 02 18:38:55 2020                                
+    HSTRY427 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:39:20                  
+    HSTRY428 GENLES  Win32  May 02 18:39:22 2020 Sdsq= 0.318E+06 S/E= 0.742E-02 
+    HSTRY429 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:39:34                  
+    HSTRY430 GENLES  Win32  May 02 18:39:35 2020 Sdsq= 0.318E+06 S/E= 0.581E-03 
+    HSTRY431 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:39:44                  
+    HSTRY432 GENLES  Win32  May 02 18:39:47 2020 Sdsq= 0.316E+06 S/E= 0.194E-02 
+    HSTRY433 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:40:04                  
+    HSTRY434 GENLES  Win32  May 02 18:40:05 2020 Sdsq= 0.316E+06 S/E= 0.325E-03 
+    HSTRY435 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:40:20                  
+    HSTRY436 GENLES  Win32  May 02 18:40:21 2020 Sdsq= 0.312E+06 S/E= 0.160E-02 
+    HSTRY437 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:40:33                  
+    HSTRY438 GENLES  Win32  May 02 18:40:36 2020 Sdsq= 0.307E+06 S/E= 0.561E-02 
+    HSTRY439 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:40:45                  
+    HSTRY440 GENLES  Win32  May 02 18:40:48 2020 Sdsq= 0.284E+06 S/E= 0.283E-02 
+    HSTRY441 GENLES  Win32  May 02 18:40:53 2020 Sdsq= 0.284E+06 S/E= 0.457E-03 
+    HSTRY442 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:41:33                  
+    HSTRY443 POWPREF Win32  May 02 18:41:33 2020                                
+    HSTRY444 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:42:32                  
+    HSTRY445 EXPEDT  Win32  May 02 18:42:32 2020 P  H                           
+    HSTRY446 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:42:48                  
+    HSTRY447 POWPREF Win32  May 02 18:42:49 2020                                
+    HSTRY448 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:43:12                  
+    HSTRY449 GENLES  Win32  May 02 18:43:12 2020                                
+    HSTRY450 BKGEDIT 1183 1251 -- Sat May 02 18:44:01 ?????????????????? 2020   
+    HSTRY451 GENLES  Win32  May 02 18:44:05 2020                                
+    HSTRY452 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:44:15                  
+    HSTRY453 GENLES  Win32  May 02 18:44:17 2020 Sdsq= 0.566E+06 S/E= 0.253E-03 
+    HSTRY454 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:44:34                  
+    HSTRY455 GENLES  Win32  May 02 18:44:35 2020 Sdsq= 0.566E+06 S/E= 0.453E-02 
+    HSTRY456 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:44:44                  
+    HSTRY457 GENLES  Win32  May 02 18:44:46 2020 Sdsq= 0.559E+06 S/E= 0.369E-03 
+    HSTRY458 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:44:56                  
+    HSTRY459 GENLES  Win32  May 02 18:44:57 2020 Sdsq= 0.550E+06 S/E= 0.378E-05 
+    HSTRY460 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:45:08                  
+    HSTRY461 GENLES  Win32  May 02 18:45:09 2020 Sdsq= 0.547E+06 S/E= 0.183E-02 
+    HSTRY462 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:45:21                  
+    HSTRY463 GENLES  Win32  May 02 18:45:25 2020 Sdsq= 0.519E+06 S/E= 0.149E-02 
+    HSTRY464 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:45:39                  
+    HSTRY465 GENLES  Win32  May 02 18:45:42 2020 Sdsq= 0.516E+06 S/E= 0.508E-02 
+    HSTRY466 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:46:08                  
+    HSTRY467 EXPEDT  Win32  May 02 18:46:08 2020 P  H                           
+    HSTRY468 POWPREF Win32  May 02 18:46:31 2020                                
+    HSTRY469 GENLES  Win32  May 02 18:46:38 2020                                
+    HSTRY470 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:46:57                  
+    HSTRY471 GENLES  Win32  May 02 18:46:59 2020 Sdsq= 0.903E+06 S/E= 0.320E-02 
+    HSTRY472 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:47:12                  
+    HSTRY473 GENLES  Win32  May 02 18:47:13 2020 Sdsq= 0.903E+06 S/E= 0.279E-02 
+    HSTRY474 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:47:28                  
+    HSTRY475 GENLES  Win32  May 02 18:47:30 2020 Sdsq= 0.903E+06 S/E= 0.581E-03 
+    HSTRY476 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:47:41                  
+    HSTRY477 GENLES  Win32  May 02 18:47:42 2020 Sdsq= 0.902E+06 S/E= 0.214E-02 
+    HSTRY478 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:48:07                  
+    HSTRY479 GENLES  Win32  May 02 18:48:08 2020 Sdsq= 0.820E+06 S/E= 0.217E-07 
+    HSTRY480 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:48:32                  
+    HSTRY481 EXPEDT  Win32  May 02 18:48:32 2020 P  H                           
+    HSTRY482 POWPREF Win32  May 02 18:48:49 2020                                
+    HSTRY483 GENLES  Win32  May 02 18:49:03 2020                                
+    HSTRY484 BKGEDIT 1183 1251 -- Sat May 02 18:49:37 ?????????????????? 2020   
+    HSTRY485 GENLES  Win32  May 02 18:49:44 2020                                
+    HSTRY486 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:49:51                  
+    HSTRY487 GENLES  Win32  May 02 18:49:52 2020 Sdsq= 0.134E+07 S/E= 0.109E-09 
+    HSTRY488 EXPGUI 1251 1251 (4 changes) -- 05/02/20 18:50:03                  
+    HSTRY489 GENLES  Win32  May 02 18:50:06 2020 Sdsq= 0.130E+07 S/E= 0.235E-03 
+    HSTRY490 EXPGUI 1251 1251 (5 changes) -- 05/02/20 18:50:33                  
+    HSTRY491 GENLES  Win32  May 02 18:50:34 2020 Sdsq= 0.130E+07 S/E= 0.851E-03 
+    HSTRY492 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:50:45                  
+    HSTRY493 GENLES  Win32  May 02 18:50:46 2020 Sdsq= 0.130E+07 S/E= 0.618E-03 
+    HSTRY494 EXPGUI 1251 1251 (4 changes) -- 05/02/20 18:51:04                  
+    HSTRY495 GENLES  Win32  May 02 18:51:06 2020 Sdsq= 0.130E+07 S/E= 0.303E-03 
+    HSTRY496 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:51:20                  
+    HSTRY497 GENLES  Win32  May 02 18:51:23 2020 Sdsq= 0.121E+07 S/E= 0.282E-02 
+    HSTRY498 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:51:32                  
+    HSTRY499 GENLES  Win32  May 02 18:51:36 2020 Sdsq= 0.120E+07 S/E= 0.776E-02 
+    HSTRY500 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:52:14                  
+    HSTRY501 GENLES  Win32  May 02 18:52:15 2020 Sdsq= 0.119E+07 S/E= 0.394E-08 
+    HSTRY502 BKGEDIT 1183 1251 -- Sat May 02 18:53:53 ?????????????????? 2020   
+    HSTRY503 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:54:00                  
+    HSTRY504 POWPREF Win32  May 02 18:54:02 2020                                
+    HSTRY505 GENLES  Win32  May 02 18:54:15 2020                                
+    HSTRY506 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:54:50                  
+    HSTRY507 GENLES  Win32  May 02 18:54:51 2020 Sdsq= 0.533E+06 S/E= 0.772E-03 
+    HSTRY508 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:54:59                  
+    HSTRY509 GENLES  Win32  May 02 18:55:01 2020 Sdsq= 0.533E+06 S/E= 0.323E-03 
+    HSTRY510 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:55:11                  
+    HSTRY511 GENLES  Win32  May 02 18:55:13 2020 Sdsq= 0.529E+06 S/E= 0.691E-04 
+    HSTRY512 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:55:25                  
+    HSTRY513 GENLES  Win32  May 02 18:55:29 2020 Sdsq= 0.401E+06 S/E= 0.436E-02 
+    HSTRY514 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:55:44                  
+    HSTRY515 GENLES  Win32  May 02 18:55:46 2020 Sdsq= 0.385E+06 S/E= 0.238E-02 
+    HSTRY516 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:56:31                  
+    HSTRY517 GENLES  Win32  May 02 18:56:32 2020 Sdsq= 0.385E+06 S/E= 0.124E-03 
+    HSTRY518 EXPGUI 1251 1251 (2 changes) -- 05/02/20 18:56:49                  
+    HSTRY519 GENLES  Win32  May 02 18:56:54 2020 Sdsq= 0.375E+06 S/E= 0.503E-02 
+    HSTRY520 EXPGUI 1251 1251 (3 changes) -- 05/02/20 18:57:12                  
+    HSTRY521 GENLES  Win32  May 02 18:57:13 2020 Sdsq= 0.375E+06 S/E= 0.384E-02 
+    HSTRY522 EXPGUI 1251 1251 (1 changes) -- 05/02/20 18:57:21                  
+    HSTRY523 EXPGUI 1251 1251 (1 changes) -- 05/03/20 19:49:22                  
+    HSTRY524 GENLES  Win32  May 03 19:49:26 2020 Sdsq= 0.375E+06 S/E= 0.149E-02 
+    HSTRY525 EXPGUI 1251 1251 (2 changes) -- 05/03/20 19:53:16                  
+    HSTRY526 GENLES  Win32  May 03 19:53:16 2020 Sdsq= 0.375E+06 S/E= 0.832E-02 
+    HSTRY527 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:05:16                  
+    HSTRY528 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:05:17                  
+    HSTRY529 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:05:26                  
+    HSTRY530 GENLES  Win32  May 12 16:05:27 2020 Sdsq= 0.221E+05 S/E= 0.370E-02 
+    HSTRY531 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:05:45                  
+    HSTRY532 EXPGUI 1251 1251 (14 changes) -- 05/12/20 16:06:07                 
+    HSTRY533 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:06:33                  
+    HSTRY534 GENLES  Win32  May 12 16:06:33 2020 Sdsq= 0.238E+05 S/E= 0.600E-02 
+    HSTRY535 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:06:46                  
+    HSTRY536 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:07:00                  
+    HSTRY537 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:07:06                  
+    HSTRY538 GENLES  Win32  May 12 16:07:07 2020                                
+    HSTRY539 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:07:13                  
+    HSTRY540 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:07:20                  
+    HSTRY541 GENLES  Win32  May 12 16:07:21 2020 Sdsq= 0.160E+05 S/E= 0.164E-02 
+    HSTRY542 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:07:27                  
+    HSTRY543 GENLES  Win32  May 12 16:07:28 2020 Sdsq= 0.160E+05 S/E= 0.828E-04 
+    HSTRY544 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:07:39                  
+    HSTRY545 GENLES  Win32  May 12 16:07:40 2020 Sdsq= 0.124E+05 S/E= 0.112E-02 
+    HSTRY546 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:08:02                  
+    HSTRY547 GENLES  Win32  May 12 16:08:02 2020 Sdsq= 0.123E+05 S/E= 0.151E-02 
+    HSTRY548 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:08:21                  
+    HSTRY549 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:08:29                  
+    HSTRY550 POWPREF Win32  May 12 16:08:29 2020                                
+    HSTRY551 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:08:53                  
+    HSTRY552 EXPEDT  Win32  May 12 16:08:54 2020 P  H                           
+    HSTRY553 GENLES  Win32  May 12 15:35:46 2020 Sdsq= 0.185E+06 S/E= 0.113E+04 
+    HSTRY554 EXPGUI 1251 1251 (7 changes) -- 05/12/20 15:36:04                  
+    HSTRY555 POWPREF Win32  May 12 15:36:04 2020                                
+    HSTRY556 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:36:43                  
+    HSTRY557 EXPEDT  Win32  May 12 15:36:43 2020 P  H                           
+    HSTRY558 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:24:41                  
+    HSTRY559 EXPGUI 1251 1251 (5 changes) -- 05/12/20 15:25:02                  
+    HSTRY560 EXPGUI 1251 1251 (7 changes) -- 05/12/20 15:25:24                  
+    HSTRY561 GENLES  Win32  May 12 15:25:24 2020 Sdsq= 0.219E+05 S/E= 0.850E-03 
+    HSTRY562 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:25:34                  
+    HSTRY563 GENLES  Win32  May 12 15:25:35 2020 Sdsq= 0.169E+05 S/E= 0.777E-02 
+    HSTRY564 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:25:43                  
+    HSTRY565 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:25:55                  
+    HSTRY566 EXPGUI 1251 1251 (11 changes) -- 05/12/20 15:26:18                 
+    HSTRY567 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:26:28                  
+    HSTRY568 GENLES  Win32  May 12 15:26:28 2020 Sdsq= 0.149E+05 S/E= 0.974E-09 
+    HSTRY569 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:26:41                  
+    HSTRY570 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:27:24                  
+    HSTRY571 GENLES  Win32  May 12 15:27:25 2020 Sdsq= 0.669E+05 S/E=  208.     
+    HSTRY572 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:27:42                  
+    HSTRY573 EXPGUI 1251 1251 (5 changes) -- 05/12/20 15:27:57                  
+    HSTRY574 GENLES  Win32  May 12 15:27:58 2020 Sdsq= 0.512E+07 S/E= 0.380E-02 
+    HSTRY575 POWPREF Win32  May 12 15:36:54 2020                                
+    HSTRY576 GENLES  Win32  May 12 15:37:05 2020                                
+    HSTRY577 POWPREF Win32  May 12 15:37:25 2020                                
+    HSTRY578 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:38:09                  
+    HSTRY579 POWPREF Win32  May 12 15:38:11 2020                                
+    HSTRY580 GENLES  Win32  May 12 15:38:16 2020                                
+    HSTRY581 GENLES  Win32  May 12 15:38:26 2020                                
+    HSTRY582 EXPGUI 1251 1251 (37 changes) -- 05/12/20 15:39:17                 
+    HSTRY583 GENLES  Win32  May 12 15:39:17 2020                                
+    HSTRY584 BKGEDIT 1183 1251 -- Tue May 12 15:39:51 ?????????????????? 2020   
+    HSTRY585 GENLES  Win32  May 12 15:39:58 2020                                
+    HSTRY586 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:40:12                  
+    HSTRY587 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:40:24                  
+    HSTRY588 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:40:49                  
+    HSTRY589 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:41:08                  
+    HSTRY590 GENLES  Win32  May 12 15:41:09 2020 Sdsq= 0.533E+07 S/E= 0.784E-02 
+    HSTRY591 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:41:30                  
+    HSTRY592 GENLES  Win32  May 12 15:41:32 2020 Sdsq= 0.184E+07 S/E=  38.7     
+    HSTRY593 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:41:42                  
+    HSTRY594 GENLES  Win32  May 12 15:41:43 2020 Sdsq= 0.838E+06 S/E= 0.692E-02 
+    HSTRY595 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:41:53                  
+    HSTRY596 GENLES  Win32  May 12 15:41:56 2020 Sdsq= 0.798E+06 S/E=  53.5     
+    HSTRY597 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:42:02                  
+    HSTRY598 GENLES  Win32  May 12 15:42:04 2020 Sdsq= 0.796E+06 S/E=  56.3     
+    HSTRY599 EXPGUI 1251 1251 (14 changes) -- 05/12/20 15:42:27                 
+    HSTRY600 GENLES  Win32  May 12 15:42:29 2020 Sdsq= 0.289E+06 S/E=  16.4     
+    HSTRY601 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:42:42                  
+    HSTRY602 GENLES  Win32  May 12 15:42:44 2020 Sdsq= 0.224E+06 S/E=  70.5     
+    HSTRY603 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:42:54                  
+    HSTRY604 GENLES  Win32  May 12 15:42:54 2020 Sdsq= 0.214E+06 S/E= 0.110E-03 
+    HSTRY605 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:43:08                  
+    HSTRY606 GENLES  Win32  May 12 15:43:10 2020 Sdsq= 0.200E+06 S/E=  6.25     
+    HSTRY607 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:43:15                  
+    HSTRY608 EXPGUI 1251 1251 (39 changes) -- 05/12/20 15:44:23                 
+    HSTRY609 GENLES  Win32  May 12 15:44:24 2020 Sdsq= 0.228E+06 S/E=  194.     
+    HSTRY610 EXPGUI 1251 1251 (15 changes) -- 05/12/20 15:44:53                 
+    HSTRY611 GENLES  Win32  May 12 15:44:56 2020 Sdsq= 0.231E+06 S/E=  24.2     
+    HSTRY612 EXPGUI 1251 1251 (4 changes) -- 05/12/20 15:45:11                  
+    HSTRY613 GENLES  Win32  May 12 15:45:12 2020 Sdsq= 0.221E+06 S/E= 0.178E-04 
+    HSTRY614 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:45:26                  
+    HSTRY615 GENLES  Win32  May 12 15:45:27 2020 Sdsq= 0.202E+06 S/E= 0.225E-02 
+    HSTRY616 EXPGUI 1251 1251 (17 changes) -- 05/12/20 15:46:05                 
+    HSTRY617 GENLES  Win32  May 12 15:46:05 2020 Sdsq= 0.201E+06 S/E= 0.884E-05 
+    HSTRY618 EXPGUI 1251 1251 (15 changes) -- 05/12/20 15:46:47                 
+    HSTRY619 GENLES  Win32  May 12 15:46:48 2020 Sdsq= 0.201E+06 S/E= 0.884E-05 
+    HSTRY620 EXPGUI 1251 1251 (16 changes) -- 05/12/20 15:48:14                 
+    HSTRY621 EXPGUI 1251 1251 (45 changes) -- 05/12/20 15:49:25                 
+    HSTRY622 GENLES  Win32  May 12 15:49:26 2020                                
+    HSTRY623 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:50:14                  
+    HSTRY624 POWPREF Win32  May 12 15:50:14 2020                                
+    HSTRY625 GENLES  Win32  May 12 15:50:35 2020                                
+    HSTRY626 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:51:04                  
+    HSTRY627 GENLES  Win32  May 12 15:51:06 2020 Sdsq= 0.391E+06 S/E= 0.667E-02 
+    HSTRY628 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:51:12                  
+    HSTRY629 GENLES  Win32  May 12 15:51:15 2020 Sdsq= 0.388E+06 S/E= 0.850E-02 
+    HSTRY630 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:51:24                  
+    HSTRY631 GENLES  Win32  May 12 15:51:25 2020 Sdsq= 0.388E+06 S/E= 0.998E-04 
+    HSTRY632 EXPGUI 1251 1251 (3 changes) -- 05/12/20 15:51:48                  
+    HSTRY633 GENLES  Win32  May 12 15:51:49 2020 Sdsq= 0.388E+06 S/E= 0.189E-04 
+    HSTRY634 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:51:58                  
+    HSTRY635 GENLES  Win32  May 12 15:51:59 2020 Sdsq= 0.351E+06 S/E= 0.905E-04 
+    HSTRY636 EXPGUI 1251 1251 (15 changes) -- 05/12/20 15:52:47                 
+    HSTRY637 GENLES  Win32  May 12 15:52:48 2020 Sdsq= 0.339E+06 S/E= 0.133E-03 
+    HSTRY638 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:53:16                  
+    HSTRY639 POWPREF Win32  May 12 15:53:18 2020                                
+    HSTRY640 EXPGUI 1251 1251 (14 changes) -- 05/12/20 15:53:34                 
+    HSTRY641 GENLES  Win32  May 12 15:53:35 2020 Sdsq= 0.863E+05 S/E= 0.330E-02 
+    HSTRY642 EXPGUI 1251 1251 (15 changes) -- 05/12/20 15:54:05                 
+    HSTRY643 GENLES  Win32  May 12 15:54:06 2020                                
+    HSTRY644 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:54:21                  
+    HSTRY645 GENLES  Win32  May 12 15:54:21 2020 Sdsq= 0.863E+05 S/E= 0.330E-02 
+    HSTRY646 EXPGUI 1251 1251 (16 changes) -- 05/12/20 15:55:07                 
+    HSTRY647 GENLES  Win32  May 12 15:55:09 2020 Sdsq= 0.149E+06 S/E=  110.     
+    HSTRY648 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:55:27                  
+    HSTRY649 GENLES  Win32  May 12 15:55:28 2020 Sdsq= 0.142E+06 S/E=  391.     
+    HSTRY650 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:55:40                  
+    HSTRY651 EXPGUI 1251 1251 (2 changes) -- 05/12/20 15:55:50                  
+    HSTRY652 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:56:10                  
+    HSTRY653 GENLES  Win32  May 12 15:56:10 2020                                
+    HSTRY654 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:56:18                  
+    HSTRY655 GENLES  Win32  May 12 15:56:18 2020 Sdsq= 0.903E+05 S/E= 0.150E-02 
+    HSTRY656 GENLES  Win32  May 12 15:56:31 2020 Sdsq= 0.903E+05 S/E= 0.138E-04 
+    HSTRY657 EXPGUI 1251 1251 (15 changes) -- 05/12/20 15:57:28                 
+    HSTRY658 GENLES  Win32  May 12 15:57:29 2020 Sdsq= 0.903E+05 S/E= 0.150E-02 
+    HSTRY659 EXPGUI 1251 1251 (17 changes) -- 05/12/20 15:59:05                 
+    HSTRY660 GENLES  Win32  May 12 15:59:06 2020 Sdsq= 0.903E+05 S/E= 0.150E-02 
+    HSTRY661 EXPGUI 1251 1251 (1 changes) -- 05/12/20 15:59:47                  
+    HSTRY662 GENLES  Win32  May 12 15:59:48 2020                                
+    HSTRY663 EXPGUI 1251 1251 (16 changes) -- 05/12/20 16:00:44                 
+    HSTRY664 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:01:13                  
+    HSTRY665 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:01:27                  
+    HSTRY666 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:01:37                  
+    HSTRY667 GENLES  Win32  May 12 16:01:38 2020                                
+    HSTRY668 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:01:46                  
+    HSTRY669 GENLES  Win32  May 12 16:01:46 2020 Sdsq= 0.903E+05 S/E= 0.150E-02 
+    HSTRY670 GENLES  Win32  May 12 16:01:50 2020 Sdsq= 0.903E+05 S/E= 0.138E-04 
+    HSTRY671 POWPREF Win32  May 12 16:08:58 2020                                
+    HSTRY672 GENLES  Win32  May 12 16:09:02 2020                                
+    HSTRY673 BKGEDIT 1183 1251 -- Tue May 12 16:09:28 ?????????????????? 2020   
+    HSTRY674 GENLES  Win32  May 12 16:09:34 2020                                
+    HSTRY675 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:09:55                  
+    HSTRY676 GENLES  Win32  May 12 16:09:55 2020 Sdsq= 0.155E+06 S/E= 0.885E-03 
+    HSTRY677 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:10:03                  
+    HSTRY678 GENLES  Win32  May 12 16:10:04 2020 Sdsq= 0.137E+06 S/E= 0.269E-02 
+    HSTRY679 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:10:08                  
+    HSTRY680 GENLES  Win32  May 12 16:10:09 2020 Sdsq= 0.137E+06 S/E= 0.649E-03 
+    HSTRY681 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:10:23                  
+    HSTRY682 GENLES  Win32  May 12 16:10:24 2020 Sdsq= 0.118E+06 S/E= 0.427E-02 
+    HSTRY683 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:10:38                  
+    HSTRY684 GENLES  Win32  May 12 16:10:39 2020 Sdsq= 0.118E+06 S/E= 0.372E-06 
+    HSTRY685 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:10:50                  
+    HSTRY686 GENLES  Win32  May 12 16:10:52 2020 Sdsq= 0.118E+06 S/E=  356.     
+    HSTRY687 EXPGUI 1251 1251 (7 changes) -- 05/12/20 16:11:34                  
+    HSTRY688 EXPEDT  Win32  May 12 16:11:34 2020 P  H                           
+    HSTRY689 POWPREF Win32  May 12 16:11:40 2020                                
+    HSTRY690 GENLES  Win32  May 12 16:11:46 2020                                
+    HSTRY691 BKGEDIT 1183 1251 -- Tue May 12 16:12:30 ?????????????????? 2020   
+    HSTRY692 GENLES  Win32  May 12 16:12:36 2020                                
+    HSTRY693 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:12:49                  
+    HSTRY694 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:14:14                  
+    HSTRY695 GENLES  Win32  May 12 16:14:15 2020 Sdsq= 0.151E+06 S/E= 0.374E-03 
+    HSTRY696 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:14:24                  
+    HSTRY697 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:14:31                  
+    HSTRY698 GENLES  Win32  May 12 16:14:32 2020 Sdsq= 0.149E+06 S/E= 0.614E-03 
+    HSTRY699 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:14:40                  
+    HSTRY700 GENLES  Win32  May 12 16:14:40 2020 Sdsq= 0.149E+06 S/E= 0.928E-04 
+    HSTRY701 EXPGUI 1251 1251 (17 changes) -- 05/12/20 16:15:15                 
+    HSTRY702 GENLES  Win32  May 12 16:15:15 2020 Sdsq= 0.149E+06 S/E= 0.316E-03 
+    HSTRY703 GENLES  Win32  May 12 16:15:22 2020 Sdsq= 0.149E+06 S/E= 0.251E-08 
+    HSTRY704 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:16:11                  
+    HSTRY705 GENLES  Win32  May 12 16:16:15 2020 Sdsq= 0.144E+06 S/E=  67.1     
+    HSTRY706 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:17:00                  
+    HSTRY707 GENLES  Win32  May 12 16:17:01 2020 Sdsq= 0.145E+06 S/E= 0.184E-09 
+    HSTRY708 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:17:29                  
+    HSTRY709 EXPEDT  Win32  May 12 16:17:29 2020 P  H                           
+    HSTRY710 POWPREF Win32  May 12 16:17:36 2020                                
+    HSTRY711 GENLES  Win32  May 12 16:17:42 2020                                
+    HSTRY712 BKGEDIT 1183 1251 -- Tue May 12 16:18:17 ?????????????????? 2020   
+    HSTRY713 GENLES  Win32  May 12 16:18:23 2020                                
+    HSTRY714 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:18:47                  
+    HSTRY715 GENLES  Win32  May 12 16:18:48 2020 Sdsq= 0.883E+05 S/E= 0.103E-07 
+    HSTRY716 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:18:57                  
+    HSTRY717 GENLES  Win32  May 12 16:18:58 2020 Sdsq= 0.838E+05 S/E= 0.919E-02 
+    HSTRY718 EXPGUI 1251 1251 (6 changes) -- 05/12/20 16:19:10                  
+    HSTRY719 GENLES  Win32  May 12 16:19:11 2020 Sdsq= 0.831E+05 S/E= 0.389E-05 
+    HSTRY720 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:19:15                  
+    HSTRY721 GENLES  Win32  May 12 16:19:16 2020 Sdsq= 0.831E+05 S/E= 0.907E-03 
+    HSTRY722 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:19:23                  
+    HSTRY723 GENLES  Win32  May 12 16:19:24 2020 Sdsq= 0.826E+05 S/E= 0.197E-02 
+    HSTRY724 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:19:35                  
+    HSTRY725 GENLES  Win32  May 12 16:19:36 2020 Sdsq= 0.823E+05 S/E= 0.184E-02 
+    HSTRY726 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:19:46                  
+    HSTRY727 GENLES  Win32  May 12 16:19:47 2020 Sdsq= 0.804E+05 S/E= 0.399E-02 
+    HSTRY728 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:20:05                  
+    HSTRY729 GENLES  Win32  May 12 16:20:06 2020 Sdsq= 0.790E+05 S/E= 0.633E-02 
+    HSTRY730 EXPGUI 1251 1251 (9 changes) -- 05/12/20 16:20:32                  
+    HSTRY731 EXPEDT  Win32  May 12 16:20:32 2020 P  H                           
+    HSTRY732 POWPREF Win32  May 12 16:20:44 2020                                
+    HSTRY733 GENLES  Win32  May 12 16:20:48 2020                                
+    HSTRY734 BKGEDIT 1183 1251 -- Tue May 12 16:21:35 ?????????????????? 2020   
+    HSTRY735 GENLES  Win32  May 12 16:21:40 2020                                
+    HSTRY736 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:21:44                  
+    HSTRY737 GENLES  Win32  May 12 16:21:45 2020 Sdsq= 0.804E+05 S/E= 0.113E-06 
+    HSTRY738 BKGEDIT 1183 1251 -- Tue May 12 16:22:29 ?????????????????? 2020   
+    HSTRY739 GENLES  Win32  May 12 16:22:34 2020                                
+    HSTRY740 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:22:43                  
+    HSTRY741 GENLES  Win32  May 12 16:22:44 2020 Sdsq= 0.847E+05 S/E= 0.648E-03 
+    HSTRY742 EXPGUI 1251 1251 (6 changes) -- 05/12/20 16:22:56                  
+    HSTRY743 GENLES  Win32  May 12 16:22:57 2020 Sdsq= 0.846E+05 S/E= 0.558E-03 
+    HSTRY744 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:23:04                  
+    HSTRY745 GENLES  Win32  May 12 16:23:05 2020 Sdsq= 0.845E+05 S/E= 0.493E-04 
+    HSTRY746 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:23:12                  
+    HSTRY747 GENLES  Win32  May 12 16:23:13 2020 Sdsq= 0.845E+05 S/E= 0.110E-02 
+    HSTRY748 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:23:19                  
+    HSTRY749 GENLES  Win32  May 12 16:23:21 2020 Sdsq= 0.843E+05 S/E= 0.167E-02 
+    HSTRY750 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:23:28                  
+    HSTRY751 GENLES  Win32  May 12 16:23:29 2020 Sdsq= 0.843E+05 S/E= 0.274E-04 
+    HSTRY752 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:23:39                  
+    HSTRY753 GENLES  Win32  May 12 16:23:41 2020 Sdsq= 0.842E+05 S/E= 0.791E-02 
+    HSTRY754 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:24:03                  
+    HSTRY755 EXPEDT  Win32  May 12 16:24:03 2020 P  H                           
+    HSTRY756 POWPREF Win32  May 12 16:24:07 2020                                
+    HSTRY757 BKGEDIT 1183 1251 -- Tue May 12 16:24:50 ?????????????????? 2020   
+    HSTRY758 GENLES  Win32  May 12 16:24:58 2020 Sdsq= 0.103E+06 S/E= 0.768E-02 
+    HSTRY759 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:25:10                  
+    HSTRY760 GENLES  Win32  May 12 16:25:18 2020 Sdsq= 0.752E+05 S/E= 0.183E-01 
+    HSTRY761 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:25:27                  
+    HSTRY762 BKGEDIT 1183 1251 -- Tue May 12 16:25:55 ?????????????????? 2020   
+    HSTRY763 GENLES  Win32  May 12 16:26:06 2020 Sdsq= 0.793E+05 S/E= 0.819E-02 
+    HSTRY764 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:26:13                  
+    HSTRY765 GENLES  Win32  May 12 16:26:21 2020 Sdsq= 0.752E+05 S/E= 0.556E-01 
+    HSTRY766 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:26:31                  
+    HSTRY767 GENLES  Win32  May 12 16:26:32 2020 Sdsq= 0.748E+05 S/E= 0.367E-02 
+    HSTRY768 EXPGUI 1251 1251 (13 changes) -- 05/12/20 16:27:12                 
+    HSTRY769 GENLES  Win32  May 12 16:27:13 2020 Sdsq= 0.747E+05 S/E= 0.227E-04 
+    HSTRY770 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:27:24                  
+    HSTRY771 POWPREF Win32  May 12 16:27:24 2020                                
+    HSTRY772 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:28:11                  
+    HSTRY773 EXPEDT  Win32  May 12 16:28:11 2020 P  H                           
+    HSTRY774 POWPREF Win32  May 12 16:28:16 2020                                
+    HSTRY775 GENLES  Win32  May 12 16:28:27 2020                                
+    HSTRY776 BKGEDIT 1183 1251 -- Tue May 12 16:28:49 ?????????????????? 2020   
+    HSTRY777 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:29:12                  
+    HSTRY778 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:29:20                  
+    HSTRY779 GENLES  Win32  May 12 16:29:20 2020                                
+    HSTRY780 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:29:44                  
+    HSTRY781 GENLES  Win32  May 12 16:29:44 2020 Sdsq= 0.234E+06 S/E= 0.376E-02 
+    HSTRY782 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:29:52                  
+    HSTRY783 GENLES  Win32  May 12 16:29:54 2020 Sdsq= 0.232E+06 S/E= 0.284E-02 
+    HSTRY784 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:30:00                  
+    HSTRY785 GENLES  Win32  May 12 16:30:02 2020 Sdsq= 0.227E+06 S/E= 0.677E-03 
+    HSTRY786 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:30:13                  
+    HSTRY787 GENLES  Win32  May 12 16:30:13 2020 Sdsq= 0.226E+06 S/E= 0.891E-02 
+    HSTRY788 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:30:23                  
+    HSTRY789 GENLES  Win32  May 12 16:30:27 2020 Sdsq= 0.226E+06 S/E= 0.735E-02 
+    HSTRY790 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:31:10                  
+    HSTRY791 GENLES  Win32  May 12 16:31:12 2020 Sdsq= 0.224E+06 S/E= 0.401E-02 
+    HSTRY792 EXPGUI 1251 1251 (7 changes) -- 05/12/20 16:31:35                  
+    HSTRY793 EXPEDT  Win32  May 12 16:31:35 2020 P  H                           
+    HSTRY794 POWPREF Win32  May 12 16:31:40 2020                                
+    HSTRY795 BKGEDIT 1183 1251 -- Tue May 12 16:32:16 ?????????????????? 2020   
+    HSTRY796 GENLES  Win32  May 12 16:32:24 2020                                
+    HSTRY797 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:32:52                  
+    HSTRY798 GENLES  Win32  May 12 16:32:53 2020 Sdsq= 0.217E+06 S/E= 0.192E-06 
+    HSTRY799 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:33:02                  
+    HSTRY800 GENLES  Win32  May 12 16:33:04 2020 Sdsq= 0.167E+06 S/E= 0.206E-03 
+    HSTRY801 EXPGUI 1251 1251 (6 changes) -- 05/12/20 16:33:17                  
+    HSTRY802 GENLES  Win32  May 12 16:33:18 2020 Sdsq= 0.167E+06 S/E= 0.873E-03 
+    HSTRY803 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:33:27                  
+    HSTRY804 GENLES  Win32  May 12 16:33:27 2020 Sdsq= 0.166E+06 S/E= 0.775E-02 
+    HSTRY805 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:33:35                  
+    HSTRY806 GENLES  Win32  May 12 16:33:35 2020 Sdsq= 0.166E+06 S/E= 0.802E-02 
+    HSTRY807 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:33:49                  
+    HSTRY808 GENLES  Win32  May 12 16:33:49 2020 Sdsq= 0.165E+06 S/E= 0.192E-02 
+    HSTRY809 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:33:58                  
+    HSTRY810 GENLES  Win32  May 12 16:34:00 2020 Sdsq= 0.164E+06 S/E= 0.187E-02 
+    HSTRY811 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:34:17                  
+    HSTRY812 GENLES  Win32  May 12 16:34:19 2020 Sdsq= 0.163E+06 S/E= 0.972E-02 
+    HSTRY813 EXPGUI 1251 1251 (7 changes) -- 05/12/20 16:34:43                  
+    HSTRY814 EXPEDT  Win32  May 12 16:34:43 2020 P  H                           
+    HSTRY815 POWPREF Win32  May 12 16:34:49 2020                                
+    HSTRY816 GENLES  Win32  May 12 16:34:53 2020                                
+    HSTRY817 BKGEDIT 1183 1251 -- Tue May 12 16:36:24 ?????????????????? 2020   
+    HSTRY818 GENLES  Win32  May 12 16:36:30 2020                                
+    HSTRY819 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:36:43                  
+    HSTRY820 GENLES  Win32  May 12 16:36:44 2020 Sdsq= 0.161E+06 S/E= 0.433E-08 
+    HSTRY821 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:36:50                  
+    HSTRY822 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:37:06                  
+    HSTRY823 GENLES  Win32  May 12 16:37:07 2020 Sdsq= 0.160E+06 S/E= 0.254E-02 
+    HSTRY824 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:37:16                  
+    HSTRY825 GENLES  Win32  May 12 16:37:16 2020 Sdsq= 0.160E+06 S/E= 0.538E-09 
+    HSTRY826 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:37:27                  
+    HSTRY827 GENLES  Win32  May 12 16:37:28 2020 Sdsq= 0.160E+06 S/E= 0.287E-02 
+    HSTRY828 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:37:35                  
+    HSTRY829 GENLES  Win32  May 12 16:37:36 2020 Sdsq= 0.160E+06 S/E= 0.579E-03 
+    HSTRY830 EXPGUI 1251 1251 (5 changes) -- 05/12/20 16:37:54                  
+    HSTRY831 GENLES  Win32  May 12 16:37:55 2020 Sdsq= 0.160E+06 S/E= 0.142E-04 
+    HSTRY832 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:38:09                  
+    HSTRY833 GENLES  Win32  May 12 16:38:11 2020 Sdsq= 0.160E+06 S/E= 0.493E-02 
+    HSTRY834 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:38:43                  
+    HSTRY835 GENLES  Win32  May 12 16:38:45 2020 Sdsq= 0.160E+06 S/E= 0.740E-02 
+    HSTRY836 EXPGUI 1251 1251 (7 changes) -- 05/12/20 16:39:09                  
+    HSTRY837 EXPEDT  Win32  May 12 16:39:09 2020 P  H                           
+    HSTRY838 POWPREF Win32  May 12 16:39:18 2020                                
+    HSTRY839 GENLES  Win32  May 12 16:39:29 2020                                
+    HSTRY840 BKGEDIT 1183 1251 -- Tue May 12 16:40:11 ?????????????????? 2020   
+    HSTRY841 GENLES  Win32  May 12 16:40:16 2020                                
+    HSTRY842 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:40:20                  
+    HSTRY843 GENLES  Win32  May 12 16:40:21 2020 Sdsq= 0.163E+06 S/E= 0.170E-06 
+    HSTRY844 BKGEDIT 1183 1251 -- Tue May 12 16:41:17 ?????????????????? 2020   
+    HSTRY845 GENLES  Win32  May 12 16:41:21 2020                                
+    HSTRY846 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:41:26                  
+    HSTRY847 GENLES  Win32  May 12 16:41:26 2020 Sdsq= 0.163E+06 S/E= 0.265E-08 
+    HSTRY848 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:41:46                  
+    HSTRY849 GENLES  Win32  May 12 16:41:48 2020 Sdsq= 0.163E+06 S/E= 0.136E-03 
+    HSTRY850 EXPGUI 1251 1251 (6 changes) -- 05/12/20 16:41:59                  
+    HSTRY851 GENLES  Win32  May 12 16:42:00 2020 Sdsq= 0.163E+06 S/E= 0.279E-03 
+    HSTRY852 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:42:14                  
+    HSTRY853 GENLES  Win32  May 12 16:42:14 2020 Sdsq= 0.163E+06 S/E= 0.742E-04 
+    HSTRY854 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:42:23                  
+    HSTRY855 GENLES  Win32  May 12 16:42:23 2020 Sdsq= 0.163E+06 S/E= 0.904E-02 
+    HSTRY856 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:42:32                  
+    HSTRY857 GENLES  Win32  May 12 16:42:32 2020 Sdsq= 0.163E+06 S/E= 0.639E-03 
+    HSTRY858 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:42:41                  
+    HSTRY859 GENLES  Win32  May 12 16:42:43 2020 Sdsq= 0.163E+06 S/E= 0.222E-02 
+    HSTRY860 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:42:58                  
+    HSTRY861 GENLES  Win32  May 12 16:43:00 2020 Sdsq= 0.163E+06 S/E= 0.873E-02 
+    HSTRY862 EXPGUI 1251 1251 (7 changes) -- 05/12/20 16:43:26                  
+    HSTRY863 EXPEDT  Win32  May 12 16:43:26 2020 P  H                           
+    HSTRY864 POWPREF Win32  May 12 16:43:34 2020                                
+    HSTRY865 GENLES  Win32  May 12 16:43:46 2020                                
+    HSTRY866 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:44:09                  
+    HSTRY867 GENLES  Win32  May 12 16:44:11 2020 Sdsq= 0.185E+06 S/E= 0.654E-02 
+    HSTRY868 EXPGUI 1251 1251 (6 changes) -- 05/12/20 16:44:25                  
+    HSTRY869 GENLES  Win32  May 12 16:44:26 2020 Sdsq= 0.185E+06 S/E= 0.105E-02 
+    HSTRY870 EXPGUI 1251 1251 (1 changes) -- 05/12/20 16:44:34                  
+    HSTRY871 GENLES  Win32  May 12 16:44:35 2020 Sdsq= 0.185E+06 S/E= 0.203E-02 
+    HSTRY872 EXPGUI 1251 1251 (4 changes) -- 05/12/20 16:44:48                  
+    HSTRY873 GENLES  Win32  May 12 16:44:48 2020 Sdsq= 0.185E+06 S/E= 0.464E-03 
+    HSTRY874 EXPGUI 1251 1251 (2 changes) -- 05/12/20 16:44:56                  
+    HSTRY875 GENLES  Win32  May 12 16:44:57 2020 Sdsq= 0.185E+06 S/E= 0.345E-02 
+    HSTRY876 EXPGUI 1251 1251 (3 changes) -- 05/12/20 16:45:11                  
+  DSGL CDAT1  DRAD ARAD NOFO                                                    
+  GNLS  RUN on May 17 19:22:07 2020    Total cycles run 987      0.18370E+06    
+  GNLS CDAT1  MXCY  20                                                          
+  GNLS SHFTS      0.02      0.01                                                
+ AFAC  O     3.048513.2771 2.2868 5.7011 1.5463  .3239  .867032.9089  .2508 RHF 
+ AFAC  O_    15.999 .5803      .00019                                           
+ AFAC  O_SIZ      1.09      0.89 1.40   96 1.40                                 
+ AFAC  O_XAB  988.0 590.6 293.1 30.48 17.21 1730. 478.0                         
+ AFAC  O_XF1  0.093 0.072 0.049 0.011 0.006 0.121 0.063-0.002-0.003-0.003       
+ AFAC  O_XF2  0.073 0.052 0.032 0.006 0.004 0.106 0.044 0.000 0.000 0.000       
+ AFAC LA    20.57802.9481719.5990.24447511.372718.77263.28719133.1242.14678*RHF 
+ AFAC LA_   138.906  .824        8.97                                           
+ AFAC LA_SIZ      2.08      1.88 2.40  110                                      
+ AFAC LA_XAB  51400146600 81520 10460  5501 82000117000                         
+ AFAC LA_XF1 -12.82-6.356-1.409-0.287-0.641-6.572-3.657-0.236-0.194-0.084       
+ AFAC LA_XF2  3.56512.893 9.038 2.452 1.615 4.75911.434 1.824 1.725 1.335       
+ AFAC LI     1.1282 3.9546  .7508 1.0524  .617585.3905  .4653168.261  .0377 RHF 
+ AFAC LI_     6.941 -.190        70.5                                           
+ AFAC LI_SIZ      1.76      1.56 1.60   91                                      
+ AFAC LI_XAB  14.32 9.193 5.496 2.268 2.061 2.510 7.990                         
+ AFAC LI_XF1  0.002 0.002 0.001 0.000 0.000 0.004 0.001-0.001-0.001-0.001       
+ AFAC LI_XF2  0.001 0.001 0.000 0.000 0.000 0.001 0.000 0.000 0.000 0.000       
+ AFAC ZR    17.87651.2761810.948011.91605.41732.1176223.6572187.66272.06929*RHF 
+ AFAC ZR   M  .4106 59.996 1.0543 18.648 -.4751 10.540  .0000   .000  .0106     
+ AFAC ZR   N10.1378 35.337 4.7734 12.545 -.0489  2.672  .0000   .000  .0036 2.00
+ AFAC ZR_     91.22  .716        .185                                           
+ AFAC ZR_SIZ      1.80      1.60 2.25   95                                      
+ AFAC ZR_XAB  60370 38440 20710 11390  8367 94300 30200                         
+ AFAC ZR_XF1  0.134 0.066-0.186-2.967-0.536-0.030-0.007 0.143 0.133 0.086       
+ AFAC ZR_XF2  4.423 3.330 2.245 0.560 2.614 5.982 2.909 0.485 0.456 0.344       
+ EXPR  HTYP1  PNT  PNT  PNT                                                     
+ EXPR  NATYP    4                                                               
+ EXPR  NHST     3                                                               
+ EXPR ATYP 1  LA          1      2.08      1.88 2.40  110                       
+ EXPR ATYP 2  LI          2      1.76      1.56 1.60   91                       
+ EXPR ATYP 3  O           1      1.09      0.89 1.40   96 1.40                  
+ EXPR ATYP 4  ZR          1      1.80      1.60 2.25   95                       
+ EXPR NPHAS     1    0    0    0    0    0    0    0    0                       
+ REFN GDNFT  Reduced CHI**2 =  33.82     for   14 variables                     
+ REFN RPOWD     0.0221    0.0195   5446 1.83700E+05    0.0000    0.0000     0   
+ REFN STATS  Cycle 987 There were  5446 observations. Total CHI**2 = 1.8370E+05 
+CIF AUTHOR    tianhl                                                            
+CRS1    PNAM  from C:/Users/blues/OneDrive/tianhl/LLZO_workspace/Dove/gsas/P1100
+CRS1   NATOM    5                                                               
+CRS1  ABC    13.086343 13.086343 13.086343    Y    0                            
+CRS1  ABCSIG  0.000081  0.000081  0.000081                                      
+CRS1  ANGLES   90.0000   90.0000   90.0000                                      
+CRS1  ANGSIG    0.0000    0.0000    0.0000                                      
+CRS1  AT  1A  LA        0.125000  0.000000  0.250000  1.000000La        24 000  
+CRS1  AT  1B  0.013918                                                    I  U  
+CRS1  AT  2A  LI        0.375000  0.000000  0.250000  0.317368Li1       24 000  
+CRS1  AT  2B  0.037271                                                    IF U  
+CRS1  AT  3A  LI        0.125000  0.177274  0.427274  0.504034Li2       48 000  
+CRS1  AT  3B  0.166026 -0.006985 -0.006985 -0.054048  0.054048 -0.029132  AFXU  
+CRS1  AT  4A  O         0.101846  0.197421  0.280818  0.977615O         96 000  
+CRS1  AT  4B  0.019706                                                    I XU  
+CRS1  AT  5A  ZR        0.000000  0.000000  0.000000  1.000000Zr        16 000  
+CRS1  AT  5B  0.009339                                                    I  U  
+CRS1  CELVOL       2241.067          0.042                                      
+CRS1  CHMF 1  LA            1.50                                                
+CRS1  CHMF 2  LI            1.99                                                
+CRS1  CHMF 3  O             5.87                                                
+CRS1  CHMF 4  ZR            1.00                                                
+CRS1  SG SYM  I a -3 d                                                          
+CRS1  SPAXIS    0    0    1                                                     
+HAP1 1 ZONE     0    0    0    0                                                
+HAP1 1EXTPOW    0.00000E+00    N    0                                           
+HAP1 1NAXIS     1                                                               
+HAP1 1PHSFR      1.0000        N    0                                           
+HAP1 1PRCF      2   15   0.00100                                                
+HAP1 1PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HAP1 1PRCF 2   0.000000E+00   0.199267E+03   0.621466E+01   0.000000E+00        
+HAP1 1PRCF 3   0.440716E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HAP1 1PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HAP1 1PREFO1  1.000000  1.000000  0.000000  0.000000  1.000000   NN    0    0   
+HAP1 1RADDAM    0.00000E+00    N    0      0.00                                 
+HAP1 2 ZONE     0    0    0    0                                                
+HAP1 2EXTPOW    0.00000E+00    N    0                                           
+HAP1 2NAXIS     1                                                               
+HAP1 2PHSFR      1.0000        N    0                                           
+HAP1 2PRCF      2   15   0.00100                                                
+HAP1 2PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HAP1 2PRCF 2   0.000000E+00   0.303210E+03   0.469337E+01   0.000000E+00        
+HAP1 2PRCF 3   0.598124E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HAP1 2PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HAP1 2PREFO1  1.000000  1.000000  0.000000  0.000000  1.000000   NN    0    0   
+HAP1 2RADDAM    0.00000E+00    N    0      0.00                                 
+HAP1 3 ZONE     0    0    0    0                                                
+HAP1 3EXTPOW    0.00000E+00    N    0                                           
+HAP1 3NAXIS     1                                                               
+HAP1 3PHSFR      1.0000        N    0                                           
+HAP1 3PRCF      2   15   0.00100                                                
+HAP1 3PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HAP1 3PRCF 2   0.000000E+00   0.939882E+02   0.595873E+00   0.000000E+00        
+HAP1 3PRCF 3   0.301958E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HAP1 3PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HAP1 3PREFO1  1.000000  1.000000  0.000000  0.000000  1.000000   NN    0    0   
+HAP1 3RADDAM    0.00000E+00    N    0      0.00                                 
+HST  1  HFIL  GEM87487-87494.gsas                                               
+HST  1  HNAM  Li7La3Zr2O12 in GEM furnace post Chopper - T=827C  #1             
+HST  1  IFIL  Y2O3_SI_184.IPF                                                   
+HST  1 BANK     4                                                               
+HST  1 BIGFO   0.118332E+03                                                     
+HST  1 CHANS      1712         1      2282 110757842      4104    0    0        
+HST  1 EPHAS    0    0    0    0    0    0    0    0    0    Y                  
+HST  1 ICONR   4891.47     -2.01     -0.11         0                  0.50000   
+HST  1 ICONS   4891.52     -2.01     -0.29         0                  0.50000   
+HST  1 MAXRF  221                                                               
+HST  1 NEXC     2                                                               
+HST  1 NFOBS  905    0    0    0    0    0    0    0    0                       
+HST  1 NPHAS    1    0    0    0    0    0    0    0    0                       
+HST  1 NREF   907    0.4997    Y    Y                                           
+HST  1 R-FAC  905   0.10019   7.294527E+03                                      
+HST  1 RPOWD    0.0172    0.0143   2282  57378.        0.0000    0.0000    0    
+HST  1 TRNGE   2.45989  18.06226                                                
+HST  1 WREXP    0.0034                                                          
+HST  1ABSCOR   0.126770E+00   0.000000E+00    N    0    0                       
+HST  1BAKGD     1    8    N    0    Y                                           
+HST  1BAKGD1   0.441659E+00  -0.148333E+00   0.465636E-01  -0.242825E-01        
+HST  1BAKGD2   0.576421E-03  -0.988328E-03  -0.484848E-02  -0.268453E-02        
+HST  1BAKGD3  -0.924026E-03                                                     
+HST  1BNKPAR    1.2212     63.62      0.00    .00000     .3000    1    1        
+HST  1CHI      90.0000                                                          
+HST  1DETAZM    0.0000                                                          
+HST  1EXC  1     0.000     2.443                                                
+HST  1EXC  2    18.071  1000.000                                                
+HST  1EXMNMX   1.00000   1.00000                                                
+HST  1HSCALE     2.3388        N    0                                           
+HST  1I ITYP    0    1.000     20.000       2                                   
+HST  1MNREF     0    1.0000                                                     
+HST  1ODMNMX   1.00000   1.00000                                                
+HST  1OMEGA     0.0000                                                          
+HST  1PHI       0.0000                                                          
+HST  1PRCF      2   15   0.00100                                                
+HST  1PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HST  1PRCF 2   0.000000E+00   0.199267E+03   0.621466E+01   0.000000E+00        
+HST  1PRCF 3   0.440716E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HST  1PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HST  1RSP    0.0084 0.0107 0.0098 0.0096 0.0113 0.0146 0.0167 0.0219 0.0132     
+HST  1RSPA   0.0082 0.0109 0.0109 0.0115 0.0112 0.0177 0.0193 0.0304 0.0261     
+HST  1RSPTT   2.46  3.07  3.83  4.78  5.96  7.44  9.29 11.60 14.47 18.06        
+HST  1RSPW   0.0106 0.0130 0.0137 0.0124 0.0138 0.0189 0.0202 0.0294 0.0159     
+HST  1RSPWA  0.0101 0.0138 0.0152 0.0162 0.0137 0.0226 0.0236 0.0391 0.0325     
+HST  1TRMNMX   0.47190   0.89793                                                
+HST  2  HFIL  GEM87487-87494.gsas                                               
+HST  2  HNAM  Li7La3Zr2O12 in GEM furnace post Chopper - T=827C  #1             
+HST  2  IFIL  Y2O3_SI_184.IPF                                                   
+HST  2 BANK     3                                                               
+HST  2 BIGFO   0.158882E+03                                                     
+HST  2 CHANS      2161         1      1278 109818993      3606    0    0        
+HST  2 EPHAS    0    0    0    0    0    0    0    0    0    Y                  
+HST  2 ICONR   2802.82      0.99      5.42         0                  0.50000   
+HST  2 ICONS   2802.82      0.99      5.31         0                  0.50000   
+HST  2 MAXRF   13                                                               
+HST  2 NEXC     2                                                               
+HST  2 NFOBS   28    0    0    0    0    0    0    0    0                       
+HST  2 NPHAS    1    0    0    0    0    0    0    0    0                       
+HST  2 NREF    30    1.7026    Y    Y                                           
+HST  2 R-FAC   28   0.06203   4.182476E+02                                      
+HST  2 RPOWD    0.0207    0.0176   1266  19065.        0.0000    0.0000    0    
+HST  2 TRNGE   4.78448  16.84525                                                
+HST  2 WREXP    0.0053                                                          
+HST  2ABSCOR   0.127845E+00   0.000000E+00    N    0    0                       
+HST  2BAKGD     1    8    N    0    Y                                           
+HST  2BAKGD1   0.335937E+00  -0.741406E-01   0.128669E-01  -0.742478E-02        
+HST  2BAKGD2  -0.428514E-02  -0.431845E-02  -0.320327E-02  -0.348089E-02        
+HST  2BAKGD3  -0.253828E-02                                                     
+HST  2BNKPAR    1.4450     34.96      0.00    .00000     .3000    1    1        
+HST  2CHI      90.0000                                                          
+HST  2DETAZM    0.0000                                                          
+HST  2EXC  1     0.000     4.780                                                
+HST  2EXC  2    16.858  1000.000                                                
+HST  2EXMNMX   1.00000   1.00000                                                
+HST  2HSCALE     2.0270        N    0                                           
+HST  2I ITYP    0    1.000     20.000       2                                   
+HST  2MNREF     0    1.7026                                                     
+HST  2ODMNMX   1.00000   1.00000                                                
+HST  2OMEGA     0.0000                                                          
+HST  2PHI       0.0000                                                          
+HST  2PRCF      2   15   0.00100                                                
+HST  2PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HST  2PRCF 2   0.000000E+00   0.303210E+03   0.469337E+01   0.000000E+00        
+HST  2PRCF 3   0.598124E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HST  2PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HST  2RSP    0.0161 0.0243 0.0153 0.0165 0.0120 0.0103 0.0064 0.0105 0.0373     
+HST  2RSPA   0.0207 0.0291 0.0214 0.0209 0.0254 0.0143 0.0087 0.0172 0.0617     
+HST  2RSPTT   0.00  5.44  6.27  7.22  8.31  9.57 11.03 12.70 14.63 16.85        
+HST  2RSPW   0.0200 0.0270 0.0203 0.0209 0.0166 0.0123 0.0076 0.0140 0.0466     
+HST  2RSPWA  0.0272 0.0328 0.0253 0.0265 0.0308 0.0166 0.0111 0.0202 0.0721     
+HST  2TRMNMX   0.50568   0.81642                                                
+HST  3  HFIL  GEM87487-87494.gsas                                               
+HST  3  HNAM  Li7La3Zr2O12 in GEM furnace post Chopper - T=827C  #1             
+HST  3  IFIL  Y2O3_SI_184.IPF                                                   
+HST  3 BANK     5                                                               
+HST  3 BIGFO   0.122532E+03                                                     
+HST  3 CHANS      2094         1      1898 125221215      4067    0    0        
+HST  3 EPHAS    0    0    0    0    0    0    0    0    0    Y                  
+HST  3 ICONR   6677.80     -4.03     -2.07                                      
+HST  3 ICONS   6677.80     -4.03     -0.27         0                  0.50000   
+HST  3 MAXRF  153                                                               
+HST  3 NEXC     2                                                               
+HST  3 NFOBS  874    0    0    0    0    0    0    0    0                       
+HST  3 NPHAS    1    0    0    0    0    0    0    0    0                       
+HST  3 NREF   901    0.4995    Y    Y                                           
+HST  3 R-FAC  874   0.20861   1.577693E+04                                      
+HST  3 RPOWD    0.0277    0.0272   1898 1.07258E+05    0.0000    0.0000    0    
+HST  3 TRNGE   3.36343  17.33165                                                
+HST  3 WREXP    0.0037                                                          
+HST  3ABSCOR   0.142669E+00   0.000000E+00    N    0    0                       
+HST  3BAKGD     1    8    N    0    Y                                           
+HST  3BAKGD1   0.393799E+00  -0.141453E+00   0.231533E-01  -0.160408E-01        
+HST  3BAKGD2  -0.391539E-02  -0.205338E-02   0.427691E-02   0.925329E-03        
+HST  3BNKPAR    1.3793      91.37     0.00    .00000     .3000    1    1        
+HST  3CHI      90.0000                                                          
+HST  3DETAZM    0.0000                                                          
+HST  3EXC  1     0.000     3.335                                                
+HST  3EXC  2    17.335  1000.000                                                
+HST  3EXMNMX   1.00000   1.00000                                                
+HST  3HSCALE     2.1530        N    0                                           
+HST  3I ITYP    0    1.000     18.000       2                                   
+HST  3MNREF     0    1.0000                                                     
+HST  3ODMNMX   1.00000   1.00000                                                
+HST  3OMEGA     0.0000                                                          
+HST  3PHI       0.0000                                                          
+HST  3PRCF      2   15   0.00100                                                
+HST  3PRCF 1   0.000000E+00   0.200000E+00   0.312302E+02   0.567270E+02        
+HST  3PRCF 2   0.000000E+00   0.939882E+02   0.595873E+00   0.000000E+00        
+HST  3PRCF 3   0.301958E+01   0.000000E+00   0.000000E+00   0.000000E+00        
+HST  3PRCF 4   0.000000E+00   0.000000E+00   0.000000E+00                       
+HST  3RSP    0.0178 0.0232 0.0155 0.0151 0.0204 0.0193 0.0234 0.0356 0.0493     
+HST  3RSPA   0.0190 0.0220 0.0168 0.0233 0.0281 0.0281 0.0408 0.0562 0.0790     
+HST  3RSPTT   3.36  4.03  4.84  5.81  6.97  8.36 10.03 12.03 14.44 17.33        
+HST  3RSPW   0.0205 0.0257 0.0201 0.0221 0.0268 0.0255 0.0309 0.0418 0.0524     
+HST  3RSPWA  0.0227 0.0236 0.0256 0.0440 0.0399 0.0400 0.0527 0.0657 0.1004     
+HST  3TRMNMX   0.44700   0.84842                                                
+LNCN   1   1  1  3FRAC -0.25001  2FRAC  1.0000                                  
+ZZZZZZZZZZZZ  Last EXP file record                                              
+    HSTRY877 GENLES  Win32  May 12 16:45:14 2020 Sdsq= 0.184E+06 S/E= 0.316E-02 
+    HSTRY878 GENLES  Win32  May 17 19:22:05 2020 Sdsq= 0.184E+06 S/E= 0.888E-03 
