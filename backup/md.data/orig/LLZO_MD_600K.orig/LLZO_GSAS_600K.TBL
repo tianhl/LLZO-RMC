@@ -1,0 +1,67 @@
+1CUBIC_600K                                                         PUBTABLE Version Win32  May 17 16:59:01 2020 Page   1
+
+
+                   |-----------------------------------------|
+                   |     Program PUBTABLES Version Win32     |
+                   |  Generate crystal structure data tables |
+                   | Distributed on Fri Apr 18 16:12:00 2014 |
+                   |-----------------------------------------|
+
+        |---------------------------------------------------------------|
+        |            Allen C. Larson and Robert B. Von Dreele           |
+        |      Manuel Lujan, Jr. Neutron Scattering Center, MS-H805     |
+        |      Los Alamos National Laboratory, Los Alamos, NM  87545    |
+        |                                                               |
+        | Copyright, 2000, The Regents of the University of California. |
+        |---------------------------------------------------------------|
+
+ GENLES was run on May 17 16:57:49 2020    Total cycles run 723
+
+ The Current Least-Squares controls are
+
+ Maximum number of cycles is   20
+ I/SigI cut-off is  1.00
+
+
+ Anisotropic thermal factors are defined by
+   T = exp(h**2*astr**2*u11+... +2*h*k*astr*bstr*u12+... )
+
+
+ Space group I a -3 d            
+ The lattice is centric  I-centered cubic         Laue symmetry m3m   
+  Multiplicity of a general site is  96
+  The symmetry of the point 0,0,0 contains 1bar
+
+ The equivalent positions are:
+
+ ( 1)     X      Y      Z  ( 2)     Z      X      Y  ( 3)     Y      Z      X 
+ ( 4) 1/2+X      Y  1/2-Z  ( 5) 1/2-Z  1/2+X      Y  ( 6)     Y  1/2-Z  1/2+X 
+ ( 7)    -Z  1/2+X  1/2-Y  ( 8) 1/2-Y     -Z  1/2+X  ( 9) 1/2+Y  1/2-Z     -X 
+ (10)    -X  1/2+Y  1/2-Z  (11) 1/2-Z     -X  1/2+Y  (12) 1/2+X  1/2-Y     -Z 
+ (13) 1/4+Y  1/4+X  1/4+Z  (14) 1/4+Z  1/4+Y  1/4+X  (15) 1/4+X  1/4+Z  1/4+Y 
+ (16) 3/4+Y  1/4+X  1/4-Z  (17) 1/4-Z  3/4+Y  1/4+X  (18) 1/4+X  1/4-Z  3/4+Y 
+ (19) 3/4-Z  3/4+Y  1/4-X  (20) 1/4-X  3/4-Z  3/4+Y  (21) 3/4+X  1/4-Z  3/4-Y 
+ (22) 3/4-Y  3/4+X  1/4-Z  (23) 1/4-Z  3/4-Y  3/4+X  (24) 3/4+Y  1/4-X  3/4-Z 
+ 
+
+ Lattice constants are 
+  a =  12.97967(10)  b = A  c = A 
+  Alpha =  90     Beta =  90    Gamma =  90   
+ Cell volume = 2186.708(28)
+
+  Name         X             Y             Z         Ui/Ue*100    Site sym Mult Type Seq Fractn
+  La       0.125000      0.000000      0.250000       1.160(24)   222(100)  24   LA    1 1.0000      
+  Li1      0.375000      0.000000      0.250000       1.4(9)       -4(100)  24   LI    2 0.238(16)   
+  Li2      0.125000      0.1774(4)     0.4274(4)      5.19*         2(011)  48   LI    3 0.524(4)    
+  O        0.10210(8)    0.19717(8)    0.28137(7)     1.715(19)       1     96   O     4 1.0000      
+  Zr       0.000000      0.000000      0.000000       1.038(31)    -3(111)  16   ZR    5 1.0000      
+1CUBIC_600K                                                         PUBTABLE Version Win32  May 17 16:59:01 2020 Page   2
+
+
+ Thermal parameters multiplied by 100.0 are
+  Name        U11          U22          U33          U12          U13          U23
+  La        1.160(24)    1.16         1.16         0.00         0.00         0.00        
+  Li1       1.4(9)       1.45         1.45         0.00         0.00         0.00        
+  Li2      14.5(11)      0.52(25)     0.52(25)    -4.5(4)       4.5(4)      -2.39(33)    
+  O         1.715(19)    1.71         1.71         0.00         0.00         0.00        
+  Zr        1.038(31)    1.04         1.04         0.00         0.00         0.00        

@@ -1,0 +1,30 @@
+La3 Li7 Zr2 O12 garnet phase
+UNITS eV
+MOLECULES 1
+LLZO
+NUMMOLS  1
+ATOMS 11287
+Li        7.0    1.0  2583
+O        16.0   -2.0  6144
+Zr     91.224    4.0  1024
+La   138.9055    3.0  1536
+FINISH
+
+rdf 10
+Li Li
+Li O
+Li La
+Li Zr
+O  O
+O  La
+O  Zr
+La La
+La Zr
+Zr Zr
+
+vdw        4
+O       O       buck    22764.3      0.149    27.63
+Li      O       buck      632.102    0.2906     0.0
+Zr      O       buck     1385.02     0.3500     0.0
+La      O       buck     4579.23     0.3044     0.0
+close
