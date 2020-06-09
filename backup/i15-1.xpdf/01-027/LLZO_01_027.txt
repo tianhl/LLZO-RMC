@@ -3,8 +3,8 @@
 INSTRUMENT          {
 
 XPDF          Instrument name
-C:\Users\blues\OneDrive\tianhl\LLZO_workspace\i15-1\ee19378-1\Gudrun_PDF\01-027\          Gudrun input file directory:
-C:\Users\blues\OneDrive\tianhl\LLZO_workspace\i15-1\ee19378-1\Gudrun_PDF\01-027\          Data file directory
+C:\Users\blues\Desktop\i15-1\ee19378-1\Gudrun_PDF\01-027\          Gudrun input file directory:
+C:\Users\blues\Desktop\i15-1\ee19378-1\Gudrun_PDF\01-027\          Data file directory
 xy          Data file type
 StartupFiles\Xray\CrossSec_XCOM.txt          X-ray cross sections file
 StartupFiles\Xray\f0_WaasKirf.txt          X-ray form factor file
@@ -115,5 +115,5 @@ GO
 
 END          
 1
-Date and time last written:  20200515 12:07:31          
+Date and time last written:  20180803 15:49:19          
 X
