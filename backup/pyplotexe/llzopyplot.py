@@ -436,10 +436,10 @@ def powerSpectra(x,y):
 #    fft_y2 = np.fft.fft(y)
     from scipy import fftpack as fft
     fft_y = fft.dct(y)
-    xbin  = 1.#getOmega(x)
-    fft_x =np.array([i*xbin for i in range(len(fft_y))])
+    #xbin  = 1.#getOmega(x)
+    #fft_x =np.array([i*xbin for i in range(len(fft_y))])
     diffuse_const = fft_y[0]
-    return fft_x, fft_y, diffuse_const
+    return x, fft_y, diffuse_const
     
 def getOmega(x):
     from scipy import fftpack as fft
@@ -469,6 +469,7 @@ def plotPowerSpectra(element='Li'):
         dlp_path = getattr(c,'DLPOLY_'+temperature)
         color    = getattr(c,'COLOR_'+temperature)
         x,y      = correlationfunction(dlp_path, element)
+        print('dlp_path: '+dlp_path+' element '+element)
         x=x[1:-10]
         y=y[1:-10]
         #ax1.plot(x[:-10],y[:-10],color)
