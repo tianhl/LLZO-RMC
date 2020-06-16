@@ -334,91 +334,9 @@ def plotXSoqInOneFig():
     plt.xlabel(r'Q ($\mathrm{\AA^{-1}}$)',fontsize=100)
     plt.ylabel('i(Q)',fontsize=100)      
 
-def getDlPolyGR(dirname=''):
-    x,LiLay =getGR(dirname+'/_gr_Li_La.csv')
-    x,LaLay =getGR(dirname+'/_gr_La_La.csv')
-    x,ZrLay =getGR(dirname+'/_gr_Zr_La.csv')
-    x,OLay  =getGR(dirname+'/_gr_O_La.csv')
-    x,ZrZry =getGR(dirname+'/_gr_Zr_Zr.csv')
-    x,LiZry =getGR(dirname+'/_gr_Li_Zr.csv')
-    x,OZry  =getGR(dirname+'/_gr_O_Zr.csv')
-    x,LiLiy =getGR(dirname+'/_gr_Li_Li.csv')
-    x,LiOy  =getGR(dirname+'/_gr_Li_O.csv')
-    x,OOy   =getGR(dirname+'/_gr_O_O.csv')
     
-    #return x, LiLay ,LaLay ,ZrLay ,OLay  ,ZrZry ,LiZry ,OZry  ,LiLiy ,LiOy  ,OOy   
-    return x, LiLiy, LiOy, LiZry, LiLay, OOy, OZry, OLay, ZrZry, ZrLay, LaLay
-    
-def getRMCGR(filename):
-    f     =open(filename)
-    lines =f.readlines()
-    x    =[]
-    LiLi =[]
-    LiO  =[]
-    LiZr =[]
-    LiLa =[]
-    OO   =[]
-    OZr  =[]
-    OLa  =[]
-    ZrZr =[]
-    ZrLa =[]
-    LaLa =[]
-    for line in lines:
-        i = line.split(',')
-        if(not is_number(i[1])):
-            continue
-        x.append(float(i[0]))
-        LiLi.append(float(i[1])) 
-        LiO.append(float(i[2])) 
-        LiZr.append(float(i[3])) 
-        LiLa.append(float(i[4])) 
-        OO.append(float(i[5])) 
-        OZr.append(float(i[6])) 
-        OLa.append(float(i[7])) 
-        ZrZr.append(float(i[8])) 
-        ZrLa.append(float(i[9])) 
-        LaLa.append(float(i[10])) 
-    return np.array(x), np.array(LiLi), np.array(LiO),  np.array(LiZr), np.array(LiLa), np.array(OO), np.array(OZr),  np.array(OLa), np.array(ZrZr), np.array(ZrLa), np.array(LaLa)
- 
-def plotPartialGofr(item=0):
 
-    #plt.xlim((0,10))
-    definePlot(10)
-    #print('plot partial pdf: '+ppdf[item])
-    offset = 0
-    #num = 0
 
-    for temperature in c.TEM_LIST:
-    #for item in range(10):
-        dlpoly_path = getattr(c,'DLPOLY_'+temperature)
-        rmc_path    = getattr(c,'RMC_'+temperature)
-        #rmc_path    = 'RMC6/LLZO_RMC6_293K-'+str(num)+'/LLZO-293K'
-        #dlpoly_path = 'DLPOLY/LLZO-300k/'
-        #num        += 1
-
-        color = getattr(c,'COLOR_'+temperature)
-        rmc_values = getRMCGR(rmc_path+c.rmc_partialpdf_suffix)
-        #dl_values  = getDlPolyGR(dlpoly_path)
-        rmclegend, = plt.plot(rmc_values[0], rmc_values[item]+offset, color+'o')
-        #dlplegend, = plt.plot(dl_values[0],   dl_values[item]+offset, 'black')
-
-        
-        offset += 2.0
-    #plt.title(ppdf[item], fontsize=40)
-    plt.xlabel(r'r ($\mathrm{\AA}$)',fontsize=40)
-    plt.ylabel('$\mathrm{g_{'+ppdf[item]+'}(r)}$',fontsize=40)
-    
-def plotPartialGofrInOneFigWithLi():
-    plt.figure() 
-    for key in ppdfwithLi.keys():
-        plt.subplot(2,2,key)  
-        plotPartialGofr(key)
-
-def plotPartialGofrInOneFigWithoutLi():
-    plt.figure() 
-    for key in ppdfwithoutLi.keys():
-        plt.subplot(3,2,key-4)  
-        plotPartialGofr(key)
   
 def correlationfunction(dirname='', element='Li'):
     f = open(dirname+'_'+element)
@@ -505,4 +423,118 @@ def plotPowerSpectra(element='Li'):
     #ax2.set_xlabel('temperature (K)',fontsize=30)
     #ax2.set_ylabel('Diffusion constant of '+element,fontsize=30)
     #ax2.xaxis.set_tick_params(labelsize=30)
-    #ax2.yaxis.set_tick_params(labelsize=30)                  
+    #ax2.yaxis.set_tick_params(labelsize=30)         
+
+
+def plotPartialGofrInOneFigWithLi():
+    plt.figure() 
+    ppdfs={1:'Li-O', 2:'O-O', 3:'O-Zr', 4:'O-La'}
+    for key in ppdfs:
+        print(key)
+        plt.subplot(2,2,key)  
+        plotPartialGofr(ppdfs[key])
+
+def plotPartialGofr(item='Li-Li'):
+    definePlot(12)
+    offset = 0.
+    for temp in c.TEM_LIST:
+        color = getattr(c,'COLOR_'+temp)
+        rmcx,rmcys=getRMCGR(temperature=temp, idx='1')
+        mdx ,mdys =getDlPolyGR(temperature=temp, idx='0')
+        rmcy = np.array(rmcys[item])
+        mdy  = np.array(mdys[item])
+        plt.plot(rmcx, rmcy+offset, color+'o',linewidth=5)
+        plt.plot(mdx,  mdy+offset, 'black',linewidth=5)
+        offset += 5.0
+        
+    plt.xlabel(r'r ($\mathrm{\AA}$)',fontsize=100)
+    plt.ylabel('$\mathrm{g_{'+item+'}(r)}$',fontsize=100)
+    
+  
+def getRMCGR(dirname='../rmc.data/rmcplotfiles/', temperature = '293', idx='0'):
+    if int(temperature) > 700:
+        temperature = 'P'+temperature
+    filename=dirname+'LLZO_RMC6_'+temperature+'K_'+idx+'_PDFpartials.csv'
+    f     =open(filename)
+    lines =f.readlines()
+    x    =[]
+    LiLi =[]
+    LiO  =[]
+    LiZr =[]
+    LiLa =[]
+    OO   =[]
+    OZr  =[]
+    OLa  =[]
+    ZrZr =[]
+    ZrLa =[]
+    LaLa =[]
+    ys   = {}
+    for line in lines:
+        i = line.split(',')
+        if(not is_number(i[1])):
+            continue
+        x.append(float(i[0]))
+        LiLi.append(float(i[1])) 
+        LiO.append(float(i[2])) 
+        LiZr.append(float(i[3])) 
+        LiLa.append(float(i[4])) 
+        OO.append(float(i[5])) 
+        OZr.append(float(i[6])) 
+        OLa.append(float(i[7])) 
+        ZrZr.append(float(i[8])) 
+        ZrLa.append(float(i[9])) 
+        LaLa.append(float(i[10]))
+    ys['Li-Li']=LiLi    
+    ys['Li-O']=LiO
+    ys['Li-Zr']=LiZr
+    ys['Li-La']=LiLa
+    ys['O-O']=OO
+    ys['O-Zr']=OZr
+    ys['O-La']=OLa
+    ys['Zr-Zr']=ZrZr
+    ys['Zr-La']=ZrLa
+    ys['La-La']=LaLa
+    return x, ys
+
+def getDlPolyGR(dirname='../md.data/mdplotfiles/', temperature = '293', idx='0'):
+    if int(temperature) > 700:
+        temperature = 'P'+temperature
+    filename=dirname+'RDFDAT_'+temperature+'K_'+idx
+    print('read file: '+filename)
+    fi = open(filename)
+    ys   = {}
+    keys = ''
+    x    = []
+    y    = []
+    LiLi =[]
+    LiO  =[]
+    LiZr =[]
+    LiLa =[]
+    OO   =[]
+    OZr  =[]
+    OLa  =[]
+    ZrZr =[]
+    ZrLa =[]
+    LaLa =[]
+    li = fi.readlines()
+    for line in li[2:]:
+        items = line.split()
+        if is_number(items[0]):
+            x.append(float(items[0]))
+            y.append(float(items[1]))
+            pass
+        else:
+            if keys is '':
+                #print('first')
+                pass
+            else:
+                #print('save: '+keys)
+                ys[keys]=y
+            keys='-'.join(items)
+            x = []
+            y = []
+            #print(keys)
+    
+    
+    #return x, LiLay ,LaLay ,ZrLay ,OLay  ,ZrZry ,LiZry ,OZry  ,LiLiy ,LiOy  ,OOy   
+    return x, ys
