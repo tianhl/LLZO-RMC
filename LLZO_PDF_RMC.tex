@@ -125,14 +125,15 @@
 \vspace{0.3cm} & \vspace{0.3cm} \\
 
  & \noindent\large{Haolai Tian,$^{\ast,a}$}
- Xiang Yang Kong,$^{b}$
  Guanqun Cai,$^{c}$
  Lei Tan,$^{c}$
+ Andy Fiedler,$^{b}$
  Anthony E Phillip,$^{c}$
  Isaac Abrahams,$^{d}$
  David A Keen,$^{e}$
  Dean Keeble,$^{f}$
-and Martin T. Dove,\textit{$^{g,h,\ddag}$}
+Martin T. Dove,\textit{$^{g,h,\ddag1}$}
+and Xiang Yang Kong,$^{b, \ddag2}$
 \\%Author names go here instead of "Full name", etc.
 
 \includegraphics{head_foot/dates} & \noindent\normalsize{
@@ -163,7 +164,8 @@ The lithium-bearing oxide Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO), with the cubic garn
 \footnotetext{\textit{$^{f}$~Diamond Light Source Ltd, Harwell Science and Innovation Campus, Didcot, OX11 0DE, United Kingdom}}
 \footnotetext{\textit{$^{g}$~College of computer science, Sichuan University, Chengdu, 610065, People's Republic of China}}
 \footnotetext{\textit{$^{h}$~School of Physics, School of Sciences, Wuhan University of Technology, Wuhan, Hubei 430070, People's Republic of China}}
-\footnotetext{\textit{$^{\ddag}$~Corresponding author. email: martin.dove@icloud.com}}
+\footnotetext{\textit{$^{\ddag1}$~Corresponding author. email: martin.dove@icloud.com}}
+\footnotetext{\textit{$^{\ddag2}$~Corresponding author. email: xykong@sjtu.edu.cn}}
 
 
 %%Please use \dag to cite the ESI in the main text of the article.
@@ -241,8 +243,8 @@ And PDF $D(r)$ were processed from scattering data using GudrunX \cite{Soper:201
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/xpdf.pdf}
 \caption{Synchrotron pair distribution $D(r)$ obtained from GudrunX for all temperatures represented as circles.
- A constant offset has been applied to separate those curves.
- The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modelling are represented by the solid red lines.
+         A constant offset has been applied to separate those curves.
+         And RMC modelling are represented by the solid black lines.
  }
 \label{fig:xpdf}
 \end{figure}
@@ -275,8 +277,8 @@ where $M(Q) = \sin(\pi Q/Q_\mathrm{max})/(\pi Q/Q_\mathrm{max})$ is the Lorch fu
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/npdf.pdf}
 \caption{Neutron pair distribution $D(r)$  obtained from GudrunN for all temperatures represented as circles.
- A constant offset has been applied to separate those curves.
- The solid black lines indicate the  simulated intensities from Dl\_poly, and RMC modelling are represented by the solid red lines. }
+         A constant offset has been applied to separate those curves.
+         The solid black lines indicate the  RMC modelling. }
 \label{fig:npdf}
 \end{figure}
 
@@ -295,7 +297,10 @@ The RMC simulations were performed using the program \texttt{RMCprofile} v6.7 \c
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/nsoq.pdf}
-\caption{Neutron scattering function $S(Q)$ for all temperatures. A constant offset has been applied to separate those curves.}
+\caption{Neutron scattering function $S(Q)$ for all temperatures.
+A constant offset has been applied to separate those curves.
+In each case the data are shown as circles,
+and RMC modelling are represented by the solid black lines.}
 \label{fig:nsoq}
 \end{figure}
 
@@ -369,7 +374,10 @@ O--O   & 22764.30& 0.1490      & 27.63                  \\
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/xsoq.pdf}
-\caption{Synchrotron scattering function $S(Q)$ for all temperatures. A constant offset has been applied to separate those curves.}
+\caption{Synchrotron scattering function $S(Q)$ for all temperatures.
+A constant offset has been applied to separate those curves.
+In each case the data are shown as circles,
+and RMC modelling are represented by the solid black lines.}
 \label{fig:xsoq}
 \end{figure}
 
@@ -395,12 +403,12 @@ The lattice parameters are plotted as functions of temperature in Fig. \ref{fig:
 
 \begin{table*}[t]
 \centering
-\caption{Lattice parameters, atomic fractional coordinates and Lithium site occupancy of Li$_7$La$_2$Zr$_3$O$_{12}$ obtained from Rietveld refinement. Zr has fractional coordinates 0,0,0, La has fractional coordinates $1/4,0,1/4$, Li$_1$ has fractional coordinates $3/8,0,1/4$, and Li$_2$ has fractional coordinates $1/4,y,z$. Standard deviations are given for the last significant figures in brackets. }
+\caption{Lattice parameters, atomic fractional coordinates and Li$_2$ site occupancy of Li$_7$La$_2$Zr$_3$O$_{12}$ obtained from Rietveld refinement. Zr has fractional coordinates 0,0,0, La has fractional coordinates $1/4,0,1/4$, Li$_1$ has fractional coordinates $3/8,0,1/4$, and Li$_2$ has fractional coordinates $1/4,y,z$. Note that the Li$_1$ site occupancy is constrained to that of the Li$_2$ site as described in the text. Standard deviations are given for the last significant figures in brackets. }
 \label{tab:Rietveld_structure}
 \begin{tabular}{ccccccccc}
 \hline
 \hline
-$T$ (K)  & $a$ (\AA) & O ($x$)        & O ($y$)        & O ($z$)        &  Li$_2$ ($y$)       & Li$_2$ ($z$) & Li$_2$ ($occ.$) \\
+$T$ (K)  & $a$ (\AA) & O $x$        & O $y$        & O $z$        &  Li$_2$ $y$       & Li$_2$ $z$ & Li$_2$ occ. \\
 \hline
 273  & 12.9219(1)    & 0.1021(1)      & 0.1970(1)      & 0.28162(9)     & 0.1763(5)           & 0.4263(5)    & 0.507(4) \\
 450  & 12.95247(9)   & 0.10210(8)     & 0.19666(8)     & 0.28141(7)     & 0.1761(2)           & 0.4261(2)    & 0.524(3) \\
@@ -488,7 +496,7 @@ because of the increases of the lattice parameters.
  and scattering function $i(Q)$ from both neutron (Fig.\ref{fig:nsoq})  and synchrotron experiments(Fig.\ref{fig:xsoq}) .
 
 
-The low-$r$  distributions of distances from the RMC and MD configurations are shown in  Fig.\ref{fig:partialPDFs}. 
+The low-$r$  distributions of distances from the RMC and MD configurations are shown in  Fig.\ref{fig:partialPDFs}.
 %The interesting point about these diagrams is that
 %the O-X (X represents Li, La, Zr or O) distribution from RMC are smoother than those from MD in all temperatures, as shown in Fig.\ref{fig:partialPDFwithLi}, indicating the Li-ion movement remains  disorderly.
 %But the framework structure keep stable in each case as shown in Fig.\ref{fig:partialPDFwithoutLi}, which is consist with the result of XPDF as shown in Fig. \ref{fig:xpdf}.
@@ -499,7 +507,10 @@ The low-$r$  distributions of distances from the RMC and MD configurations are s
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/partialPDFs.pdf}
-\caption{The distributions calculated from RMCProfile of (1) Li-O, (2)O-O, (3)O-Zr, (4)O-La at low-$r$ range for all temperatures. A constant offset has been applied to separate those curves.}
+\caption{The distributions calculated from RMCProfile of (1) Li-O, (2)O-O, (3)O-Zr, (4)O-La at low-$r$ range for all temperatures.
+A constant offset has been applied to separate those curves.
+In each case the RMC modelling are shown as circles,
+and the solid black lines indicate the values obtained from Molecular Dynamic simulation}
 \label{fig:partialPDFs}
 \end{figure}
 %
@@ -567,13 +578,13 @@ as well as the diffusion coefficient shown in Fig.\ref{fig:DiffusionCoefficient}
 The 3D density maps of Li in cubic garnets are shown in Fig.\ref{fig:pdfs}.
 The lithium distribution can ben expected in liquid and amorphous materials
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=0.9\textwidth]{Pics/pdfs.pdf}
-\caption{Isosurfaces with level of 0.1~\AA$^{-3}$ (yellow) and 3~\AA$^{-3}$ (red)}
-\label{fig:pdfs}
-\end{figure*}
-
+%\begin{figure*}[t]
+%\centering
+%\includegraphics[width=0.9\textwidth]{Pics/pdfs.pdf}
+%\caption{Isosurfaces with level of 0.1~\AA$^{-3}$ (yellow) and 3~\AA$^{-3}$ (red)}
+%\label{fig:pdfs}
+%\end{figure*}
+%
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/MSD.pdf}
@@ -584,6 +595,12 @@ The inset shows a diffusion constant (D) versus temperatures.}
 \end{figure}
 
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/powerSpectra.pdf}
+\caption{The power spectra of (1) Li, (2)La, (3)Zr, (4)O  for all temperatures.}
+\label{fig:powerSpectra}
+\end{figure}
 %\begin{figure}
 %\centering
 %\includegraphics[width=0.5\textwidth]{Pics/entropy.pdf}
