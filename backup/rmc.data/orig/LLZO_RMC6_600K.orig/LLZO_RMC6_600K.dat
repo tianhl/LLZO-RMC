@@ -23,7 +23,7 @@ AVERAGE_COORDINATION_CONSTRAINTS :: 0
 POTENTIALS ::
   > STRETCH :: Zr O 8.35 eV 2.0 Ang
   > STRETCH_SEARCH :: 20%
-  > STRETCH :: La O 8.35 eV 2.0 Ang
+  > STRETCH :: La O 8.35 eV 2.5 Ang
   > STRETCH_SEARCH :: 20%
   > ANGLE :: Zr O O 5.0 eV 90 deg  2.0 Ang 2.0 Ang
   %%> ANGLE :: Zr O O 180 deg 5 eV 2.0 2.0 Ang
