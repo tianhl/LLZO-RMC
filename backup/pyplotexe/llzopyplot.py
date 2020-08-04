@@ -8,6 +8,32 @@ ppdf={1:'Li-Li', 2:'Li-O', 3:'Li-Zr', 4:'Li-La', 5:'O-O', 6:'O-Zr', 7:'O-La', 8:
 ppdfwithLi={1:'Li-Li', 2:'Li-O', 3:'Li-Zr', 4:'Li-La'}
 ppdfwithoutLi={5:'O-O', 6:'O-Zr', 7:'O-La', 8:'Zr-Zr', 9:'Zr-La', 10:'La-La'}
 
+
+
+total = 56.0+24.0+16.0+96.0
+
+NLifi=-1.9
+XLifi=3.0
+Lici=56.0/total
+
+NLafi=8.24
+XLafi=57.0
+Laci=24.0/total
+
+NZrfi=7.16
+XZrfi=40.0
+Zrci=16.0/total
+
+NOfi=5.803
+XOfi=8.0
+Oci=96.0/total
+
+Nfi={'Li':NLifi, 'La':NLafi, 'Zr':NZrfi, 'O':NOfi}
+Xfi={'Li':XLifi, 'La':XLafi, 'Zr':XZrfi, 'O':XOfi}
+Ci={'Li':Lici, 'La':Laci, 'Zr':Zrci, 'O':Oci}
+
+
+
 class ConstantValue:
     TEM_LIST=['293','450','600','750','900','1100']
     
@@ -284,16 +310,16 @@ def getRMCGR(dirname='../rmc.data/rmcplotfiles/', temperature = '293', idx='0'):
         ZrZr.append(float(i[8])) 
         ZrLa.append(float(i[9])) 
         LaLa.append(float(i[10]))
-    ys['Li-Li']=np.array(LiLi)    
-    ys['Li-O']=np.array(LiO)
-    ys['Li-Zr']=np.array(LiZr)
-    ys['Li-La']=np.array(LiLa)
-    ys['O-O']=np.array(OO)
-    ys['O-Zr']=np.array(OZr)
-    ys['O-La']=np.array(OLa)
-    ys['Zr-Zr']=np.array(ZrZr)
-    ys['Zr-La']=np.array(ZrLa)
-    ys['La-La']=np.array(LaLa)
+    ys['Li-Li']   = np.array(LiLi)    
+    ys['Li-O']    = np.array(LiO)
+    ys['Li-Zr']   = np.array(LiZr)
+    ys['Li-La']   = np.array(LiLa)
+    ys['O-O']     = np.array(OO)
+    ys['O-Zr']    = np.array(OZr)
+    ys['O-La']    = np.array(OLa)
+    ys['Zr-Zr']   = np.array(ZrZr)
+    ys['Zr-La']   = np.array(ZrLa)
+    ys['La-La']   = np.array(LaLa)
     return x, ys
 
 def getDlPolyGR(dirname='../md.data/mdplotfiles/', temperature = '293', idx='0'):
@@ -417,6 +443,45 @@ def plotPartialGofr(item='Li-Li', has_xlabel = False):
     if has_xlabel:    
         plt.xlabel(r'r ($\mathrm{\AA}$)',fontsize=100)
     plt.ylabel('$\mathrm{g_{'+item+'}}$',fontsize=100)
+    
+
+def getPartialNPDFbyTemperature(item='Li-Li', temperature='293'):
+
+    rmcx,rmcys=getRMCGR(temperature=temperature, idx='0')
+        #mdx ,mdys =getDlPolyGR(temperature=temp, idx='0')
+    for i in range(1,6):
+            #mdx2, mdys2  = getDlPolyGR(temperature=temp, idx=str(i))
+        rmcx2,rmcys2 = getRMCGR(temperature=temperature, idx=str(i))
+        rmcys[item]= rmcys[item]+rmcys2[item]
+            #mdys[item] = mdys[item]+mdys2[item]
+        #mdys[item] = mdys[item]/6.
+    rmcys[item]= rmcys[item]/6
+    rmcy = np.array(rmcys[item])
+        #mdy  = np.array(mdys[item])
+    element0, element1 = item.split('-')    
+    dofr = getDofR(rmcx, rmcy, Ci[element0], Ci[element1], Nfi[element0], Nfi[element1])
+    return rmcx, dofr
+
+def getTotalNPDFbyTemperature(temperature='293'):
+    ppdfs={1:'Li-O', 2:'O-O', 3:'O-Zr', 4:'O-La', 5:'Li-Zr', 6:'Li-La', 7:'Li-Li', 8:'Zr-La', 9:'Zr-Zr', 10:'La-La'}
+    rmcx, dofr = getPartialNPDFbyTemperature(ppdfs[1], temperature=temperature)
+    for key in range(2,11):
+        x,y = getPartialNPDFbyTemperature(ppdfs[key],temperature)
+        dofr = y+dofr
+    return rmcx, dofr    
+
+def getDofR(np_x, np_y, ci, cj, fi, fj):
+    pi=3.14
+    rho=5.07
+    factor=4*pi*rho*2*fi*fj*ci*cj
+
+    tmp0 = np.subtract(np_y, 1.0)
+    tmp1 = np.multiply(tmp0, np_x)
+    #tmp2 = np.multiply(factor, tmp1)
+    dr = np.multiply(tmp1, factor)
+    #dr   = np.subtract(tmp3, offset)
+    return dr
+
 
 ##############################################################################
 
