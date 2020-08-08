@@ -18,9 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage{fnpos}
 \usepackage[english]{babel}
-\addto{\captionsenglish}{%
-  \renewcommand{\refname}{Notes and references}
-}
+% \addto{\captionsenglish}{\renewcommand{\refname}{Notes and references} }
 \usepackage{array}
 \usepackage{droidsans}
 \usepackage{charter}
@@ -31,7 +29,7 @@
 \usepackage{hyperref}
 %%%Please don't disable any packages in the preamble, as this may cause the template to display incorrectly.%%%
 
-
+%\usepackage{subfigure}
 \usepackage{epstopdf}%This line makes .eps figures into .pdf - please comment out if not required.
 \setlength\headheight{20pt}
 %\enlargethispage*{1000pt}
@@ -121,19 +119,20 @@
 \sffamily
 \begin{tabular}{m{4.5cm} p{13.5cm} }
 
-\includegraphics{head_foot/DOI} & \noindent\LARGE{\textbf{Local Structure and Lithium Ion Diffusion Pathway of Cubic Li$_7$La$_3$Zr$_2$O$_{12}$ Studied by Total Scattering and the Reverse Monte Carlo Method$^\dag$}} \\%Article title goes here instead of the text "This is the title"
+\includegraphics{head_foot/DOI} & \noindent\LARGE{\textbf{Local structure and lithium ion diffusion pathway of cubic Li$_\mathbf{7}$La$_\mathbf{3}$Zr$_\mathbf{2}$O$_\mathbf{12}$ studied by total scattering and the reverse Monte Carlo method}} \\%Article title goes here instead of the text "This is the title"
 \vspace{0.3cm} & \vspace{0.3cm} \\
 
- & \noindent\large{Haolai Tian,$^{\ast,a,b,c}$}
- Guanqun Cai,$^{e}$
- Lei Tan,$^{e}$
- Andy Fiedler,$^{d}$
- Anthony E Phillip,$^{e}$
- Isaac Abrahams,$^{f}$
- David A Keen,$^{g}$
- Dean Keeble,$^{h}$
-Martin T. Dove,\textit{$^{i,j,\ddag1}$}
-and Xiang Yang Kong,$^{b, \ddag2}$
+ & \noindent\large{Haolai Tian,$^{a,b,c}$}
+ Guanqun Cai,$^{d}$
+ Lei Tan,$^{d}$
+ Anthony E Phillip,$^{d}$
+ Isaac Abrahams,$^{e}$
+ David A Keen,$^{f}$
+ Dean Keeble,$^{g}$
+ Andy Fiedler,$^{h}$
+  Junrong Zhang, $^{a,b,c}$
+Xiang Yang Kong,$^{h, \dag}$
+Martin T. Dove,\textit{$^{i,j,\ddag}$}
 \\%Author names go here instead of "Full name", etc.
 
 \includegraphics{head_foot/dates} & \noindent\normalsize{
@@ -156,22 +155,18 @@ The lithium-bearing oxide Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO), with the cubic garn
 
 %%%FOOTNOTES%%%
 
-
-
-
-
 \footnotetext{\textit{$^{a}$~Spallation Neutron Source Science Center, Dongguan 523803, Guangdong, China}}
 \footnotetext{\textit{$^{b}$~Institute of High Energy Physics, Chinese Academy of Sciences, Beijing 100049, China}}
 \footnotetext{\textit{$^{c}$~University of Chinese Academy of Sciences, Beijing 100049, China}}
-\footnotetext{\textit{$^{d}$~School of Materials Sciences and Engineering, Shanghai Jiao Tong University, Huashan Road 1954, Shanghai 200030, People's Republic of China}}
-\footnotetext{\textit{$^{e}$~School of Physics and Astronomy, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
-\footnotetext{\textit{$^{f}$~School of Biological and Chemical Sciences, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
-\footnotetext{\textit{$^{g}$~ISIS Neutron and Muon Facility,  Rutherford Appleton Laboratory, Harwell Campus, Didcot, Oxfordshire, OX11 0QX, United Kingdom}}
-\footnotetext{\textit{$^{h}$~Diamond Light Source Ltd, Harwell Science and Innovation Campus, Didcot, OX11 0DE, United Kingdom}}
+\footnotetext{\textit{$^{d}$~School of Physics and Astronomy, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
+\footnotetext{\textit{$^{e}$~School of Biological and Chemical Sciences, Queen Mary University of London, Mile End Road, London, E1 4NS, United Kingdom}}
+\footnotetext{\textit{$^{f}$~ISIS Neutron and Muon Facility,  Rutherford Appleton Laboratory, Harwell Campus, Didcot, Oxfordshire, OX11 0QX, United Kingdom}}
+\footnotetext{\textit{$^g$~Diamond Light Source Ltd, Harwell Science and Innovation Campus, Didcot, OX11 0DE, United Kingdom}}
+\footnotetext{\textit{$^{h}$~School of Materials Sciences and Engineering, Shanghai Jiao Tong University, Huashan Road 1954, Shanghai 200030, People's Republic of China}}
 \footnotetext{\textit{$^{i}$~College of computer science, Sichuan University, Chengdu, 610065, People's Republic of China}}
 \footnotetext{\textit{$^{j}$~School of Physics, School of Sciences, Wuhan University of Technology, Wuhan, Hubei 430070, People's Republic of China}}
-\footnotetext{\textit{$^{\ddag1}$~Corresponding author. email: martin.dove@icloud.com}}
-\footnotetext{\textit{$^{\ddag2}$~Corresponding author. email: xykong@sjtu.edu.cn}}
+\footnotetext{\textit{$^{\dag}$~Corresponding author. email: xykong@sjtu.edu.cn}}
+\footnotetext{\textit{$^{\ddag}$~Corresponding author. email: martin.dove@icloud.com}}
 
 
 %%Please use \dag to cite the ESI in the main text of the article.
@@ -218,8 +213,14 @@ In this paper we use the methods of neutron and synchrotron x-ray total scatteri
 \subsection{Synthesis}
 The precursor materials used was anhydrous LiOH (Alfa Aesar 99.5\%, dried at 200~$^{\circ}$C overnight; 10 wt.\% excess was taken to compensate for the loss of lithium under annealing conditions), La$_2$O$_3$ (Alfa Aesar, treated at 950~$^{\circ}$C overnight), ZrO$_2$ (Alfa Aesar, 99.7\%). The reactants were mixed with a mortar and pestle before reacting them at 950~$^{\circ}$C for 12 hours. The resultant product was reground and pressed into pellets. The pellets were transferred to an alumina crucible and buried with mother powder, followed by sintering at 1140~$^{\circ}$C for 20 hours to form single-phase material. The resulting pellets were grounded into powder and stored in an argon-filled glovebox (<0.1 ppm O$_2$, <0.1 ppm H$_2$O) to prevent reaction with humidity.
 
+\subsection{Electrochemical impedance measurements}
 
-\subsection{Neutron Powder Diffraction and Total Scattering}
+Electrochemical experiments were carried out in an Ar glovebox (O$_2$; H$_2$O < 1 ppm). For the electrical measurement,
+gold electrodes were evaporated on LLZO by thermal evaporation. The EIS was recorded by a Solartron ModuLab system,
+and contacted via a probe station on a hot stage in the glovebox. EIS was performed with an 10 mV amplitude voltage
+in a frequency range of 50 mHz to 1 MHz.
+
+\subsection{Neutron Powder diffraction and total scattering}
 
 Neutron powder diffraction and total scattering data were obtained at a number of temperatures on the GEM diffractometer \cite{Hannon:2005cy} at the
 ISIS spallation neutron source, Rutherford Appleton Laboratory, UK. The LLZO sample was contained in a cylindrical thin-walled vanadium can of 8 mm diameter.
@@ -238,34 +239,25 @@ Measurements were also performed on the empty instrument, the empty furnace, and
 \end{figure}
 
 
-\subsection{Synchrotron  Total Scattering}
+\subsection{Synchrotron total scattering}
 Synchrotron powder diffraction and total scattering data were collected on the XPDF beamline (I15-1 instrument) at Diamond Light Source (UK).
 The X-rays were monochromatized to give a wavelength of 0.161669~\AA.
 %PerkinElmer XRD 16611 CP3 and a PerkinElmer XRD 4343 CT were used as primary and secondary detectors.
 The sample was sealed into borosilicate capillary tubes ($\phi$ 1 mm, and 50 mm in length) for measurements at the same temperatures as the neutron beam measurements. The raw data  were corrected and reduced into scattering data using the program DAWN \cite{Basham:2015cf}.
 And PDF $D(r)$ were processed from scattering data using GudrunX \cite{Soper:2011fda,Soper:2012vs} with the range of data between $0.5 \le Q \le 25$ \AA$^{-1}$ for the Fourier transformation. Corrections for fluorescence were applied, in which the fluorescence energy of La was assumed to be 38.739 keV.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/xpdf.pdf}
-\caption{Synchrotron pair distribution $D(r)$ obtained from GudrunX for all temperatures represented as circles.
-         A constant offset has been applied to separate those curves.
-         And RMC modelling are represented by the solid black lines.
- }
-\label{fig:xpdf}
-\end{figure}
 
-\subsection{Pair Distribution Function}
+\subsection{Pair distribution function from total scattering data}
 The differential cross section for the scattering of a beam of radiation as integrated over all changes of energy is defined as
 \begin{equation}
 \frac{1}{N}\frac{d\sigma}{d\Omega}=I(Q)=I^\mathrm{S}(Q)+i(Q)
 \end{equation}
 where $I^\mathrm{S}(Q)=  \sum_m c_m f_m^2 $ is the self-scattering of all atoms, $c_m$ is the fractional amount of atom type $m$ such that $\sum_m c_m = 1$, and $f_m$ is the scattering factor of atom of type $m$ (the symbol $b_m$ is usually used for neutron scattering, denoting the scattering length whose value is independent of $Q$) \cite{Keen:2001wc}. The function $i(Q)$ is the total scattering structure factor. Here we define the partial pair distribution function (PDF) $g_{mn}(r)$ to represent the number of atoms of type $n$ within the shell between $r$ and  $r+\mathrm{d}r$ centred on a particle of type $m$, namely of value $4 \pi r^2 \mathrm{d}r \times c_n \rho \times g_{mn}(r)$,  where $\rho$ is the overall atomic number density. The structure factor $i(Q)$ can then be written as \cite{Dove2002}
-\begin{equation}
+\begin{equation} \label{eq:iQ}
 i(Q)=4\pi\rho\int^{\infty}_{0}\sum_{m,n}c_m c_n f_m f_n r^2 [g_{mn}(r)-1]\frac{\sin{Qr}}{Qr} \mathrm{d}r
 \end{equation}
  The overall pair distribution function is defined as
-\begin{equation}\label{fun:dofr_0}
+\begin{equation}\label{eq:Dr}
 D(r)=4\pi\rho r \sum_{m,n}c_m c_n f_m f_n [g_{mn}(r)-1]
 \end{equation}
 so that
@@ -273,11 +265,21 @@ so that
 Qi(Q)=\int^{\infty}_{0} D(r) \sin{Qr} \mathrm{d}r
 \end{equation}
 In turn, the function $D(r)$ can be obtained as the the sine Fourier transform of $Qi(Q)$, but in practice the transform is modified as
-\begin{equation}\label{fun:dofr_1}
+\begin{equation}\label{eq:Dr2}
 D(r)=\frac{2}{\pi}\int^{Q_{max}}_{0} M(Q)Qi(Q)\sin{Qr} \mathrm{d}r
 \end{equation}
 where $M(Q) = \sin(\pi Q/Q_\mathrm{max})/(\pi Q/Q_\mathrm{max})$ is the Lorch function, which is introduced to reduce the effect of finite maximum momentum transfer, $Q_\mathrm{max}$ \cite{Lorch:1969js, Dove2002, Soper:2012kr}. Those tasks were carried out using the programs GudrunX and GudrunN \cite{Soper:2011fda,Soper:2012vs}.
 
+The PDFs $D(r)$ for both synchrotron and x-ray total scattering data are shown in FIgures \ref{fig:xpdf} and \ref{fig:npdf} respectively.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/xpdf.pdf}
+\caption{Synchrotron pair distribution $D(r)$ obtained from GudrunX for all temperatures represented as circles.
+         A constant offset has been applied to separate those curves.
+         And RMC modelling are represented by the solid black lines.}
+\label{fig:xpdf}
+\end{figure}
 
 \begin{figure}[t]
 \centering
@@ -288,7 +290,35 @@ where $M(Q) = \sin(\pi Q/Q_\mathrm{max})/(\pi Q/Q_\mathrm{max})$ is the Lorch fu
 \label{fig:npdf}
 \end{figure}
 
-\subsection{Reverse Monte Carlo Analysis}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/xsoq.pdf}
+\caption{Synchrotron scattering function $i(Q)$ for all temperatures.
+A constant offset has been applied to separate those curves.
+In each case the data are shown as circles,
+and RMC modelling are represented by the solid black lines.}
+\label{fig:xsoq}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/nsoq.pdf}
+\caption{Neutron scattering function $i(Q)$ for all temperatures.
+A constant offset has been applied to separate those curves.
+In each case the data are shown as circles,
+and RMC modelling are represented by the solid black lines.}
+\label{fig:nsoq}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/bragg.pdf}
+\caption{The Bragg diffraction data. The data are represented as circles with constant offset to separate those curves.
+The solid black lines indicate the  calculated intensities from GSAS, and RMC modelling are represented by the solid red lines. }
+\label{fig:Rietveld_refinement}
+\end{figure}
+
+\subsection{Reverse Monte Carlo analysis}
 
 The Reverse Monte Carlo (RMC) method, whilst initially developed for the study of highly-disordered (non-crystalline) materials \cite{McGreevy:1988bu}, is in fact an excellent technique for the study of disordered crystalline materials \cite{Keen:2005dd}. That said, it appears that there have been only limited applications of the RMC method to crystalline fast-ion conductors \cite{Adams:2000ez, Swenson:2001if, Adams:2002ga,Adams:2005ds}, and apparently not to the cases where lithium is the mobile ion. We will comment later on some observations on the application of the RMC method to lithium fast-ion conductors in the light of the experience gained in this study.
 
@@ -300,15 +330,7 @@ where $y^\mathrm{obs}_{i,j}$ is the observed values at data point $i$ in data se
 
 The RMC simulations were performed using the program \texttt{RMCprofile} v6.7 \cite{Tucker:2007eh}. The starting configurations of Li$_7$La$_2$Zr$_3$O$_{12}$ were generated from the results of Rietveld refinement using the \texttt{data2config}/\texttt{RMCcreate} program \cite{Dove:2013gk}. Configurations were $4\times 4\times 4$ supercell of the conventional body-centred unit cell with linear dimension of around 52 \AA, containing 12288 atoms. Maximum atomic moves of La, O and Zr atoms were of size $0.05 \AA$, but those of Li were $0.1 \AA$. Minimum distance constraints were applied within the RMC simulation; between  pairs of atoms as given in Table  \ref{tab:min_dis}. Finally, bond-stretching and bond-bending potentials were applied within the ZrO$_6$ octahedra, and for the La--O bonds, during the RMC simulation.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/nsoq.pdf}
-\caption{Neutron scattering function $S(Q)$ for all temperatures.
-A constant offset has been applied to separate those curves.
-In each case the data are shown as circles,
-and RMC modelling are represented by the solid black lines.}
-\label{fig:nsoq}
-\end{figure}
+It is important to note the contrast between the x-ray and neutron total scattering data. The key point in the formalism, for example equations \ref{eq:iQ} and \ref{eq:Dr}, is the factor $c_m c_n f_m f_n$. The relative sizes of these factors for different atom pairs are compared for both x-ray and neutron scattering in Figure \ref{fig:ccbb}. In the case of x-ray scattering, the dominant contribution is for La--La pairs, but all pairs excluding cases with Li as one ion are reasonably strong. The relative contribution of O--O pairs comes from the fact that is 4 times as many oxygen as Lanthanum giving a relative factor of 16 for $c_\mathrm{O}^2$ over $c_\mathrm{La}^2$. In spite of the high composition of lithium, the low atomic number still means that none of the pairs containing lithium is significant. Thus the x-ray data will primarily contain information about the heavy metal cations and the oxygen anions. On the other hand, the dominant pair in the neutron scattering is the O--O pair. The other significant pairs are for metal cations and oxygen atoms, this time including the Li--O pair. The pairs involving two metal cations are rather less significant. This shows the complementarity of the synchrotron x-ray and neutron total scattering data. The x-ray data provide information about the network of the heavy cations (La and Zr) and oxygen, and the neutron data provide more weight to the oxygen atom and gives sensitivity to the Li--O pair. What is important to note is that there is very weak sensitivity to Li--Li pairs in \textit{both} synchrotron x-ray and neutron total scattering data. This is despite the relatively high concentration of lithium in this compound, $c_\mathrm{Li} = 7/24 = 0.29$. This means that we might expect to be able to obtain good information about the structure of the La$_2$Zr$_3$O$_{12}$ network and its fluctuations, and about the density of the Li ions within the channels in the network, but we are unlikely to be unable to obtain robust information on the Li--Li correlations. This is likely to be usually the case in similar studies any any Li-conducting materials.
 
 \begin{table}[t]
 \centering
@@ -325,15 +347,17 @@ La &      &      &     & 3.3 \\
 \end{tabular}
 \end{table}
 
-\subsection{Electrochemical Impedance Measurements}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.35\textwidth]{Pics/ccbb2.pdf}
+\caption{Comparison of the relative sizes of the functions $c_m c_n f_m f_n$ in equations \ref{eq:iQ} and \ref{eq:Dr} for all atoms pairs for both x-ray (top bar for each pair) and neutron (bottom bar for each pair) total scattering. Both are normalised against the largest value in each case (there is no direct comparison between the values for the two radiation types). Note that Li has a negative neutron scatting factor. In the case of x-ray scattering, the dominant terms are those where the two atoms are heavy (i.e. not lithium) atoms. In the case of neutron scattering, the dominant terms are for the metal--oxygen pairs, this time including the lithium What is clear is that in spite the large fraction of lithium atoms in the chemical formula, the contribution from the Li--Li pairs is small in both cases.}
+\label{fig:ccbb}
+\end{figure}
 
-Electrochemical experiments were carried out in an Ar glovebox (O$_2$; H$_2$O < 1 ppm). For the electrical measurement,
-gold electrodes were evaporated on LLZO by thermal evaporation. The EIS was recorded by a Solartron ModuLab system,
-and contacted via a probe station on a hot stage in the glovebox. EIS was performed with an 10 mV amplitude voltage
-in a frequency range of 50 mHz to 1 MHz.
+The fitted PDF functions $D(r)$ are shown in FIgures \ref{fig:xpdf} and \ref{fig:npdf} for the synchrotron and neutron total scattering data respectively. The corresponding fits to the functions $i(Q)$ are shown in Figures \ref{fig:xsoq} and \ref{fig:nsoq}. The fitted Bragg scattering profiles are shown in Figure \ref{fig:Rietveld_refinement}, where we compare both the Rietveld and RMC calculation profiles with the experimental data.
 
 
-\subsection{Molecular Dynamic Simulation}
+\subsection{Molecular dynamics simulation}
 
 Classical molecular dynamics (MD) simulations were performed using the \texttt{DL\_POLY} package \cite{Todorov:2006ee}.
 Empirical force-fields were used, which include the long-range Coulomb potential,
@@ -377,15 +401,6 @@ O--O   & 22764.30& 0.1490      & 27.63                  \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/xsoq.pdf}
-\caption{Synchrotron scattering function $S(Q)$ for all temperatures.
-A constant offset has been applied to separate those curves.
-In each case the data are shown as circles,
-and RMC modelling are represented by the solid black lines.}
-\label{fig:xsoq}
-\end{figure}
 
 
 
@@ -398,18 +413,71 @@ and RMC modelling are represented by the solid black lines.}
 %bond-bending and bond-stretching motions.
 
 
-\section{Results and discussion}
+\section{Results}
 
-\subsection{Crystal Structure Analysis}
+\subsection{Ionic conductivity}
 
-The structural parameters of Rietveld refinement for all temperatures are listed in Table \ref{tab:Rietveld_structure} and \ref{tab:Li_displacement_parameters},
-which fitted well to the cubic model with space group $Ia\bar{3}d$. A sample fit to the data, namely for the data at 1100 K, is shown in Fig. \ref{fig:gsas}
-The lattice parameters are plotted as functions of temperature in Fig. \ref{fig:lattice}, showing a linear thermal expansion. The coefficient of volumetric thermal expansion is $\alpha_V = 1.18 \times 10^{-5}$ K$^{-1}$. The structure is in good agreement with previous structure refinements \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go, Xie:2011gv,Han:2012is,Li:2012fz,Wang:2014ic}; aspects of the crystal structure have been discussed in these previous works.
+\subsubsection{Electrochemical impedance spectroscopy}
 
+The EIS of the LLZO were examined with a in-plane geometry at elevated temperatures from -20$^\circ$C to 100$^\circ$C, as shown in  Fig.\ref{fig:impedance}.
+From the Nyquist plots, a typical semi arc with the straight tail indicates the ion in-plane diffusion at low frequency occurs along the LLZO.
+The ion conductivity is about 2.1$\times$10$^{-4}$ S/cm at room temperature.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/impedance.png}
+\caption{AC impedance data collected from -20$^\circ$C to 100$^\circ$C.}
+\label{fig:impedance}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.45\textwidth]{Pics/arrhenius-plot.png}
+\includegraphics[width=0.45\textwidth]{Pics/DiffusionCoefficient.png}
+\caption{Top: Conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range. Bottom: Diffusion coefficient at different temperatures}
+\label{fig:arrhenius-plot}
+\end{figure}
+
+The activation energy can be calculated from the series of EIS at elevated temperatures shown in Fig.\ref{fig:arrhenius-plot} (top).
+The activation energy E$_a$ is estimated based on the Arrhenius equation for the ionic conductivity
+\begin{equation}
+\sigma T = \sigma_0 e^{-E_a/k_B T}
+\end{equation}
+where $\sigma$ is the ionic conductivity, $\sigma_0$ is a pre-exponential factor, T is the absolute temperature, and k$_B$ is the Boltzmann constant.
+Furthermore, the diffusion coefficient was calculated using the Nernst-Einstein-equation
+\begin{equation}
+D=\frac{\sigma k_B T}{N_{Li} q^2}
+\end{equation}
+where q is the charge of the lithium and N$_{Li}$ the concentration of lithium, in this case for a cubic LLZO structure.
+The calculated activation energy is about 0.36~eV which is in good agreement to other publications,
+as well as the diffusion coefficient shown in Fig.\ref{fig:arrhenius-plot} (bottom) with 1.31 $\times$ 10$^{-13}$ m$^2$s$^{-1}$ at room temperature.
+
+
+
+
+
+\subsubsection{Lithium-ion diffusion studied by molecular dynamics simulations}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{Pics/MSD.pdf}
+\caption{Mean squared displacement (MSD) of Li from 300 K to 1100 K.
+The slope of MSD of each temperature data set yields the diffusion constant (D).
+The inset shows a diffusion constant (D) versus temperatures.}
+\label{fig:msd}
+\end{figure}
+
+The mean square displacement of lithium ions over the temperature range 300--1100 K are shown in Figure \ref{fig:msd}.
+
+\subsection{Crystal structure analysis}
+
+The structural parameters of LLZO obtained from Rietveld refinement of the neutron scattering data for all temperatures are listed in Table \ref{tab:Rietveld_structure} and \ref{tab:Li_displacement_parameters}. We refined in the standard space group of $Ia\bar{3}d$ with two partially-occupied sites for the Li cations suggested by earlier authors  \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go, Xie:2011gv,Han:2012is,Li:2012fz,Wang:2014ic}. The model gave a good fit to the data, and the example of the fit to the data at 1100 K is shown in Fig. \ref{fig:gsas}.  Aspects of this crystal structure have been discussed in the cited previous works; our aim in this paper is to better explore the continuous distribution of Li cation positions and fluctuations in the crystal structure. However, we will remark that the refinement of the two sites for the Li cations
+
+The lattice parameters are plotted as functions of temperature in Fig. \ref{fig:lattice}, showing a linear thermal expansion. The coefficient of volumetric thermal expansion is $\alpha_V = 11.8 \times 10^{-6}$ K$^{-1}$.
 
 \begin{table*}[t]
 \centering
-\caption{Lattice parameters, atomic fractional coordinates and Li$_2$ site occupancy of Li$_7$La$_2$Zr$_3$O$_{12}$ obtained from Rietveld refinement. Zr has fractional coordinates 0,0,0, La has fractional coordinates $1/4,0,1/4$, Li$_1$ has fractional coordinates $3/8,0,1/4$, and Li$_2$ has fractional coordinates $1/4,y,z$. Note that the Li$_1$ site occupancy is constrained to that of the Li$_2$ site as described in the text. Standard deviations are given for the last significant figures in brackets. }
+\caption{Lattice parameters, atomic fractional coordinates and Li$_2$ site occupancy of Li$_7$La$_2$Zr$_3$O$_{12}$ obtained from Rietveld refinement. Zr has fractional coordinates 0,0,0, La has fractional coordinates $1/4,0,1/4$, Li$_1$ has fractional coordinates $3/8,0,1/4$, and Li$_2$ has fractional coordinates $1/4,y,z$. Note that the Li$_1$ site occupancy is constrained from the value of that of the Li$_2$ site as described in the text. Standard deviations are given for the last significant figures in brackets. }
 \label{tab:Rietveld_structure}
 \begin{tabular}{ccccccccc}
 \hline
@@ -429,21 +497,19 @@ $T$ (K)  & $a$ (\AA) & O $x$        & O $y$        & O $z$        &  Li$_2$ $y$ 
 
 \begin{table*}[t]
 \centering
-\caption{Li displacement parameters $100 \times U_{ij}$(\AA$^2$) refined from Rietveld refinement.For Li$_2$ $U_{22} = U_{33}$ and $U_{12} = - U_{13}.
-$. $U_{ij}$ units are in \AA$^2$.
-Standard deviations are given for the last significant figures in brackets. }
+\caption{Atomic displacement parameters, $100 \times U_{ij}$(\AA$^2$), obtained from Rietveld refinement. For Li$_2$ $U_{22} = U_{33}$ and $U_{12} = - U_{13}$. Standard deviations are given for the last significant figures in brackets. }
 \label{tab:Li_displacement_parameters}
 \begin{tabular}{ccccccccc}
 \hline
 \hline
 $T$ (K) & Li$_1$ $U_\mathrm{iso}$  & Li$_2$ $U_{11}$ & Li$_2$ $U_{22}$ & Li$_2$ $U_{12}$ & Li$_2$ $U_{23}$  & O $U_\mathrm{iso}$  & La $U_\mathrm{iso}$  & Zr $U_\mathrm{iso}$\\
 \hline
-273     &  0.9(5)                  & 10(1)           & 0.09(33)        & -3.6(5)         & -1.4(3)          &  0.97(2)            &  0.63(2)             &  0.62(3)            \\
-450     & -0.6(2)                  & 13(1)           & 0.2(2)          & -6.1(4)         & -2.5(2)          &  0.97(1)            &  0.56(2)             &  0.35(2)            \\
-600     &  1.4(8)                  & 14(1)           & 0.5(2)          & -4.4(4)         & -2.3(3)          &  1.7(1)             &  1.16(2)             &  1.03(3)            \\
-750     & -2.8(2)                  & 19(1)           & 1.9(5)          & -10.7(8)        & -4.9(5)          & -0.20(1)            & -0.01(2)             & -0.43(2)            \\
-900     & -2.7(1)                  & 16(1)           & 0.4(3)          & -7.4(5)         & -3.1(3)          &  0.74(1)            &  0.38(2)             & -0.10(2)            \\
-1100    &  3.7(7)                  & 16(1)           &-0.6(2)          & -5.4(4)         & -2.9(2)          &  1.97(1)            &  1.39(2)             &  0.93(2)            \\
+273     &  0.9(5)        & 10(1)     &  0.19(3)        & $-3.6$(5)      & $-1.4$(3)     &  0.97(2)        &  0.63(2)         &  0.62(3)        \\
+450     & $-0.6$(2)    & 13(1)     &  0.2(2)          & $-6.1$(4)      & $-2.5$(2)     &  0.97(1)        &  0.56(2)         &  0.35(2)        \\
+600     &  1.4(8)        & 14(1)     &  0.5(2)          & $-4.4$(4)      & $-2.3$(3)     &  1.7(1)          &  1.16(2)         &  1.03(3)        \\
+750     & $-2.8$(2)    & 19(1)     &  1.9(5)          & $-10.7$(8)    & $-4.9$(5)     & $-0.20$(1)    & $-0.01$(2)     & $-0.43$(2)   \\
+900     & $-2.7$(1)    & 16(1)     &  0.4(3)          & $-7.4$(5)      & $-3.1$(3)     &  0.74(1)        &  0.38(2)         & $-0.10$(2)    \\
+1100   &  3.7(7)        & 16(1)     & $-0.6$(2)      & $-5.4$(4)      & $-2.9$(2)     &  1.97(1)        &  1.39(2)         &  0.93(2)        \\
 \hline
 \hline
 \end{tabular}
@@ -483,42 +549,62 @@ $T$ (K) & Li$_1$ $U_\mathrm{iso}$  & Li$_2$ $U_{11}$ & Li$_2$ $U_{22}$ & Li$_2$ 
 
 
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/bragg.pdf}
-\caption{The Bragg diffraction data. The data are represented as circles with constant offset to separate those curves.
-The solid black lines indicate the  calculated intensities from GSAS, and RMC modeling are represented by the solid red lines. }
-\label{fig:Rietveld_refinement}
-\end{figure}
 
-\subsection{Local Structure Analysis}
-The synchrotron pair distribution function $D(r)$ defined as functions \ref{fun:dofr_0} and \ref{fun:dofr_1}, are shown in Fig. \ref{fig:xpdf}.
-The first peak corresponds to the La-O nearest-neighbor distance at around 2.5~\AA, and the second peaks refers to La-Zr around 3.6~\AA.
-The position and integrated area are constant for all temperatures,
-reflection there is no significant differences in crystal framwork structure. The higher-$r$ PDF shows shifting and broadening of the peaks as the temperature rising,
-because of the increases of the lattice parameters.
+\subsection{Local structure analysis}
+%The synchrotron pair distribution function $D(r)$ defined as functions \ref{fun:dofr_0} and \ref{fun:dofr_1}, are shown in Fig. \ref{fig:xpdf}.
+%The first peak corresponds to the La-O nearest-neighbor distance at around 2.5~\AA, and the second peaks refers to La-Zr around 3.6~\AA.
+%The position and integrated area are constant for all temperatures,
+%reflection there is no significant differences in crystal framwork structure. The higher-$r$ PDF shows shifting and broadening of the peaks as the temperature rising,
+%because of the increases of the lattice parameters.
+%
+% The RMC analysis used 4 data sets to perform RMC fits, including Bragg data (Fig.\ref{fig:Rietveld_refinement}) and PDF $D(r)$ from neutron total scattering (Fig.\ref{fig:npdf}),
+% and scattering function $i(Q)$ from both neutron (Fig.\ref{fig:nsoq})  and synchrotron experiments(Fig.\ref{fig:xsoq}) .
+%
+%
+%The low-$r$  distributions of distances from the RMC and MD configurations are shown in  Fig.\ref{fig:partialPDFs}.
+%%The interesting point about these diagrams is that
+%%the O-X (X represents Li, La, Zr or O) distribution from RMC are smoother than those from MD in all temperatures, as shown in Fig.\ref{fig:partialPDFwithLi}, indicating the Li-ion movement remains  disorderly.
+%%But the framework structure keep stable in each case as shown in Fig.\ref{fig:partialPDFwithoutLi}, which is consist with the result of XPDF as shown in Fig. \ref{fig:xpdf}.
+%
+%From the configurations from both RMC and MD we have formed the distributions of Zr--O and La--O distances within the structural polyhedra, and distributions of O--Zr--O and O--La--O bond angles. The distributions of bond lengths are shown in Figure \ref{fig:bonds}, and the distributions of bond angles are shown in Figure \ref{fig:angles}.
 
- The RMC analysis used 4 data sets to perform RMC fits, including Bragg data (Fig.\ref{fig:Rietveld_refinement}) and PDF $D(r)$ from neutron total scattering (Fig.\ref{fig:npdf}),
- and scattering function $i(Q)$ from both neutron (Fig.\ref{fig:nsoq})  and synchrotron experiments(Fig.\ref{fig:xsoq}) .
-
-
-The low-$r$  distributions of distances from the RMC and MD configurations are shown in  Fig.\ref{fig:partialPDFs}.
-%The interesting point about these diagrams is that
-%the O-X (X represents Li, La, Zr or O) distribution from RMC are smoother than those from MD in all temperatures, as shown in Fig.\ref{fig:partialPDFwithLi}, indicating the Li-ion movement remains  disorderly.
-%But the framework structure keep stable in each case as shown in Fig.\ref{fig:partialPDFwithoutLi}, which is consist with the result of XPDF as shown in Fig. \ref{fig:xpdf}.
-
-
-
+\subsubsection{Behaviour of the La$_\mathbf{2}$Zr$_\mathbf{3}$O$_\mathbf{12}$ network}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/partialPDFs.pdf}
-\caption{The distributions calculated from RMCProfile of (1) Li-O, (2)O-O, (3)O-Zr, (4)O-La at low-$r$ range for all temperatures.
-A constant offset has been applied to separate those curves.
-In each case the RMC modelling are shown as circles,
-and the solid black lines indicate the values obtained from Molecular Dynamic simulation}
+\caption{The distributions calculated from RMCProfile of (1) Li--O, (2) O--O, (3) Zr--O, and  (4) La--O at low-$r$, show for all temperatures.
+A constant offset has been applied to separate those curves. In each case the RMC modelling are shown as circles, and the solid black lines indicate the values obtained from Molecular Dynamic simulation}
 \label{fig:partialPDFs}
 \end{figure}
+
+Some of the partial PDF functions $g_{mn}(r)$ are shown in Figure \ref{fig:partialPDFs}, comparing the results from both MD and RMC.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.6\textwidth]{Pics/bonds.pdf}
+\caption{The distributions of Zr--O and La--O bond lengths at the different temperatures (blue to red corresponds to 293 K to 1100 K) in both the RMC and MD models, each averaged over six independent configurrations.}
+\label{fig:bonds}
+\end{figure*}
+
+The distributions of the Zr--O and La--O bond lengths from both RMC and MD simulations at each temperature are shown in Figure \ref{fig:bonds}. The results from the two methods are, unsurprisingly, consistent in terms of mean distances and the variation of the widths of the distances.
+
+One very interesting feature from both the RMC and MD (actually more strongly seen in the latter) is that the distribution of La--O distances is not symmetric but shows a wider spread to larger distances. This suggests quite a strong anharmonicity, and reflects a similar situation seen in CsPbI$_3$ albeit to a lesser extent. In the crystal structure there are two distinct La--O bond lengths (2.53 and 2.63 \AA\ at temperature of 1100 K), but these are not sufficiently different to explain the width of the distribution.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.6\textwidth]{Pics/angles.pdf}
+\caption{The distributions of O--Zr--O and O--La--O bond angles at the different temperatures (blue to red corresponds to 293 K to 1100 K) in both the RMC and MD models, each averaged over six independent configurations.}
+\label{fig:angles}
+\end{figure*}
+
+The distributions of  O--Zr--O and O--La--O bond angles from both RMC and MD at the different temperatures are shown in Figure \ref{fig:angles}. The RMC and MD results are consistent in most respects. The key features in the O--Zr--O distribution reflect a slightly distorted octahedron, with nearly right-angle bond angles deviating from the ideal $90^\circ$ by a few degrees. The fluctuations in the O--Zr--O bond angles are slightly larger in the RMC than in the MD, and there are features to indicate a few large distortions of around  $20^\circ$.
+
+The LaO$_8$ polyhedron is not of regular shape. There are two distinct La--O distances in the average structure as noted above, and of the 28 O--La--O bond angles there are 10 distinct angle values which may correspond to 2 or 4 angles. Thus this distribution of O--La--O angles is rather more complicated than for the angles within the ZrO$_6$ octahedra, as seen in Figure \ref{fig:angles}. The MD and RMC both capture this distribution, with the peaks in the distribution from the RMC simulation being slightly broader than from the MD simulation. There is again evidence for some defects in the RMC simulation, with the small peak around 50--60$^\circ$.
+
+The data for bond lengths and angles (Figures \ref{fig:bonds} and \ref{fig:angles} respectively) show that the ZrO$_6$ and LaO$_8$ polyhedra retain their integrity across the full range of temperatures in both RMC and MD (aside from some defects in the RMC), with only a slight broadening with increasing temperature. Thus we conclude that the backbone network structure with channels for Li-ion diffusion will remain steady across the whole temperature range.
+
+
 %
 %\begin{figure}[t]
 %\centering
@@ -528,92 +614,59 @@ and the solid black lines indicate the values obtained from Molecular Dynamic si
 %\end{figure}
 
 
-\subsection{Electrochemical Impedance Spectroscopy}
-
-The EIS of the LLZO were examined with a in-plane geometry at elevated temperatures from -20$^\circ$C to 100$^\circ$C, as shown in  Fig.\ref{fig:impedance}.
-From the Nyquist plots, a typical semi arc with the straight tail indicates the ion in-plane diffusion at low frequency occurs along the LLZO.
-The ion conductivity is about 2.1$\times$10$^{-4}$ S/cm at room temperature.
-
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.5\textwidth]{Pics/impedance.png}
-\caption{AC impedance data collected from -20$^\circ$C to 100$^\circ$C.}
-\label{fig:impedance}
-\end{figure}
-
-The activation energy can be calculated from the series of EIS at elevated temperatures shown in Fig.\ref{fig:arrhenius-plot}.
-The activation energy E$_a$ is estimated based on the Arrhenius equation for the ionic conductivity
-
-\begin{equation}
-\sigma T = \sigma_0 e^{-E_a/k_B T}
-\end{equation}
-
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/arrhenius-plot.png}
-\caption{A plot of conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range.}
-\label{fig:arrhenius-plot}
-\end{figure}
-
-where $\sigma$ is the ionic conductivity, $\sigma_0$ is a pre-exponential factor, T is the absolute temperature, and k$_B$ is the Boltzmann constant.
-Furthermore, the diffusion coefficient was calculated using the Nernst-Einstein-equation
-
-\begin{equation}
-D=\frac{\sigma k_B T}{N_{Li} q^2}
-\end{equation}
-
-where q is the charge of the lithium and N$_{Li}$ the concentration of lithium, in this case for a cubic LLZO structure.
-The calculated activation energy is about 0.36~eV which is in good agreement to other publications,
-as well as the diffusion coefficient shown in Fig.\ref{fig:DiffusionCoefficient} with 1.31 $\times$ 10$^{-13}$ m$^2$s$^{-1}$ at room temperature.
-
-
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/DiffusionCoefficient.png}
-\caption{Diffusion coefficient at different temperatures}
-\label{fig:DiffusionCoefficient}
+\includegraphics[width=0.23\textwidth]{Pics/collapsed_RMC.png}
+\includegraphics[width=0.23\textwidth]{Pics/collapsed_MD.png}
+\caption{Distribution of instantaneous lithium-ion positions in RMC (left) and MD (right) configurations, obtained by collapsing each configuration down to one unit cell and then adding 6 separate configurations.}
+\label{fig:collapsed}
 \end{figure}
 
 
-\subsection{Lithium Distribution and Dynamics Analysis}
+\subsection{Distribution of lithium cations}
+
+By collapsing the configurations down into one unit cell, and drawing only the lithium ions, we can get a feel for the transition pathways. Examples from both RMC and MD (temperature of 273 K) are shown in Figure \ref{fig:collapsed}. The two simulations are consistent with each other, except that there is a broader distribution of atoms positions in the RMC. What is clear from the images is that the pathways for the diffusion of lithium ions is not a set of straight lines but a more complex set of connected curves. The three-dimensional connections between separate pathways is clear, but what is apparent is that a simple slice of three-dimensional space will not capture much of the overall picture.
 
 
-
-The 3D density maps of Li in cubic garnets are shown in Fig.\ref{fig:pdfs}.
-The lithium distribution can ben expected in liquid and amorphous materials
-
-%\begin{figure*}[t]
-%\centering
-%\includegraphics[width=0.9\textwidth]{Pics/pdfs.pdf}
-%\caption{Isosurfaces with level of 0.1~\AA$^{-3}$ (yellow) and 3~\AA$^{-3}$ (red)}
-%\label{fig:pdfs}
-%\end{figure*}
-%
 \begin{figure}[t]
-\centering
-\includegraphics[width=0.5\textwidth]{Pics/MSD.pdf}
-\caption{Mean squared displacement (MSD) of Li from 300 K to 1100 K.
-The slope of MSD of each temperature data set yields the diffusion constant (D).
-The inset shows a diffusion constant (D) versus temperatures.}
-\label{fig:msd}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{pics/density_plots.pdf}
+\label{fig:density_plots}
+\caption{\label{fig:density_plots}  Li-density plots.}
+\end{center}
 \end{figure}
 
+We also remark that simply plotting atoms in a three-dimensional space is a poor way to represent the quantitative density of atoms. Such a plot, in which points are represented by finite-size spheres, tends to exaggerate the visual representation of the lower-density regions and masks the higher-density regions with many overlapping spheres. In view of the comment regarding the inadequacy of slices of the three-dimensional density, we plot in Figure \ref{fig:density_plots} the projections of the lithium-ion densities onto a surface perpendicular to the crystal 4-fold axes. To reduce statistical noise, not only did we combine six independent configurations in each case but we also applied some of the symmetry operations
 
-\begin{figure}[t]
+The key point seen in Figure \ref{fig:density_plots} is that the lithium ions are clearly not distributed evenly within the channels identified in Figure \ref{fig:collapsed}, but have a high probability of being located around a set of identifiable positions. These are the Li1 and Li2 positions described in Table \ref{tab:Rietveld_structure}, as indicated in the top RMC image of Figure \ref{fig:density_plots}. What we see in the density plots is that on heating there is a a growing density between the special positions, corresponding to increased lithium-ion mobility.
+
+Inspection of Figure \ref{fig:density_plots} shows that the same special places are found for lithium in both the RMC and MD, but their relative weightings are different. Actually, visually the differences in weighting make the RMC and MD results look more different than they really are.
+
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{pics/site_density.pdf}
+\label{fig:density_plots}
+\caption{\label{fig:site_density}  Li-density plots.}
+\end{center}
+\end{figure*}
+
+To quantify the results better, we have calculated the density along certain linear directions that contain the Li$_1$ and Li$_2$ sites, as indicated by the lines in the MD image at the top. The lithium-ion densities along the linear directions are shown in Figure \ref{fig:site_density}. In both RMC and MD the peaks occur in exactly the same places, and in both cases the peak heights decrease on heating with a broadening that does not commensurably match the decreasing peak eight. This is consistent with the observation of a growing density of lithium ions between these special positions in Figure \ref{fig:density_plots}.
+
+\subsection{Ionic phonon density of states}
+
+\begin{figure*}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/powerSpectra.pdf}
-\caption{The power spectra of (1) Li, (2)La, (3)Zr, (4)O  for all temperatures.}
+\caption{The power spectra of (1) Li, (2) La, (3) Zr, (4) O  for all temperatures.}
 \label{fig:powerSpectra}
-\end{figure}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.5\textwidth]{Pics/entropy.pdf}
-%\caption{The entropy of Li distribution. Data represented by back circles are the experimentally determined values using RMC refinement.
-%Red circles represent the Molecular Dynamic simulation ones.}
-%\label{fig:entropy}
-%\end{figure}
+\end{figure*}
+
+From the MD simulations we calculated the velocity autocorrelation functions for each atom type. Fourier transform of these functions give power spectra, the combination of which would give the phonon density of states. Here we show the four atoms types separation, displayed in Figure \ref{fig:powerSpectra}.
+
+The data for different temperatures show exactly the same behaviour for oxygen, zirconium and lanthanum. The much heavier mass of the lanthanum atom means that its power spectrum is mostly around the low-frequency part of the spectrum. On the other hand, the oxygen power spectrum is spread across all frequencies up to 40 THz, reflecting stretching vibrations of Z--O and La--O bonds in addition to the lower mass. The zirconium power spectrum is intermediate reflecting the fact that its mass is lower than lanthanum.
+
+The lithium power spectrum is interesting. The other three power spectra go to zero at low frequency, reflecting the normal Debye frequency-squared dependence of the density of states. However, the lithium power spectra do not go to zero at low frequency, reflecting the diffusion. The size of the power spectrum at zero frequency increases with temperature, as would be expected given that diffusion is a thermally-activated process. What is also interesting about the power spectrum is that there is a significant contribution peaking at around 13 THz and extending to 40 THz. Other most of the frequency range, therefore, the lithium ion appears to be vibrating as a bound particle, with the higher frequency reflecting the light mass of the atom compared with the other atoms. The coincidence of the upper frequency in the power spectrum of lithium with that of oxygen suggests that the bound Li--O pair execute bond-stretching types of vibrations.
+
 
 
 %\begin{figure}
@@ -663,13 +716,17 @@ The inset shows a diffusion constant (D) versus temperatures.}
 %In principle this model contains all the essential interactions to give negative thermal expansion, a characteristic of ScF$_3$ and ReO$_3$ if not of many other perovskites other than when associated with a displacive phase transition or through magnetic/electronic effects.
 
 
-
 \section{Conclusions}
-The conclusions section should come in this section at the end of the article, before the Conflicts of interest statement.
+
+In this paper we have explored the three-dimensional distribution of lithium ions in the fast-ion conductor Li$_7$La$_3$Zr$_2$O$_{12}$ using a combination of simulation by the RMC method based on both neutron and x-ray total scattering data, and by the MD method. There is a high-consistency between the two methods, albeit with some differences concerning the distribution of lithium positions. The backbone La$_3$Zr$_2$O$_{12}$ network is robust at all temperatures. The network defines a set of curved pathways for the motions of lithium ions.
+
+The results of the two simulations are supported by ionic conductivity measurements to give the lithium ion diffusion. These results are reproduced by the MD simulations.
+
+The key result of this paper is to explore this diffusion pathway from both experiment and simulation. Here is where there are similarities in both methods but also some differences. In both cases there is a pattern of the lithium ions preferentially lying close to some specific sites and moving between these sites. The changes in occupancy on heating corresponding to the ions moving into the channels. On the other hand, the relative weights of the two types of special site are different between the RMC and MD.
 
 \section{Appendix}
 
-\subsection{The Correlation Functions}
+\subsection{The correlation functions}
 
 Time-dependent correlation functions are valuable tools to describe the average way the quantity will change with time,
 and predict the trends within the behaviour of atomic structure and dynamics.
@@ -719,7 +776,7 @@ respect to a reference position over time. MSD is related to the $G_s(r,t)$ as:
   \langle \Delta r_i(t)\rangle ^2=\int_{0}^{\infty} (\Delta r_i(t))^2\cdot 4\pi(\Delta r_i(t))^2G_s(\Delta r,t)d\Delta r
 \end{equation}
 
-\subsection{ Nernst-Einstein  Equation}
+\subsection{ Nernst-Einstein  equation}
 
 The value of ionic conductivity ($\sigma$) is determined by the impedance spectroscopy.
 In solid electrolytes, as the anions are immobile, the ionic conduction is driven by the diffusion of Li$^+$ ions.
@@ -736,7 +793,13 @@ where $k$ is the Boltzmann constant, $e$ is the elementary charge, and N is the 
 There are no conflicts to declare.
 
 \section*{Acknowledgements}
-The Acknowledgements come at the end of an article after Conflicts of interest and before the Notes and references.
+
+We are grateful to ISIS and Diamond for provision of beam
+time (Projects No. XXXXX and No. XXXXX). Haolai Tian is
+grateful to the China Scholarship Council (No. 201704910231) for financial support.
+This work is also supported by the National Natural Science Foundation of China (No. 11675195).
+This research utilized HPC facility of China Spallation Neutron Source, supported by IHEP 
+Computer Center, especially Mr. Yakang Li.
 
 %%%END OF MAIN TEXT%%%
 
