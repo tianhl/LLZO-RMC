@@ -432,21 +432,24 @@ The ion conductivity is about 2.1$\times$10$^{-4}$ S/cm at room temperature.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.45\textwidth]{Pics/arrhenius-plot.png}
-\includegraphics[width=0.45\textwidth]{Pics/DiffusionCoefficient.png}
-\caption{Top: Conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range. Bottom: Diffusion coefficient at different temperatures}
+\includegraphics[width=0.45\textwidth]{Pics/arrhenius-plot.pdf}
+\includegraphics[width=0.45\textwidth]{Pics/DiffusionCoefficient.pdf}
+\caption{Top: Conductivity as a function of temperature for LLZO. The line indicates an Arrhenius fit over the whole temperature range. Bottom: Diffusion coefficient at different temperatures. The circles represent the results calculated from EIS, and squares from MD simulation.}
 \label{fig:arrhenius-plot}
 \end{figure}
+
 
 The activation energy can be calculated from the series of EIS at elevated temperatures shown in Fig.\ref{fig:arrhenius-plot} (top).
 The activation energy E$_a$ is estimated based on the Arrhenius equation for the ionic conductivity
 \begin{equation}
 \sigma T = \sigma_0 e^{-E_a/k_B T}
+\label{eq:Arrhenius-equation}
 \end{equation}
 where $\sigma$ is the ionic conductivity, $\sigma_0$ is a pre-exponential factor, T is the absolute temperature, and k$_B$ is the Boltzmann constant.
 Furthermore, the diffusion coefficient was calculated using the Nernst-Einstein-equation
 \begin{equation}
 D=\frac{\sigma k_B T}{N_{Li} q^2}
+\label{eq:Nernst-Einstein-equation}
 \end{equation}
 where q is the charge of the lithium and N$_{Li}$ the concentration of lithium, in this case for a cubic LLZO structure.
 The calculated activation energy is about 0.36~eV which is in good agreement to other publications,
@@ -461,17 +464,27 @@ as well as the diffusion coefficient shown in Fig.\ref{fig:arrhenius-plot} (bott
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.5\textwidth]{Pics/MSD.pdf}
-\caption{Mean squared displacement (MSD) of Li from 300 K to 1100 K.
-The slope of MSD of each temperature data set yields the diffusion constant (D).
-The inset shows a diffusion constant (D) versus temperatures.}
+\caption{Mean squared displacement (MSD) of Li from 300 K to 1100 K.}
 \label{fig:msd}
 \end{figure}
 
-The mean square displacement of lithium ions over the temperature range 300--1100 K are shown in Figure \ref{fig:msd}.
+The diffusion of lithium ions is crucial for the performance of solid electrolyte operation, especially for the ion conductivity.
+The Mean Square Displacement (MSD) of lithium ions are investigated from the MD simulations, shown in Figure \ref{fig:msd}.
+The slope of MSD of each temperature data set yields the diffusion constant (D), and the relationship between MSD and diffusion coefficient is generally valid:
+
+\begin{equation}
+<r^2>=q_iDt
+\end{equation}
+
+where $<r^2>$ represents MSD, $q_i$ is numerical constant which depends on dimensionality, here $q_i$ = 6 for 3 dimensional diffusion,
+%qi - numerical constant which depends on dimensionality: qi = 2, 4, or 6, for 1, 2, or 3 dimensional diffusion.
+and $t$ is time. The diffusion coefficient from MD is also shown in Fig.\ref{fig:arrhenius-plot} (bottom) with 3.11 $\times$ 10$^{-13}$ m$^2$s$^{-1}$ at room temperature.
+And the activation energy shown in Fig.\ref{fig:arrhenius-plot} (top), which is about 0.16~eV, can also be calculated from MSD according to the equations \ref{eq:Arrhenius-equation} and \ref{eq:Nernst-Einstein-equation}.
+
 
 \subsection{Crystal structure analysis}
 
-The structural parameters of LLZO obtained from Rietveld refinement of the neutron scattering data for all temperatures are listed in Table \ref{tab:Rietveld_structure} and \ref{tab:Li_displacement_parameters}. We refined in the standard space group of $Ia\bar{3}d$ with two partially-occupied sites for the Li cations suggested by earlier authors  \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go, Xie:2011gv,Han:2012is,Li:2012fz,Wang:2014ic}. The model gave a good fit to the data, and the example of the fit to the data at 1100 K is shown in Fig. \ref{fig:gsas}.  Aspects of this crystal structure have been discussed in the cited previous works; our aim in this paper is to better explore the continuous distribution of Li cation positions and fluctuations in the crystal structure. However, we will remark that the refinement of the two sites for the Li cations
+The structural parameters of LLZO obtained from Rietveld refinement of the neutron scattering data for all temperatures are listed in Table \ref{tab:Rietveld_structure} and \ref{tab:Li_displacement_parameters}. We refined in the standard space group of $Ia\bar{3}d$ with two partially-occupied sites for the Li cations suggested by earlier authors  \cite{Awaka:2009jv,Buschmann:2011jo,Geiger:2011cg, Awaka:2011il, DanielRettenwander:2016ei,Wagner:2016bh,Kataoka:2019go, Xie:2011gv,Han:2012is,Li:2012fz,Wang:2014ic}. The model gave a good fit to the data, and the example of the fit to the data at 1100 K is shown in Fig. \ref{fig:gsas}.  Aspects of this crystal structure have been discussed in the cited previous works; our aim in this paper is to better explore the continuous distribution of Li cation positions and fluctuations in the crystal structure. However, we will remark that the refinement of the two sites for the Li cations.
 
 The lattice parameters are plotted as functions of temperature in Fig. \ref{fig:lattice}, showing a linear thermal expansion. The coefficient of volumetric thermal expansion is $\alpha_V = 11.8 \times 10^{-6}$ K$^{-1}$.
 
@@ -776,30 +789,27 @@ respect to a reference position over time. MSD is related to the $G_s(r,t)$ as:
   \langle \Delta r_i(t)\rangle ^2=\int_{0}^{\infty} (\Delta r_i(t))^2\cdot 4\pi(\Delta r_i(t))^2G_s(\Delta r,t)d\Delta r
 \end{equation}
 
-\subsection{ Nernst-Einstein  equation}
-
-The value of ionic conductivity ($\sigma$) is determined by the impedance spectroscopy.
-In solid electrolytes, as the anions are immobile, the ionic conduction is driven by the diffusion of Li$^+$ ions.
-The connection between the diffusion constant (D) and $\sigma$ is defined by the Nernst-Einstein (NE) equation,
-which are widely used for electrolyte system. NE equation is given as
-
-\begin{equation}
-D(T)=\frac{kT}{Ne^2}\sigma(T)
-\end{equation}
-
-where $k$ is the Boltzmann constant, $e$ is the elementary charge, and N is the number of carrier ions.
+%\subsection{ Nernst-Einstein  equation}
+%
+%The value of ionic conductivity ($\sigma$) is determined by the impedance spectroscopy.
+%In solid electrolytes, as the anions are immobile, the ionic conduction is driven by the diffusion of Li$^+$ ions.
+%The connection between the diffusion constant (D) and $\sigma$ is defined by the Nernst-Einstein (NE) equation,
+%which are widely used for electrolyte system. NE equation is given as
+%
+%\begin{equation}
+%D(T)=\frac{kT}{Ne^2}\sigma(T)
+%\end{equation}
+%
+%where $k$ is the Boltzmann constant, $e$ is the elementary charge, and N is the number of carrier ions.
 
 \section*{Conflicts of interest}
 There are no conflicts to declare.
 
 \section*{Acknowledgements}
-
-We are grateful to ISIS and Diamond for provision of beam
-time (Projects No. XXXXX and No. XXXXX). Haolai Tian is
-grateful to the China Scholarship Council (No. 201704910231) for financial support.
-This work is also supported by the National Natural Science Foundation of China (No. 11675195).
-This research utilized HPC facility of China Spallation Neutron Source, supported by IHEP 
-Computer Center, especially Mr. Yakang Li.
+Haolai Tian is grateful to the China Scholarship Council (No. 201704910231) for financial support.
+This work is also funded by the National Natural Science Foundation of China (No. 11675195).
+This research utilized radiation facilities operated by ISIS and Diamond of STFC for provision of beam time(Projects No. XXXXX and No. XXXXX),
+as well as HPC facility of China Spallation Neutron Source, supported by IHEP Computering Center, especially Mr. Yakang Li.
 
 %%%END OF MAIN TEXT%%%
 

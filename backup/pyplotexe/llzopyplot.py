@@ -632,4 +632,122 @@ def plotPartialGofrInOneFig():
             x_label = True
         plotPartialGofr(ppdfs[key],x_label)
 
+def plotAllMSD():
+    import matplotlib.pyplot as plt
+    import math
+    definePlot(32.0,5.0)
+    ct = ConstantValue
+    slope=[]
+    for temperature in ct.TEM_LIST:
+        t,l,o,z,a=readSTATIS(temperature=temperature)
+        color = getattr(ct,'COLOR_'+temperature)
+        start = math.ceil(len(t)/10) 
+        end   = math.ceil(len(t)/2)
+        plt.plot(t[start:end],l[start:end],color=color,marker='o')
+        rg=np.polyfit(t[start:end],l[start:end], 1)
+        ry=np.polyval(rg,t[start:end])
+        plt.plot(t[start:end],ry,color='k',linewidth=5)
+        deltaY = ry[-1]   - ry[0]
+        deltaX = t[end] - t[start]
+        slope.append(deltaY/deltaX)
+    plt.xlabel('time (ps)',fontsize=100)
+    plt.ylabel('MSD ($\mathrm{\AA^2}$)',fontsize=100)
+    print(slope)    
+    
+
+def readSTATIS(dirname='../md.data/mdplotfiles/', temperature = '293'):
+    import math
+    if int(temperature) > 700:
+        temperature = 'P'+temperature
+    filename=dirname+'STATIS_'+temperature+'K'
+    print(filename)
+    f = open(filename)
+    line = f.readline()
+    line = f.readline()
+    line = f.readline()
+    time = []
+    dofl = []
+    dofo = []
+    dofz = []
+    dofa = []
+    while(line):
+        # record 1
+        items = line.split()
+        nframe, ntime, nitem = int(items[0]), float(items[1]), int(items[2])
+        time.append(ntime)
+        nrecord = math.ceil(nitem/5)
+        for i in range(5): # record 2-6
+            line = f.readline()
+        items    = f.readline().split() # record 7
+        DLi, DO  = float(items[3]), float(items[4])
+        items    = f.readline().split() # record 8
+        DZr, DLa = float(items[0]), float(items[1])
+        dofl.append(DLi)
+        dofo.append(DO)
+        dofz.append(DZr)
+        dofa.append(DLa)
+        for i in range(nrecord - 7): # rest records
+            line = f.readline()
+        line = f.readline() # next frame    
+    return np.array(time), np.array(dofl), np.array(dofo), np.array(dofz), np.array(dofa)
+
+def plotD():
+    
+    plt.axes(yscale = "log")  
+    plt.ylim(0.5E-13, 1.5E-11)
+    definePlot(xup=3.5, xlow=0.5)
+    my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
+    mx=np.array([293.,450.,600.,750.,900.,1100.])
+    mx=1000/mx
+    my=my*1E-11
+    plt.plot(mx,my,'s',color='k', markersize=30)
+    
+    mrg=np.polyfit(mx, my, 1)
+    mry=np.polyval(mrg,mx)
+    #plt.plot(mx,mry,color='k',linewidth=5)
+    
+    ex=np.array([2.68097,2.75482,2.83286,2.91545,3.003,3.19489,3.41297])
+    ey=np.array([6.02091E-12,3.6901E-12,3.056E-12,2.08526E-12,1.38574E-12,6.57443E-13,1.31293E-13])
+    plt.plot(ex,ey, 'o', color='k', markersize=30)
+    erg=np.polyfit(ex, ey, 1)
+    ery=np.polyval(erg,ex)
+    #plt.plot(ex,ery,color='k',linewidth=5)
+    
+    plt.xlabel('1000/T (K$^{-1}$)',fontsize=100)
+    plt.ylabel('$\mathrm{D_{Li}(m^2 s^{-1}}$)',fontsize=100)
+
+
+def plotDiffuseCoeff():
+    definePlot(xup=3.7, xlow=.6)
+    my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
+    mx=np.array([293.,450.,600.,750.,900.,1100.])
+    my=my/6
+    my=np.log(my*mx)
+    mx=1000/mx
+    plt.plot(mx,my, 's', color='k', markersize=30)
+    
+    ex=np.array([2.68097,2.75482,2.83286, 2.91545, 3.003,   3.19489])
+    ey=np.array([1.05308,0.5635, 0.37495,-0.00726,-0.41592,-1.16155])
+    plt.xlabel('1000/T (K$^{-1}$)',fontsize=100)
+    plt.ylabel('ln($\mathrm{D_{Li}T}$)',fontsize=100)
+    plt.plot(ex,ey, 'o', color='k', markersize=30)
  
+    mrg=np.polyfit(mx, my, 1)
+    mry=np.polyval(mrg,mx)
+    plt.plot(mx,mry,color='k',linewidth=5)
+    mae=-((mry[-1]-mry[0])/(mx[-1]-mx[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
+    print(mae)
+    plt.annotate('$\mathrm{E_a}$='+format(mae,'0.2f')+' eV', fontsize=100, xy=(2.5,4.0))
+    
+    
+    
+    erg=np.polyfit(ex, ey, 1)
+    ery=np.polyval(erg,ex)
+    plt.plot(ex,ery,color='k',linewidth=5)
+    eae=-((ery[-1]-ery[0])/(ex[-1]-ex[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
+    plt.annotate('$\mathrm{E_a}$='+format(eae,'0.2f')+' eV', fontsize=100, xy=(1.5,0.2))
+    
+    plt.grid()
+    
+    
+    
