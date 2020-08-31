@@ -596,7 +596,7 @@ def plotXSoqInOneFig():
     ct = ConstantValue
     for temperature in ct.TEM_LIST:
         color = getattr(ct,'COLOR_'+temperature)
-        x,c,e=getXSoqByTemperature(temperature)
+        x,c,e  = getXSoqByTemperature(temperature)
         soq_c, = plt.plot(x,c+offset,'black',linewidth=5)
         soq_e, = plt.plot(x,e+offset,color+'o',linewidth=5)
         offset += 3.0
@@ -700,7 +700,7 @@ def plotD():
     mx=np.array([293.,450.,600.,750.,900.,1100.])
     mx=1000/mx
     my=my*1E-11
-    plt.plot(mx,my,'s',color='k', markersize=30)
+    plt.plot(mx,my,'o', markerfacecolor='none', markeredgewidth=5., color='k', markersize=40)
     
     mrg=np.polyfit(mx, my, 1)
     mry=np.polyval(mrg,mx)
@@ -708,7 +708,7 @@ def plotD():
     
     ex=np.array([2.68097,2.75482,2.83286,2.91545,3.003,3.19489,3.41297])
     ey=np.array([6.02091E-12,3.6901E-12,3.056E-12,2.08526E-12,1.38574E-12,6.57443E-13,1.31293E-13])
-    plt.plot(ex,ey, 'o', color='k', markersize=30)
+    plt.plot(ex,ey, 'o', color='k', markersize=40)
     erg=np.polyfit(ex, ey, 1)
     ery=np.polyval(erg,ex)
     #plt.plot(ex,ery,color='k',linewidth=5)
@@ -724,13 +724,13 @@ def plotDiffuseCoeff():
     my=my/6
     my=np.log(my*mx)
     mx=1000/mx
-    plt.plot(mx,my, 's', color='k', markersize=30)
+    plt.plot(mx,my, 'o', markerfacecolor='none',  markeredgewidth=5.,color='k', markersize=40)
     
     ex=np.array([2.68097,2.75482,2.83286, 2.91545, 3.003,   3.19489])
     ey=np.array([1.05308,0.5635, 0.37495,-0.00726,-0.41592,-1.16155])
     plt.xlabel('1000/T (K$^{-1}$)',fontsize=100)
     plt.ylabel('ln($\mathrm{D_{Li}T}$)',fontsize=100)
-    plt.plot(ex,ey, 'o', color='k', markersize=30)
+    plt.plot(ex,ey, 'o', color='k', markersize=40)
  
     mrg=np.polyfit(mx, my, 1)
     mry=np.polyval(mrg,mx)
