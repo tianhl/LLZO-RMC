@@ -126,8 +126,9 @@ def rmcloaddata(filename):
         exp_array.append(float(i[2]))
     return np.array(x_array), np.array(rmc_array), np.array(exp_array)
 
-def definePlot(xup=25, xlow=0):
-    plt.grid()
+def definePlot(xup=25, xlow=0, grid = True):
+    if grid == True:
+        plt.grid()
     plt.xticks(fontsize=75)
     plt.yticks(fontsize=75)
     plt.xlim((xlow,xup))
@@ -165,10 +166,13 @@ def getRmcGsasBragg(temperature='293'):
     r=r/6
     return x,g,r    
 
-def getRmcGsasBraggByIdx(temperature='293', idx='0'):
+def getRmcGsasBraggByIdx(temperature='293', idx='0',filename = False):
     rmc_path=getattr(c,'RMC_'+temperature)
     filename=rmc_path+'_'+idx+'.braggout'
     print('read rmc braggout file: '+filename)
+    return getRmcGsasBraggByName(filename)
+
+def getRmcGsasBraggByName(filename):
     f=open(filename)
     lines=f.readlines()
     x=[]
@@ -180,6 +184,10 @@ def getRmcGsasBraggByIdx(temperature='293', idx='0'):
         r.append(float(line.split()[2]))
     
     return np.array(x),np.array(g),np.array(r)
+
+
+    
+
 
 def readtable(filename,scale=1):
     f=open(filename)
@@ -236,6 +244,9 @@ def getNSoqByTemperatureByIdx(temperature='293', idx='0'):
     soq_path=getattr(c,'RMC_'+temperature)
     filename = soq_path+'_'+idx+'_SQ1.csv'
     print(filename)
+    return getNSoqByTemperatureByName(filename)
+    
+def getNSoqByTemperatureByName(filename):
     f=open(filename)
     lines=f.readlines()
     x=[]
@@ -264,6 +275,9 @@ def getXSoqByTemperatureByIdx(temperature='293', idx = '0'):
     soq_path=getattr(c,'RMC_'+temperature)
     filename = soq_path+'_'+idx+'_XFQ1.csv'
     print(filename)
+    return getXSoqByTemperatureByName(filename)
+    
+def getXSoqByTemperatureByName(filename):    
     f=open(filename)
     lines=f.readlines()
     x=[]
@@ -694,60 +708,69 @@ def readSTATIS(dirname='../md.data/mdplotfiles/', temperature = '293'):
 def plotD():
     
     plt.axes(yscale = "log")  
-    plt.ylim(0.5E-13, 1.5E-11)
-    definePlot(xup=3.5, xlow=0.5)
-    my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
-    mx=np.array([293.,450.,600.,750.,900.,1100.])
-    mx=1000/mx
-    my=my*1E-11
-    plt.plot(mx,my,'o', markerfacecolor='none', markeredgewidth=5., color='k', markersize=40)
     
-    mrg=np.polyfit(mx, my, 1)
-    mry=np.polyval(mrg,mx)
+    
+    plt.ylim(1.E-13, 1.E-11)
+    #definePlot(xup=3.5, xlow=0.5)
+    # my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
+    # mx=np.array([293.,450.,600.,750.,900.,1100.])
+    # mx=1000/mx
+    # my=my*1E-11
+    # plt.plot(mx,my,'o', markerfacecolor='none', markeredgewidth=5., color='k', markersize=40)
+    
+    # mrg=np.polyfit(mx, my, 1)
+    # mry=np.polyval(mrg,mx)
     #plt.plot(mx,mry,color='k',linewidth=5)
     
-    ex=np.array([2.68097,2.75482,2.83286,2.91545,3.003,3.19489,3.41297])
+    definePlot(xup=3.5, xlow=2.6, grid = False)
+    # DLi (m2s-1)
+    #ex=np.array([2.68097,2.75482,2.83286,2.91545,3.003,3.19489,3.41297])
     ey=np.array([6.02091E-12,3.6901E-12,3.056E-12,2.08526E-12,1.38574E-12,6.57443E-13,1.31293E-13])
-    plt.plot(ex,ey, 'o', color='k', markersize=40)
-    erg=np.polyfit(ex, ey, 1)
-    ery=np.polyval(erg,ex)
-    #plt.plot(ex,ery,color='k',linewidth=5)
+    ex=np.array([2.68097,2.75482,2.83286,2.91545,3.003,3.19489,3.41297])
+    plt.plot(ex,ey, 'o', color='k', markersize=20)
+    # erg=np.polyfit(ex, ey, 1)
+    # ery=np.polyval(erg,ex)
+    # plt.plot(ex,ery,color='k',linewidth=5)
     
-    plt.xlabel('1000/T (K$^{-1}$)',fontsize=100)
-    plt.ylabel('$\mathrm{D_{Li}(m^2 s^{-1}}$)',fontsize=100)
+    plt.xlabel('1000/T (K$^{-1}$)',fontsize=60)
+    plt.ylabel('$\mathrm{D_{Li}(m^2 s^{-1}}$)',fontsize=60)
 
 
 def plotDiffuseCoeff():
-    definePlot(xup=3.7, xlow=.6)
-    my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
-    mx=np.array([293.,450.,600.,750.,900.,1100.])
-    my=my/6
-    my=np.log(my*mx)
-    mx=1000/mx
-    plt.plot(mx,my, 'o', markerfacecolor='none',  markeredgewidth=5.,color='k', markersize=40)
+    # definePlot(xup=3.7, xlow=.6)
+    # my=np.array([0.031075532625208274, 0.05198720372587821, 0.1328615809979784, 0.28705397833485197, 0.6056943962610198, 0.9520218588231469])
+    # mx=np.array([293.,450.,600.,750.,900.,1100.])
+    # my=my/6
+    # my=np.log(my*mx)
+    # mx=1000/mx
+    # plt.plot(mx,my, 'o', markerfacecolor='none',  markeredgewidth=5.,color='k', markersize=40)
     
-    ex=np.array([2.68097,2.75482,2.83286, 2.91545, 3.003,   3.19489])
-    ey=np.array([1.05308,0.5635, 0.37495,-0.00726,-0.41592,-1.16155])
-    plt.xlabel('1000/T (K$^{-1}$)',fontsize=100)
-    plt.ylabel('ln($\mathrm{D_{Li}T}$)',fontsize=100)
-    plt.plot(ex,ey, 'o', color='k', markersize=40)
- 
-    mrg=np.polyfit(mx, my, 1)
-    mry=np.polyval(mrg,mx)
-    plt.plot(mx,mry,color='k',linewidth=5)
-    mae=-((mry[-1]-mry[0])/(mx[-1]-mx[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
-    print(mae)
-    plt.annotate('$\mathrm{E_a}$='+format(mae,'0.2f')+' eV', fontsize=100, xy=(2.5,4.0))
+    #ln [s x K] (S x cm-1 x K)
+    
+    definePlot(xup=3.5, xlow=2.6)
+    ex=np.array([2.68097,2.75482,2.83286, 2.91545, 3.003,   3.19489, 3.41297])
+    ey=np.array([1.05308,0.5635, 0.37495,-0.00726,-0.41592,-1.16155,-2.77248])
+    plt.xlabel('1000/T (K$^{-1}$)',fontsize=60)
+    #plt.ylabel('ln($\mathrm{D_{Li}T}$)',fontsize=100)
+    plt.ylabel('ln[s X K] (S X cm$^{-1}$ X K)', fontsize = 60)
+    plt.plot(ex,ey, 'o', color='k', markersize=20)
+    plt.annotate('$\mathrm{E_a}$='+format(0.36,'0.2f')+' eV', fontsize=60, xy=(3.0,0.5))
+    # mrg=np.polyfit(mx, my, 1)
+    # mry=np.polyval(mrg,mx)
+    # plt.plot(mx,mry,color='k',linewidth=5)
+    # mae=-((mry[-1]-mry[0])/(mx[-1]-mx[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
+    # print(mae)
+    # plt.annotate('$\mathrm{E_a}$='+format(mae,'0.2f')+' eV', fontsize=100, xy=(2.5,4.0))
     
     
     
     erg=np.polyfit(ex, ey, 1)
     ery=np.polyval(erg,ex)
     plt.plot(ex,ery,color='k',linewidth=5)
-    eae=-((ery[-1]-ery[0])/(ex[-1]-ex[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
-    plt.annotate('$\mathrm{E_a}$='+format(eae,'0.2f')+' eV', fontsize=100, xy=(1.5,0.2))
-    
-    plt.grid()
+    # eae=-((ery[-1]-ery[0])/(ex[-1]-ex[0]))*8.314/96.484  # R = 8.314  J/mol=>eV = 96.484
+    # plt.annotate('$\mathrm{E_a}$='+format(eae,'0.2f')+' eV', fontsize=100, xy=(1.5,0.2))
+    # print(eae)
+    # plt.grid()
     
     
     

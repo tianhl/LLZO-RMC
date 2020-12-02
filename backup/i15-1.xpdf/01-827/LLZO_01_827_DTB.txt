@@ -1,15 +1,15 @@
-'  '  '          '  '/'
+'  '  '          '  '\'
 
 INSTRUMENT          {
 
 XPDF          Instrument name
-/home/tianhl/workarea/LLZO/i15-1/ee19378-1/Gudrun_PDF/01-827/          Gudrun input file directory:
-/home/tianhl/workarea/LLZO/i15-1/ee19378-1/Gudrun_PDF/01-827/          Data file directory
+C:\Users\TIANHL-NUCi5\OneDrive\tianhl\LLZO_workspace\Paper\RMC.PDF.LLZO\backup\i15-1.xpdf\01-827\          Gudrun input file directory:
+C:\Users\TIANHL-NUCi5\OneDrive\tianhl\LLZO_workspace\Paper\RMC.PDF.LLZO\backup\i15-1.xpdf\01-827\          Data file directory
 xy          Data file type
-StartupFiles/Xray/CrossSec_XCOM.txt          X-ray cross sections file
-StartupFiles/Xray/f0_WaasKirf.txt          X-ray form factor file
-StartupFiles/Xray/CrossSec_Compton_Balyuzi.txt          X-ray Compton scattering file
-0.5  25  0.01          Q-range [1/Å] for final DCS
+StartupFiles\Xray\CrossSec_XCOM.txt          X-ray cross sections file
+StartupFiles\Xray\f0_WaasKirf.txt          X-ray form factor file
+StartupFiles\Xray\CrossSec_Compton_Balyuzi.txt          X-ray Compton scattering file
+0.5  25  0.01          Q-range [1/?] for final DCS
 50  0.02          r-max and r-step for final g(r)
 
 }
@@ -78,23 +78,23 @@ SAMPLE          {
 1            Number of  files
 i15-1-18940_tth_det2_0.xy          SAMPLE data files
 1          Force calculation of sample corrections?
-Li  Li  7.0  0.0  0.0          Sample atomic composition
-La  La  3.0  0.0  0.0          Sample atomic composition
-Zr  Zr  2.0  0.0  0.0          Sample atomic composition
-O  O  12.0  0.0  0.0          Sample atomic composition
+Li  Li  7.0  0.0  0.0          Composition
+La  La  3.0  0.0  0.0          Composition
+Zr  Zr  2.0  0.0  0.0          Composition
+O  O  12.0  0.0  0.0          Composition
 *  0  0  0  0          * 0 0 0 0 to specify end of composition input
 SameAsBeam          Geometry
 0.0  0.038          Inner and outer radii (cm)
 2.5          Sample height (cm)
 5.07          Density Units:  gm/cm^3?
 TABLES          Total cross section source
-4          Sample tweak factor
-5          Top hat width (1/Å) for cleaning up Fourier Transform
-1.8          Minimum radius for Fourier Transform [Å]
+4          Tweak factor
+5          Top hat width (1/?) for cleaning up Fourier Transform
+1.8          Minimum radius for Fourier Transform [?]
 0.15          Width of broadening in r-space [A]
 0  0          0   0          to finish specifying wavelength range of resonance
-0.0  0.0  1.0          Exponential amplitude, decay [�] and stretch
-7.829841e-02          Sample calibration factor
+0.0  0.0  1.0          Exponential amplitude, decay [?] and stretch
+ 7.859461e-02          Sample calibration factor
 5          No. of iterations
 0.52 0.0 0.0 38.739 2.0 17.963 0.0 0.0 0.0           Fluorescence levels
 1          Factor to modify multiple scattering (0 - 1)
@@ -136,5 +136,5 @@ GO
 
 END          
 1
-Date and time last written:  20180921 16:30:48          
+Date and time last written:  20200923 18:16:33          
 X

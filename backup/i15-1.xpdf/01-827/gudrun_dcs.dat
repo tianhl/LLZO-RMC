@@ -1,15 +1,15 @@
-'  '  '          '  '/'
+'  '  '          '  '\'
 
 INSTRUMENT          {
 
 XPDF          Instrument name
-/home/tianhl/workarea/LLZO/i15-1/ee19378-1/Gudrun_PDF/01-827/          Gudrun input file directory:
-/home/tianhl/workarea/LLZO/i15-1/ee19378-1/Gudrun_PDF/01-827/          Data file directory
+C:\Users\TIANHL-NUCi5\OneDrive\tianhl\LLZO_workspace\Paper\RMC.PDF.LLZO\backup\i15-1.xpdf\01-827\          Gudrun input file directory:
+C:\Users\TIANHL-NUCi5\OneDrive\tianhl\LLZO_workspace\Paper\RMC.PDF.LLZO\backup\i15-1.xpdf\01-627\          Data file directory
 xy          Data file type
-StartupFiles/Xray/CrossSec_XCOM.txt          X-ray cross sections file
-StartupFiles/Xray/f0_WaasKirf.txt          X-ray form factor file
-StartupFiles/Xray/CrossSec_Compton_Balyuzi.txt          X-ray Compton scattering file
-0.5  25  0.01          Q-range [1/Å] for final DCS
+StartupFiles\Xray\CrossSec_XCOM.txt          X-ray cross sections file
+StartupFiles\Xray\f0_WaasKirf.txt          X-ray form factor file
+StartupFiles\Xray\CrossSec_Compton_Balyuzi.txt          X-ray Compton scattering file
+0.6  25  0.01          Q-range [1/?] for final DCS
 50  0.02          r-max and r-step for final g(r)
 
 }
@@ -41,7 +41,7 @@ Na          K-beta filter
 0.161669          Wavelength [A]:
 0          Theta-theta scanning?
 0          Fixed slits?
-0.0  0.0  -1.0          Footprint length, sample thickness, and depression (all relative to sample dimension):
+0.0  DeprecatedSpace  -1.0          Footprint length, sample thickness, and depression (all relative to sample dimension):
 0.0  0.0  -1.0          Position, width and power for low angle cutoff [deg]: 
 *          Tube current [mA]
 *          kAlpha1 [A] 
@@ -56,7 +56,7 @@ Na          K-beta filter
 NORMALISATION          {
 
 0.0          Azimuthal angle of detector above scattering plane:
-1          Divide by <F^2>? 
+0          Divide by <F>^2? 
 3          Power for Breit-Dirac factor (2 -3) 
 1          Krogh-Moe & Norman normalisation
 0.0          Overlap factor
@@ -78,31 +78,31 @@ SAMPLE          {
 1            Number of  files
 i15-1-18940_tth_det2_0.xy          SAMPLE data files
 1          Force calculation of sample corrections?
-Li  Li  7.0  0.0  0.0          Composition
-La  La  3.0  0.0  0.0          Composition
-Zr  Zr  2.0  0.0  0.0          Composition
-O  O  12.0  0.0  0.0          Composition
+Li  Li  7.0  0.0  0.0          Sample atomic composition
+La  La  3.0  0.0  0.0          Sample atomic composition
+Zr  Zr  2.0  0.0  0.0          Sample atomic composition
+O  O  12.0  0.0  0.0          Sample atomic composition
 *  0  0  0  0          * 0 0 0 0 to specify end of composition input
 SameAsBeam          Geometry
 0.0  0.038          Inner and outer radii (cm)
 2.5          Sample height (cm)
 5.07          Density Units:  gm/cm^3?
 TABLES          Total cross section source
-4          Tweak factor
-5          Top hat width (1/Å) for cleaning up Fourier Transform
-1.8          Minimum radius for Fourier Transform [Å]
-0.15          Width of broadening in r-space [A]
+4          Sample tweak factor
+-15          Top hat width (1/?) for cleaning up Fourier Transform
+1.4          Minimum radius for Fourier Transform [?]
+0.06          Width of broadening in r-space [A]
 0  0          0   0          to finish specifying wavelength range of resonance
-0.0  0.0  1.0          Exponential amplitude, decay [�] and stretch
-7.829841e-02          Sample calibration factor
+0.0  0.0  1.0          Exponential amplitude, decay [?] and stretch
+8.327556e-02          Sample calibration factor
 5          No. of iterations
 0.52 0.0 0.0 38.739 2.0 17.963 0.0 0.0 0.0           Fluorescence levels
 1          Factor to modify multiple scattering (0 - 1)
 -1          Incident beam polarization factor (-1 -> +1)
-0.95          Factor for Compton scattering
+1.2          Factor for Compton scattering
 0.0          Bremsstrahlung scattering amplitude
 1          No. of bremsstrahlung iterations
-0.1          Broadening power
+0.03          Broadening power
 0.0  0.0          kAlpha2 and kBeta relative intensities:  
 1.0          Data factor
 1          Analyse this sample? 
@@ -122,7 +122,7 @@ O  O  2.0  0.0  0.0          Container atomic composition
 *  0  0  0  0          * 0 0 0 0 to specify end of composition input
 SameAsBeam          Geometry
 0.038  0.050          Inner and outer radii (cm)
-2          Sample height (cm)
+4          Sample height (cm)
 1.625          Density Units:  gm/cm^3?
 TABLES          Total cross section source
 0.1          Container tweak factor
@@ -135,4 +135,4 @@ GO
 
 
 END          
-Date and time last written:  20180921 16:30:56          
+Date and time last written:  20200923 18:41:18          

@@ -1,4 +1,4 @@
-'  '  '          '  '/'
+'  '  '          '  '\'
 
 CYLINDRICAL          Sample geometry
 2          Number of beam profile values
@@ -25,7 +25,7 @@ Na          K-beta filter
 0.161669          Wavelength [A]:
 0          Theta-theta scanning?
 0          Fixed slits?
-0.0  0.0  -1.0          Footprint length, sample thickness, and depression (all relative to sample dimension):
+0.0  DeprecatedSpace  -1.0          Footprint length, sample thickness, and depression (all relative to sample dimension):
 0.0  0.0  -1.0          Position, width and power for low angle cutoff [deg]: 
 *          Tube current [mA]
 *          kAlpha1 [A] 
